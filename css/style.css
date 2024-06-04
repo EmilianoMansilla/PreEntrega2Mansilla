@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
     font-size: 16px;
-    list-style: none;
 }
 
 
@@ -24,27 +23,79 @@ body {
 
 
 
-
-.contenedor_padre {
-    display: flex;
-}
-
-
-
-
 header {
     width: 100%;
-    background: rgb(47, 62, 70);
     margin: 0;
 }
 
 
+.menu ul{
+    list-style: none;
+    display: block;
+    margin: 20px 10px;
+  }
+  
+  .menu ul li{
+    display: block;
+    margin: 20px 0;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .logo-nav {
+    width: 65px;
+    height: 65px;
+}
+
+.icono-nav {
+    width: 45px;
+    height: 45px;
+}
 
 
 nav {
+    width: 100%;
+    background: rgb(47, 62, 70);
+    padding: 15px 10px;
     display: flex;
-    align-items: flex-end;
     justify-content: space-between;
+    position: relative;
+    height: 90px;
+}
+
+@media (min-width: 1024px) {
+    .menu-items {
+    display: flex;
+    align-items: center;
+    }
+}
+
+.menu-items ul {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 15px 10px;
+    background-color: rgb(237, 64, 64);
+}
+
+
+@media (min-width: 1024px) {
+    .menu-items ul {
+        position: inherit;
+        display: flex;
+        padding: 3px;
+        margin: 5px;
+        flex-direction: row;
+    }
 }
 
 
@@ -154,7 +205,7 @@ nav {
 
 
 
-.menu_nav ul li a {
+.menu-items ul li a {
     font-size: 17px;
     color: rgb(255, 255, 255);
     text-decoration: underline;
@@ -287,7 +338,28 @@ footer {
     text-align: center;
 }
 
+.menu-items ul li a {
+    text-decoration: none;
+    color: rgb(17, 16, 16);
+    font-size: 18px;
+}
 
+
+.menu-toggle {
+    display: none;
+}
+
+
+@media (min-width: 1024px) {
+    .menu-items label {
+        display: none;
+    }
+}
+
+
+.menu-toggle:checked ~ ul {
+    display: flex;
+}
 
 /* ------------------------------------------- */
             /* TABLA DE POSICIONES */
