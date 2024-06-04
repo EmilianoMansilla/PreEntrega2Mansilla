@@ -1,0 +1,210 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    list-style: none;
+}
+
+
+
+@font-face {
+    font-family: Roboto; 
+    src: url(assets/fonts/Roboto-Medium.ttf);
+}
+
+
+
+
+body {
+    font-family: Roboto, sans-serif;
+    background: rgb(82, 121, 111);
+}
+
+
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+nav {
+    background-color: rgb(144, 158, 166);
+    width: 100%;
+    padding: 20px 30px;
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+
+
+ul li a {
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 22, 84);
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+ul li a:hover {
+    background-color: rgba(255, 255, 255, .1);                  /* Cambia el color de fondo al pasar el mouse */
+}
+
+
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+
+
+@media (min-width: 1024px) {
+    h1, h2, h3 {
+        text-align: left;
+    }
+}
+
+
+
+h1 {
+    margin-bottom: 20px;
+}
+
+
+
+.columna-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+
+
+.columna-1 article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.columna-1 footer {
+    display: flex;
+    gap: 10px;
+}
+
+
+.columna-2 article {
+    display: flex;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(236, 225, 225);
+    gap: 20px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 550px 1fr;
+    row-gap: 30px;
+}
+
+
+
+/* ------------------------------------------- */
+        /* DEFINIR GRID */
+        .grilla {
+            height: 100dvh; /* DVH dinamic viwport height - medida nueva por los celulares cosito en la pantalla */
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px, 1fr, 2fr, 2fr, 1fr, 100px;
+        
+            grid-template-areas: 
+            "header"
+            "nav"
+            "productos"
+            "servicios"
+            "aside"
+            "footer"
+            ;
+        
+            row-gap: 10px;
+        }
+        
+        
+        
+        /* TABLET */
+        @media (min-width: 768px) {
+            .grilla {
+                grid-template-columns: 20% auto 15%;
+                grid-template-rows: 1fr 1fr 1fr 120px;
+        
+                grid-template-areas: 
+                "header header header"
+                "nav productos aside"
+                "nav servicios servicios"
+                "footer footer footer"
+                ;
+            }
+        }
+        
+        
+        /* DESKTOP */
+        @media (min-width: 1024px) {
+            .grilla {
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 40px;
+
+                grid-template-areas: 
+                "header header header"
+                "nav productos aside"
+                "nav servicios servicios"
+                "footer footer footer"
+                ;
+            }
+        }
+        
+        
+        header {
+            grid-area: header;
+            background-color: rgb(47, 62, 70);
+        
+        }
+        
+        .productos {
+            grid-area: productos;
+            background-color: rgb(82, 121, 111);
+        }
+        
+        .servicios {
+            grid-area: servicios;
+            background-color: rgb(132, 169, 140);
+        }
+        
+        nav {
+            grid-area: nav;
+        }
+        
+        aside {
+            grid-area: aside;
+            background-color: rgb(53, 79, 82);
+        }
+        
+        footer {
+            grid-area: footer;
+            background-color: rgb(202, 210, 197);
+        }
+        /* ------------------------------------------- */

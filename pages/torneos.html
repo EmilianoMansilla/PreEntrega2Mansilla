@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emiliano Mansilla Maciel">
+    <meta name="description" content="Somos una empresa enfocada en tener a todos los locales de alquiler de canchas de futgol 5 y 7 en un solo sitio web y aplicacion">
+    <link rel="shortcut icon" href="../assets/icono/icono16.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css"> 
+    <link rel="stylesheet" href="../normalize.css">
+    <title>Torneos</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <nav>
+                <div class="img_nav">
+                    <a href="./pages/torneos.html">
+                        <img src="../assets/logo/logo25.png" alt="Logo y redirección del sitio web">
+                    </a>
+                </div>
+    
+                <form action="/buscar" method="post" class="nav_buscar">
+                    <input type="text" name="buscar" placeholder="Buscar..." class="input_buscar">
+                    <button type="submit" class="boton_buscar">Buscar</button>
+                </form>
+    
+                <div class="menu_nav">
+                    <ul>
+                        <li><a href="../pages/inicio.html">Inicio</a></li>
+                        <li><a href="../pages/registrarme.html">Registrarme</a></li>
+                        <li><a href="../pages/equipos.html">Equipos</a></li>
+                        <li><a href="../pages/torneos.html">Torneos</a></li>
+                        <li><a href="../pages/ubicaciones.html" target="_blank">Ubicaciones</a></li>
+                        <li><a href="../pages/noticias.html" target="_blank">Noticias</a></li>
+                        <li><a href="../pages/miperfil.html" target="_blank">Mi Perfil</a></li>
+                    </ul>
+    
+                    <ul>
+                        <li><a href="../miperfil.html"><img class="img_perfil" src="../assets/perfil/usuario1.png" alt="Logo de Mi perfil para ingresar"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+
+
+    
+        <div class="pie">
+            <a href="#pie">Ir al pie de página</a>
+        </div>
+        
+        <div class="contenedor_tabla_torneos">
+            <section>
+                <h1>Torneo 24 Equipos, Tabla de posiciones, Fases Preliminares</h1>
+                <article>
+                    <h2>Tabla de Posiciones</h2>
+                    <div class="tabla_posiciones_torneos">
+                        <div class="cabecera_posicion">Posición</div>
+                        <div class="cabecera_equipo">Equipo</div>
+                        <div class="cabecera_datos">PJ</div>
+                        <div class="cabecera_datos">PG</div>
+                        <div class="cabecera_datos">PE</div>
+                        <div class="cabecera_datos">PP</div>
+                        <div class="cabecera_datos">GF</div>
+                        <div class="cabecera_datos">GC</div>
+                        <div class="cabecera_datos">Dif</div>
+                        <div class="cabecera_datos">Pts</div>
+                        <!-- Equipo 1 -->
+                        <div class="posicion">1</div>
+                        <div class="equipo">Atlético Madrid</div>
+                        <div class="datos">7</div>
+                        <div class="datos">5</div>
+                        <div class="datos">1</div>
+                        <div class="datos">1</div>
+                        <div class="datos">11</div>
+                        <div class="datos">6</div>
+                        <div class="datos">+5</div>
+                        <div class="datos">16</div>
+                        <!-- Equipo 2 -->
+                        <div class="posicion">2</div>
+                        <div class="equipo">Bayern Munich</div>
+                        <div class="datos">7</div>
+                        <div class="datos">5</div>
+                        <div class="datos">0</div>
+                        <div class="datos">2</div>
+                        <div class="datos">17</div>
+                        <div class="datos">6</div>
+                        <div class="datos">+11</div>
+                        <div class="datos">15</div>
+                        <!-- Equipo 3 -->
+                        <div class="posicion">3</div>
+                        <div class="equipo">Real Madrid</div>
+                        <div class="datos">7</div>
+                        <div class="datos">4</div>
+                        <div class="datos">1</div>
+                        <div class="datos">2</div>
+                        <div class="datos">15</div>
+                        <div class="datos">9</div>
+                        <div class="datos">+6</div>
+                        <div class="datos">13</div>
+                        <!-- Equipo 4 -->
+                        <div class="posicion">4</div>
+                        <div class="equipo">Chelsea</div>
+                        <div class="datos">7</div>
+                        <div class="datos">3</div>
+                        <div class="datos">2</div>
+                        <div class="datos">2</div>
+                        <div class="datos">11</div>
+                        <div class="datos">9</div>
+                        <div class="datos">+2</div>
+                        <div class="datos">11</div>
+                        <!-- Equipo 5 -->
+                        <div class="posicion">5</div>
+                        <div class="equipo">Manchester City</div>
+                        <div class="datos">7</div>
+                        <div class="datos">3</div>
+                        <div class="datos">1</div>
+                        <div class="datos">3</div>
+                        <div class="datos">9</div>
+                        <div class="datos">8</div>
+                        <div class="datos">+1</div>
+                        <div class="datos">10</div>
+                        <!-- Equipo 6 -->
+                        <div class="posicion">6</div>
+                        <div class="equipo">Liverpool</div>
+                        <div class="datos">7</div>
+                        <div class="datos">3</div>
+                        <div class="datos">1</div>
+                        <div class="datos">3</div>
+                        <div class="datos">10</div>
+                        <div class="datos">9</div>
+                        <div class="datos">+1</div>
+                        <div class="datos">10</div>
+                        <!-- Equipo 7 -->
+                        <div class="posicion">7</div>
+                        <div class="equipo">Juventus</div>
+                        <div class="datos">7</div>
+                        <div class="datos">3</div>
+                        <div class="datos">1</div>
+                        <div class="datos">3</div>
+                        <div class="datos">8</div>
+                        <div class="datos">9</div>
+                        <div class="datos">-1</div>
+                        <div class="datos">10</div>
+                        <!-- Equipo 8 -->
+                        <div class="posicion">8</div>
+                        <div class="equipo">Paris Saint-Germain</div>
+                        <div class="datos">7</div>
+                        <div class="datos">2</div>
+                        <div class="datos">3</div>
+                        <div class="datos">2</div>
+                        <div class="datos">12</div>
+                        <div class="datos">11</div>
+                        <div class="datos">+1</div>
+                        <div class="datos">9</div>
+                        <!-- Equipo 9 -->
+                        <div class="posicion">9</div>
+                        <div class="equipo">Barcelona</div>
+                        <div class="datos">7</div>
+                        <div class="datos">2</div>
+                        <div class="datos">2</div>
+                        <div class="datos">3</div>
+                        <div class="datos">10</div>
+                        <div class="datos">12</div>
+                        <div class="datos">-2</div>
+                        <div class="datos">8</div>
+                        <!-- Equipo 10 -->
+                        <div class="posicion">10</div>
+                        <div class="equipo">Manchester United</div>
+                        <div class="datos">7</div>
+                        <div class="datos">2</div>
+                        <div class="datos">2</div>
+                        <div class="datos">3</div>
+                        <div class="datos">9</div>
+                        <div class="datos">12</div>
+                        <div class="datos">-3</div>
+                        <div class="datos">8</div>
+                        <!-- Equipo 11 -->
+                        <div class="posicion">11</div>
+                        <div class="equipo">AC Milan</div>
+                        <div class="datos">7</div>
+                        <div class="datos">2</div>
+                        <div class="datos">1</div>
+                        <div class="datos">4</div>
+                        <div class="datos">8</div>
+                        <div class="datos">10</div>
+                        <div class="datos">-2</div>
+                        <div class="datos">7</div>
+                        <!-- Equipo 12 -->
+                        <div class="posicion">12</div>
+                        <div class="equipo">Ajax</div>
+                        <div class="datos">7</div>
+                        <div class="datos">2</div>
+                        <div class="datos">1</div>
+                        <div class="datos">4</div>
+                        <div class="datos">7</div>
+                        <div class="datos">9</div>
+                        <div class="datos">-2</div>
+                        <div class="datos">7</div>
+                        <!-- Equipo 13 -->
+                        <div class="posicion">13</div>
+                        <div class="equipo">Borussia Dortmund</div>
+                        <div class="datos">7</div>
+                        <div class="datos">2</div>
+                        <div class="datos">1</div>
+                        <div class="datos">4</div>
+                        <div class="datos">6</div>
+                        <div class="datos">9</div>
+                        <div class="datos">-3</div>
+                        <div class="datos">7</div>
+                        <!-- Equipo 14 -->
+                        <div class="posicion">14</div>
+                        <div class="equipo">Inter de Milán</div>
+                        <div class="datos">7</div>
+                        <div class="datos">1</div>
+                        <div class="datos">2</div>
+                        <div class="datos">4</div>
+                        <div class="datos">5</div>
+                        <div class="datos">10</div>
+                        <div class="datos">-5</div>
+                        <div class="datos">5</div>
+                        <!-- Equipo 15 -->
+                        <div class="posicion">15</div>
+                        <div class="equipo">Roma</div>
+                        <div class="datos">7</div>
+                        <div class="datos">1</div>
+                        <div class="datos">2</div>
+                        <div class="datos">4</div>
+                        <div class="datos">4</div>
+                        <div class="datos">9</div>
+                        <div class="datos">-5</div>
+                        <div class="datos">5</div>
+                        <!-- Equipo 16 -->
+                        <div class="posicion">16</div>
+                        <div class="equipo">Napoli</div>
+                        <div class="datos">7</div>
+                        <div class="datos">1</div>
+                        <div class="datos">1</div>
+                        <div class="datos">5</div>
+                        <div class="datos">4</div>
+                        <div class="datos">10</div>
+                        <div class="datos">-6</div>
+                        <div class="datos">4</div>
+                        <!-- Equipo 17 -->
+                        <div class="posicion">17</div>
+                        <div class="equipo">Sevilla</div>
+                        <div class="datos">7</div>
+                        <div class="datos">0</div>
+                        <div class="datos">3</div>
+                        <div class="datos">4</div>
+                        <div class="datos">3</div>
+                        <div class="datos">10</div>
+                        <div class="datos">-7</div>
+                        <div class="datos">3</div>
+                        <!-- Equipo 18 -->
+                        <div class="posicion">18</div>
+                        <div class="equipo">Atalanta</div>
+                        <div class="datos">7</div>
+                        <div class="datos">0</div>
+                        <div class="datos">3</div>
+                        <div class="datos">4</div>
+                        <div class="datos">2</div>
+                        <div class="datos">9</div>
+                        <div class="datos">-7</div>
+                        <div class="datos">3</div>
+                        <!-- Equipo 19 -->
+                        <div class="posicion">19</div>
+                        <div class="equipo">Lazio</div>
+                        <div class="datos">7</div>
+                        <div class="datos">0</div>
+                        <div class="datos">3</div>
+                        <div class="datos">4</div>
+                        <div class="datos">2</div>
+                        <div class="datos">10</div>
+                        <div class="datos">-8</div>
+                        <div class="datos">3</div>
+                        <!-- Equipo 20 -->
+                        <div class="posicion">20</div>
+                        <div class="equipo">Porto</div>
+                        <div class="datos">7</div>
+                        <div class="datos">0</div>
+                        <div class="datos">2</div>
+                        <div class="datos">5</div>
+                        <div class="datos">4</div>
+                        <div class="datos">11</div>
+                        <div class="datos">-7</div>
+                        <div class="datos">2</div>
+                        <!-- Equipo 21 -->
+                        <div class="posicion">21</div>
+                        <div class="equipo">Benfica</div>
+                        <div class="datos">7</div>
+                        <div class="datos">0</div>
+                        <div class="datos">2</div>
+                        <div class="datos">5</div>
+                        <div class="datos">3</div>
+                        <div class="datos">10</div>
+                        <div class="datos">-7</div>
+                        <div class="datos">2</div>
+                        <!-- Equipo 22 -->
+                        <div class="posicion">22</div>
+                        <div class="equipo">Sporting Lisboa</div>
+                        <div class="datos">7</div>
+                        <div class="datos">0</div>
+                        <div class="datos">2</div>
+                        <div class="datos">5</div>
+                        <div class="datos">2</div>
+                        <div class="datos">9</div>
+                        <div class="datos">-7</div>
+                        <div class="datos">2</div>
+                        <!-- Equipo 23 -->
+                        <div class="posicion">23</div>
+                        <div class="equipo">Shakhtar Donetsk</div>
+                        <div class="datos">7</div>
+                        <div class="datos">0</div>
+                        <div class="datos">1</div>
+                        <div class="datos">6</div>
+                        <div class="datos">2</div>
+                        <div class="datos">11</div>
+                        <div class="datos">-9</div>
+                        <div class="datos">1</div>
+                        <!-- Equipo 24 -->
+                        <div class="posicion">24</div>
+                        <div class="equipo">Olympique de Marsella</div>
+                        <div class="datos">7</div>
+                        <div class="datos">0</div>
+                        <div class="datos">0</div>
+                        <div class="datos">7</div>
+                        <div class="datos">1</div>
+                        <div class="datos">13</div>
+                        <div class="datos">-12</div>
+                        <div class="datos">0</div>
+                    </div>
+                </article>
+            </section>
+        </div>
+        
+        <div>
+            <section>
+                <article>
+                    <h2>Grupos</h2>
+                    <div>
+                        <section>
+                            <article>
+                                <h2>Grupos</h2>
+                                <!-- Grupo A -->
+                                <div class="grupo">
+                                    <div class="cabecera_posicion">Posición</div>
+                                    <div class="cabecera_equipo">Equipo</div>
+                                    <div class="cabecera_datos">PJ</div>
+                                    <div class="cabecera_datos">PG</div>
+                                    <div class="cabecera_datos">PE</div>
+                                    <div class="cabecera_datos">PP</div>
+                                    <div class="cabecera_datos">GF</div>
+                                    <div class="cabecera_datos">GC</div>
+                                    <div class="cabecera_datos">Dif</div>
+                                    <div class="cabecera_datos">Pts</div>
+                                    <!-- Equipo 1 -->
+                                    <div class="posicion">1</div>
+                                    <div class="equipo">Atlético Madrid</div>
+                                    <div class="datos">7</div>
+                                    <div class="datos">5</div>
+                                    <div class="datos">1</div>
+                                    <div class="datos">1</div>
+                                    <div class="datos">11</div>
+                                    <div class="datos">6</div>
+                                    <div class="datos">+5</div>
+                                    <div class="datos">16</div>
+                                    <!-- Equipo 2 -->
+                                    <div class="posicion">2</div>
+                                    <div class="equipo">Manchester City</div>
+                                    <div class="datos">7</div>
+                                    <div class="datos">5</div>
+                                    <div class="datos">0</div>
+                                    <div class="datos">2</div>
+                                    <div class="datos">17</div>
+                                    <div class="datos">6</div>
+                                    <div class="datos">+11</div>
+                                    <div class="datos">15</div>
+                                    <!-- Equipo 3 -->
+                                    <div class="posicion">3</div>
+                                    <div class="equipo">Juventus</div>
+                                    <div class="datos">7</div>
+                                    <div class="datos">4</div>
+                                    <div class="datos">1</div>
+                                    <div class="datos">2</div>
+                                    <div class="datos">15</div>
+                                    <div class="datos">9</div>
+                                    <div class="datos">+6</div>
+                                    <div class="datos">13</div>
+                                    <!-- Equipo 4 -->
+                                    <div class="posicion">4</div>
+                                    <div class="equipo">Paris Saint-Germain</div>
+                                    <div class="datos">7</div>
+                                    <div class="datos">3</div>
+                                    <div class="datos">2</div>
+                                    <div class="datos">2</div>
+                                    <div class="datos">11</div>
+                                    <div class="datos">9</div>
+                                    <div class="datos">+2</div>
+                                    <div class="datos">11</div>
+                                </div>
+
+<!-- Grupo B -->
+<div class="grupo">
+    <div class="cabecera_posicion">Posición</div>
+    <div class="cabecera_equipo">Equipo</div>
+    <div class="cabecera_datos">PJ</div>
+    <div class="cabecera_datos">PG</div>
+    <div class="cabecera_datos">PE</div>
+    <div class="cabecera_datos">PP</div>
+    <div class="cabecera_datos">GF</div>
+    <div class="cabecera_datos">GC</div>
+    <div class="cabecera_datos">Dif</div>
+    <div class="cabecera_datos">Pts</div>
+    <!-- Equipo 1 -->
+    <div class="posicion">1</div>
+    <div class="equipo">Bayern Munich</div>
+    <div class="datos">7</div>
+    <div class="datos">5</div>
+    <div class="datos">1</div>
+    <div class="datos">1</div>
+    <div class="datos">11</div>
+    <div class="datos">6</div>
+    <div class="datos">+5</div>
+    <div class="datos">16</div>
+    <!-- Equipo 2 -->
+    <div class="posicion">2</div>
+    <div class="equipo">Liverpool</div>
+    <div class="datos">7</div>
+    <div class="datos">5</div>
+    <div class="datos">0</div>
+    <div class="datos">2</div>
+    <div class="datos">17</div>
+    <div class="datos">6</div>
+    <div class="datos">+11</div>
+    <div class="datos">15</div>
+    <!-- Equipo 3 -->
+    <div class="posicion">3</div>
+    <div class="equipo">Real Madrid</div>
+    <div class="datos">7</div>
+    <div class="datos">4</div>
+    <div class="datos">1</div>
+    <div class="datos">2</div>
+    <div class="datos">15</div>
+    <div class="datos">9</div>
+    <div class="datos">+6</div>
+    <div class="datos">13</div>
+    <!-- Equipo 4 -->
+    <div class="posicion">4</div>
+    <div class="equipo">Manchester United</div>
+    <div class="datos">7</div>
+    <div class="datos">3</div>
+    <div class="datos">2</div>
+    <div class="datos">2</div>
+    <div class="datos">11</div>
+    <div class="datos">9</div>
+    <div class="datos">+2</div>
+    <div class="datos">11</div>
+</div>
+<!-- Grupo C -->
+<div class="grupo">
+    <div class="cabecera_posicion">Posición</div>
+    <div class="cabecera_equipo">Equipo</div>
+    <div class="cabecera_datos">PJ</div>
+    <div class="cabecera_datos">PG</div>
+    <div class="cabecera_datos">PE</div>
+    <div class="cabecera_datos">PP</div>
+    <div class="cabecera_datos">GF</div>
+    <div class="cabecera_datos">GC</div>
+    <div class="cabecera_datos">Dif</div>
+    <div class="cabecera_datos">Pts</div>
+    <!-- Equipo 1 -->
+    <div class="posicion">1</div>
+    <div class="equipo">Juventus</div>
+    <div class="datos">7</div>
+    <div class="datos">5</div>
+    <div class="datos">1</div>
+    <div class="datos">1</div>
+    <div class="datos">11</div>
+    <div class="datos">6</div>
+    <div class="datos">+5</div>
+    <div class="datos">16</div>
+    <!-- Equipo 2 -->
+    <div class="posicion">2</div>
+    <div class="equipo">Paris Saint-Germain</div>
+    <div class="datos">7</div>
+    <div class="datos">5</div>
+    <div class="datos">0</div>
+    <div class="datos">2</div>
+    <div class="datos">17</div>
+    <div class="datos">6</div>
+    <div class="datos">+11</div>
+    <div class="datos">15</div>
+    <!-- Equipo 3 -->
+    <div class="posicion">3</div>
+    <div class="equipo">Inter Milan</div>
+    <div class="datos">7</div>
+    <div class="datos">4</div>
+    <div class="datos">1</div>
+    <div class="datos">2</div>
+    <div class="datos">15</div>
+    <div class="datos">9</div>
+    <div class="datos">+6</div>
+    <div class="datos">13</div>
+    <!-- Equipo 4 -->
+    <div class="posicion">4</div>
+    <div class="equipo">Borussia Dortmund</div>
+    <div class="datos">7</div>
+    <div class="datos">3</div>
+    <div class="datos">2</div>
+    <div class="datos">2</div>
+    <div class="datos">11</div>
+    <div class="datos">9</div>
+    <div class="datos">+2</div>
+    <div class="datos">11</div>
+</div>
+                                <!-- Grupo D -->
+<div class="grupo">
+    <div class="cabecera_posicion">Posición</div>
+    <div class="cabecera_equipo">Equipo</div>
+    <div class="cabecera_datos">PJ</div>
+    <div class="cabecera_datos">PG</div>
+    <div class="cabecera_datos">PE</div>
+    <div class="cabecera_datos">PP</div>
+    <div class="cabecera_datos">GF</div>
+    <div class="cabecera_datos">GC</div>
+    <div class="cabecera_datos">Dif</div>
+    <div class="cabecera_datos">Pts</div>
+    <!-- Equipo 1 -->
+    <div class="posicion">1</div>
+    <div class="equipo">Barcelona</div>
+    <div class="datos">7</div>
+    <div class="datos">5</div>
+    <div class="datos">1</div>
+    <div class="datos">1</div>
+    <div class="datos">11</div>
+    <div class="datos">6</div>
+    <div class="datos">+5</div>
+    <div class="datos">16</div>
+    <!-- Equipo 2 -->
+    <div class="posicion">2</div>
+    <div class="equipo">Arsenal</div>
+    <div class="datos">7</div>
+    <div class="datos">5</div>
+    <div class="datos">0</div>
+    <div class="datos">2</div>
+    <div class="datos">17</div>
+    <div class="datos">6</div>
+    <div class="datos">+11</div>
+    <div class="datos">15</div>
+    <!-- Equipo 3 -->
+    <div class="posicion">3</div>
+    <div class="equipo">AC Milan</div>
+    <div class="datos">7</div>
+    <div class="datos">4</div>
+    <div class="datos">1</div>
+    <div class="datos">2</div>
+    <div class="datos">15</div>
+    <div class="datos">9</div>
+    <div class="datos">+6</div>
+    <div class="datos">13</div>
+    <!-- Equipo 4 -->
+    <div class="posicion">4</div>
+    <div class="equipo">RB Leipzig</div>
+    <div class="datos">7</div>
+    <div class="datos">3</div>
+    <div class="datos">2</div>
+    <div class="datos">2</div>
+    <div class="datos">11</div>
+    <div class="datos">9</div>
+    <div class="datos">+2</div>
+    <div class="datos">11</div>
+</div>
+<!-- Grupo E -->
+<div class="grupo">
+    <div class="cabecera_posicion">Posición</div>
+    <div class="cabecera_equipo">Equipo</div>
+    <div class="cabecera_datos">PJ</div>
+    <div class="cabecera_datos">PG</div>
+    <div class="cabecera_datos">PE</div>
+    <div class="cabecera_datos">PP</div>
+    <div class="cabecera_datos">GF</div>
+    <div class="cabecera_datos">GC</div>
+    <div class="cabecera_datos">Dif</div>
+    <div class="cabecera_datos">Pts</div>
+
+    <!-- Equipo 1 -->
+    <div class="posicion">1</div>
+    <div class="equipo">FC Porto</div>
+    <div class="datos">7</div>
+    <div class="datos">5</div>
+    <div class="datos">1</div>
+    <div class="datos">1</div>
+    <div class="datos">11</div>
+    <div class="datos">6</div>
+    <div class="datos">+5</div>
+    <div class="datos">16</div>
+
+    <!-- Equipo 2 -->
+    <div class="posicion">2</div>
+    <div class="equipo">RB Leipzig</div>
+    <div class="datos">7</div>
+    <div class="datos">5</div>
+    <div class="datos">0</div>
+    <div class="datos">2</div>
+    <div class="datos">17</div>
+    <div class="datos">6</div>
+    <div class="datos">+11</div>
+    <div class="datos">15</div>
+
+    <!-- Equipo 3 -->
+    <div class="posicion">3</div>
+    <div class="equipo">Sporting CP</div>
+    <div class="datos">7</div>
+    <div class="datos">4</div>
+    <div class="datos">1</div>
+    <div class="datos">2</div>
+    <div class="datos">15</div>
+    <div class="datos">9</div>
+    <div class="datos">+6</div>
+    <div class="datos">13</div>
+
+    <!-- Equipo 4 -->
+    <div class="posicion">4</div>
+    <div class="equipo">Ajax</div>
+    <div class="datos">7</div>
+    <div class="datos">3</div>
+    <div class="datos">2</div>
+    <div class="datos">2</div>
+    <div class="datos">11</div>
+    <div class="datos">9</div>
+    <div class="datos">+2</div>
+    <div class="datos">11</div>
+</div>
+<!-- Grupo F -->
+<div class="grupo">
+    <div class="cabecera_posicion">Posición</div>
+    <div class="cabecera_equipo">Equipo</div>
+    <div class="cabecera_datos">PJ</div>
+    <div class="cabecera_datos">PG</div>
+    <div class="cabecera_datos">PE</div>
+    <div class="cabecera_datos">PP</div>
+    <div class="cabecera_datos">GF</div>
+    <div class="cabecera_datos">GC</div>
+    <div class="cabecera_datos">Dif</div>
+    <div class="cabecera_datos">Pts</div>
+
+    <!-- Equipo 1 -->
+    <div class="posicion">1</div>
+    <div class="equipo">Manchester City</div>
+    <div class="datos">7</div>
+    <div class="datos">5</div>
+    <div class="datos">1</div>
+    <div class="datos">1</div>
+    <div class="datos">11</div>
+    <div class="datos">6</div>
+    <div class="datos">+5</div>
+    <div class="datos">16</div>
+
+    <!-- Equipo 2 -->
+    <div class="posicion">2</div>
+    <div class="equipo">Manchester United</div>
+    <div class="datos">7</div>
+    <div class="datos">5</div>
+    <div class="datos">0</div>
+    <div class="datos">2</div>
+    <div class="datos">17</div>
+    <div class="datos">6</div>
+    <div class="datos">+11</div>
+    <div class="datos">15</div>
+
+    <!-- Equipo 3 -->
+    <div class="posicion">3</div>
+    <div class="equipo">Inter Milan</div>
+    <div class="datos">7</div>
+    <div class="datos">4</div>
+    <div class="datos">1</div>
+    <div class="datos">2</div>
+    <div class="datos">15</div>
+    <div class="datos">9</div>
+    <div class="datos">+6</div>
+    <div class="datos">13</div>
+
+    <!-- Equipo 4 -->
+    <div class="posicion">4</div>
+    <div class="equipo">Borussia Dortmund</div>
+    <div class="datos">7</div>
+    <div class="datos">3</div>
+    <div class="datos">2</div>
+    <div class="datos">2</div>
+    <div class="datos">11</div>
+    <div class="datos">9</div>
+    <div class="datos">+2</div>
+    <div class="datos">11</div>
+</div>
+                </section>
+            </article>
+        </div>
+
+        <div class="torneo-container">
+            <!-- Octavos -->
+            <div class="etapa octavos">
+                <div class="etapa-title">Octavos de Final</div>
+                <div class="partido-container">
+                    <div class="equipo-container winner1">Atlético Madrid</div>
+                    <div class="vs-container">Vs</div>
+                    <div class="equipo-container">Bayern Munich</div>
+                </div>
+                <div class="partido-container">
+                    <div class="equipo-container winner1">Real Madrid</div>
+                    <div class="vs-container">Vs</div>
+                    <div class="equipo-container">Chelsea</div>
+                </div>
+                <div class="partido-container">
+                    <div class="equipo-container winner1">Paris Saint-Germain</div>
+                    <div class="vs-container">Vs</div>
+                    <div class="equipo-container">Liverpool</div>
+                </div>
+                <div class="partido-container">
+                    <div class="equipo-container winner1">Manchester City</div>
+                    <div class="vs-container">Vs</div>
+                    <div class="equipo-container">Real Madrid</div>
+                </div>
+                <div class="partido-container">
+                    <div class="equipo-container winner1">Barcelona</div>
+                    <div class="vs-container">Vs</div>
+                    <div class="equipo-container">Manchester United</div>
+                </div>
+                <div class="partido-container">
+                    <div class="equipo-container winner1">Bayern Munich</div>
+                    <div class="vs-container">Vs</div>
+                    <div class="equipo-container">Juventus</div>
+                </div>
+                <div class="partido-container">
+                    <div class="equipo-container winner1">Inter de Milán</div>
+                    <div class="vs-container">Vs</div>
+                    <div class="equipo-container">Chelsea</div>
+                </div>
+                <div class="partido-container">
+                    <div class="equipo-container winner1">AC Milan</div>
+                    <div class="vs-container">Vs</div>
+                    <div class="equipo-container">Bayern Munich</div>
+                </div>
+            </div>
+        
+            <!-- Cuartos -->
+            <div class="etapa cuartos">
+                <div class="etapa-title">Cuartos de Final</div>
+                <div class="partido-container">
+                    <div class="equipo-container winner1">Bayern Munich</div>
+                    <div class="vs-container">Vs</div>
+                    <div class="equipo-container">Real Madrid</div>
+                </div>
+                <div class="partido-container">
+                    <div class="equipo-container winner1">Paris Saint-Germain</div>
+                    <div class="vs-container">Vs</div>
+                    <div class="equipo-container">Manchester City</div>
+                </div>
+                <div class="partido-container">
+                    <div class="equipo-container winner1">Liverpool</div>
+                    <div class="vs-container">Vs</div>
+                    <div class="equipo-container">Juventus</div>
+                </div>
+                <div class="partido-container">
+                    <div class="equipo-container winner1">Manchester United</div>
+                    <div class="vs-container">Vs</div>
+                    <div class="equipo-container">Barcelona</div>
+                </div>
+            </div>
+        
+            <!-- Semifinales -->
+            <div class="etapa semifinales">
+                <div class="etapa-title">Semifinales</div>
+                <div class="partido-container">
+                    <div class="equipo-container winner1">Bayern Munich</div>
+                    <div class="vs-container">Vs</div>
+                    <div class="equipo-container">Real Madrid</div>
+                </div>
+                <div class="partido-container">
+                    <div class="equipo-container winner1">Paris Saint-Germain</div>
+                    <div class="vs-container">Vs</div>
+                    <div class="equipo-container">Liverpool</div>
+                </div>
+            </div>
+        
+            <!-- Final -->
+            <div class="etapa final">
+                <div class="etapa-title">Final</div>
+                <div class="partido-container">
+                    <div class="equipo-container winner1">Bayern Munich</div>
+                    <div class="vs-container">Vs</div>
+                    <div class="equipo-container">Real Madrid</div>
+                </div>
+            </div>
+        
+            <!-- Campeon -->
+            <div class="etapa campeon">
+                <div class="etapa-title">Campeón</div>
+                <div class="campeon-container">
+                    <img src="tuimagen.jpg" alt="Imagen del campeón">
+                </div>
+            </div>
+        </div>
+
+        <div class="div_footer">
+            <footer class="border">
+                <div class="horarios_contactos">
+                    <ul>
+                        <li>
+                            <p>Horarios y Contactos</p>
+                            <img src="../assets/redes/contacto/contacto3.png" alt="Logo de Contactos">
+                            <p>Nuestro número de teléfono: 2204 5199</p>
+                        </li>  
+        
+                        <li>
+                            <a href="https://web.whatsapp.com" target="_blank" title="Ingresar a nuestro chat de Whatsapp">
+                                <img src="../assets/redes/whatsapp/whatsapp7.png" alt="Logo de Whatsapp para ingresar">
+                                <p>Nuestro Whatsapp: (+598) 98 264 654</p>
+                            </a>
+                        </li>  
+                        
+                        <li>
+                            <a href="https://gmail.com" target="_blank" title="Ingresar a Gmail chat de Whatsapp">
+                                <img src="../assets/redes/gmail/gmail3.png" alt="Logo de Gmail para ingresar">
+                                <p>Nuestro correo electrónico: Emii_mansilla@gmail.com</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="footer_tabla">
+                    <fieldset>
+                        <legend>Horarios</legend>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Día</th>
+                                    <th>De Mañana</th>
+                                    <th>De Tarde</th>
+                                    <th>De Noche</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Lunes</td>
+                                    <td>Cerrado</td>
+                                    <td>14:00 - 18:00</td>
+                                    <td>19:00 - 23:30</td>
+                                </tr>
+                                <tr>
+                                    <td>Martes</td>
+                                    <td>Cerrado</td>
+                                    <td>14:00 - 18:00</td>
+                                    <td>19:00 - 23:30</td>
+                                </tr>
+                                <tr>
+                                    <td>Miercoles</td>
+                                    <td>09:00 - 13:00</td>
+                                    <td>14:00 - 18:00</td>
+                                    <td>19:00 - 23:30</td>
+                                </tr>
+                                <tr>
+                                    <td>Jueves</td>
+                                    <td>09:00 - 13:00</td>
+                                    <td>14:00 - 18:00</td>
+                                    <td>19:00 - 00:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Viernes</td>
+                                    <td>09:00 - 13:00</td>
+                                    <td>14:00 - 18:00</td>
+                                    <td>19:00 - 01:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Sabado</td>
+                                    <td>09:00 - 13:00</td>
+                                    <td>14:00 - 18:00</td>
+                                    <td>19:00 - 01:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Domingo</td>
+                                    <td>09:00 - 13:00</td>
+                                    <td>14:00 - 18:00</td>
+                                    <td>19:00 - 23:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+                </div>
+        
+                <div>
+                    <ul>
+                        <li>
+                            <h2 id="pie">Te quería decir...</h2>
+                            <a href="equipos.html">Equipos</a>
+                            <a href="torneos.html">Torneos</a>
+                            <a href="ubicaciones.html">Ubicaciones</a>
+                            <a href="micuenta.html">Iniciar Sesión</a>
+                            <a href="registrarme.html">Registrarme</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Enlaces</h4>
+                            <a href="equipos.html">Equipos</a>
+                            <a href="torneos.html">Torneos</a>
+                            <a href="ubicaciones.html">Ubicaciones</a>
+                            <a href="micuenta.html">Iniciar Sesión</a>
+                            <a href="registrarme.html">Registrarme</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer_mapa">
+                    <img src="../assets/redes/mapa/mapa5.png" alt="Logo del mapa para ingresar">
+                    <p>Nuestra ubicación</p>
+                </div>
+        
+                <div class="copyright">
+                    <h4>&copy; Derechos de autor - Todos los derechos reservados</h4>
+                </div>
+        
+            </footer>
+        </div>
+    </div>
+        </body>
+        </html>
