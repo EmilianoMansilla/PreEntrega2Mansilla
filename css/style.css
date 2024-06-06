@@ -38,14 +38,6 @@ h3 {
     color: rgb(208, 208, 208);
 }
 
-/* Contenedores */
-nav {
-    justify-content: space-between;
-    display: flex;
-    background: rgb(47, 62, 70);
-    width: 100%;
-}
-
 
 /* Enlaces */
 button, .button-index-hero {
@@ -58,63 +50,108 @@ button, .button-index-hero {
     text-decoration: none;
     transition: background 0.3s ease-in-out;
 }
-
 button:hover, .button-index-hero:hover {
     background: rgb(255, 85, 102);
 }
 
 
-/* Header y Nav */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu-items {
-    position: relative;
-}
-
-.menu-items ul {
-    list-style: none;
-    display: none;
-    position: absolute;
-}
-
-.menu-items ul li {
-    margin: 10px 5px;
-}
-
-.menu-items ul li a {
-    text-decoration: none;
-    font-size: 17px;
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-    padding: 5px 10px;
-    border-radius: 7px;
-}
-.menu-items ul li a:hover {
-    background-color: rgba(255, 255, 255, .1);
-}
-
-.menu-toggle:checked ~ ul {
-    display: block;
-}
-
+/* Estilos para el menú */
 .logo-nav {
     width: 65px;
     height: 65px;
 }
 
+nav {
+    width: 100%;
+    background-color: rgb(11, 11, 11);
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 85px;
+}
+
+.menu-items ul {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 15px 10px;
+    background-color: rgba(11, 11, 11, 0.9); 
+    border-radius: 5px; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.menu-items ul li {
+    list-style: none;
+}
+
+.menu-items ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 10px 15px;
+    gap: 20px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.menu-items ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.menu-toggle:checked ~ ul {
+    display: flex;
+}
+
 .icono-nav {
     width: 45px;
     height: 45px;
+    cursor: pointer;
 }
 
+.menu-toggle {
+    display: none;
+}
+
+.icono-nav {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+@media (min-width: 1024px) {
+    .menu-items label {
+        display: none;
+    }
+    .menu-items ul {
+        position: inherit;
+        display: flex;
+        padding: 3px;
+        margin: 5px;
+        flex-direction: row;
+    }
+    .menu-items {
+        margin-top: 20px;
+        margin-left: 80px; /* Ajusta el margen izquierdo según sea necesario */
+        justify-content: flex-end;
+        align-items: center; /* Alinea verticalmente los elementos del menú */
+    }
+}
 
 /* Hero Section */
 .hero {
-    height: 70vh;
+    height: 74vh;
     background-image: url(../assets/img/imagen6.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -196,7 +233,7 @@ button {
 .productos-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly; 
     gap: 50px;
 }
 
@@ -204,10 +241,9 @@ button {
     background: rgb(31, 43, 49);
     padding: 20px;
     border-radius: 10px;
-    flex-grow: 1;           /* flex grow, shrink, basis - Indica que el elemento puede crecer y reducirse segun sea necesario para ajustarse al espacio disponigle en su contenedor con un tamaño inicial de 250px */
-    flex-shrink: 1;
-    flex-basis: 250px;
-    max-width: 300px;
+    flex-grow: 1;               /* especifica cuánto espacio adicional deben ocupar los elementos flexibles en relación con los demás elementos flexibles dentro del mismo contenedor flex */
+    max-width: 350px; 
+    text-align: center; 
 }
 
 .producto h3 {
@@ -216,6 +252,16 @@ button {
 
 .producto p {
     font-size: 1rem;
+}
+
+.producto-link {
+    text-decoration: none; 
+    color: inherit;             /* Hereda el color del texto */
+}
+
+.producto-link:hover {
+    text-decoration: none; 
+    color: inherit; 
 }
 
 
@@ -231,6 +277,15 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
+}
+
+.servicio-link {
+    text-decoration: none;
+    color: inherit;
+}
+.servicio-link:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
 .servicio {
