@@ -1,55 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Emiliano Mansilla Maciel">
-    <meta name="description" content="Somos una empresa enfocada en tener a todos los locales de alquiler de canchas de futgol 5 y 7 en un solo sitio web y aplicacion">
-    <link rel="shortcut icon" href="assets/icono/icono16.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="normalize.css">
-    <title>GolDirecto</title>
+    <meta name="description" content="Somos una empresa que brindamos el servicio de tener a tu LOCAL de alquiler de canchas de futbol 5 en un solo sitio web y aplicación móvil">
+    <link rel="shortcut icon" href="assets/icono/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <title>Bienvenidos - GolDirecto</title>
 </head>
+
 <body>
     <main class="grilla">
-        <header class="border">Header</header>
-        <nav class="border">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contactos</a></li>
-            </ul>
-        </nav>
-        <section class="productos border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ab dolorum ipsa tempore accusantium maiores! Incidunt vel atque, officia enim, voluptates a voluptas eaque, repudiandae impedit dignissimos iusto maxime laboriosam.</section>
-        <section class="servicios border">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur accusantium architecto facilis deserunt blanditiis tempore suscipit iusto, officia quisquam debitis eos fugiat possimus aliquid autem atque ratione, ullam quae quasi!</section>
-        <aside class="border">
-            <h2>PUBLICIDAD</h2>
-            <img src="" alt="">
-        </aside>
-        <footer class="border">
-            <p>Footer</p>
+        <header class="border">
             <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Contactos</a></li>
-                </ul>
+                <div>
+                    <a href="index.html">
+                        <img src="./assets/logo/logo1.png" class="logo-nav" alt="Logo de GolDirecto">
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <input type="checkbox" class="menu-toggle">
+                    <label>
+                        <img src="./assets/menu/menu.png" class="icono-nav" alt="Icono de menú">
+                    </label>
+                    <ul>
+                        <li><a href="./pages/iniciarsesion.html">Inicio de Sesión</a></li>
+                        <li><a href="./pages/registrarme.html">Registrarme</a></li>
+                    </ul>
+                </div>
             </nav>
+        </header>
 
-            <h2>Meter</h2>
-            <meter min="0" max="100" value="50">50%</meter>
-            <meter min="0" max="1" value="1">1%</meter>
-            <meter min="0" max="10" value="10">10%</meter>
-            <meter min="0" max="20" value="20">20%</meter>
-            <meter min="0" max="30" value="30">30%</meter>
+        <!-- Hero Section -->
+        <section class="hero border">
+            <div class="hero-content">
+                <h1>Bienvenidos a GolDirecto</h1>
+                <p>Tu sitio web para reservar canchas de fútbol 5 fácilmente</p>
+                <a href="./pages/registrarme.html" class="button-index-hero">Regístrate Ahora</a>
+            </div>
+        </section>
+                
+        <!-- Productos Section -->
+        <section class="productos border">
+            <h2>Nuestros Productos</h2>
+            <div class="productos-container">
+                <div class="producto">
+                    <h3>Reserva Online</h3>
+                    <p>Reserva tu cancha de fútbol 5 desde la comodidad de tu hogar.</p>
+                </div>
+                <div class="producto">
+                    <h3>Aplicación Móvil</h3>
+                    <p>Descarga nuestra app y lleva tus reservas contigo.</p>
+                </div>
+                <div class="producto">
+                    <h3>Promociones Especiales</h3>
+                    <p>Accede a promociones exclusivas solo para usuarios registrados.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aside -->
+        <aside class="border">
+            <div class="redes_sociales">
+                <h2 class="tituloh2_aside">Redes Sociales</h2>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank" title="Ingresar a nuestro perfil de Facebook">
+                        <img src="../assets/redes/facebook/facebook9.png" alt="Logo de Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" title="Ingresar a nuestro perfil de Instagram">
+                        <img src="../assets/redes/instagram/instagram4.png" alt="Logo de Instagram"></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank" title="Ingresar a nuestro Twitter">
+                        <img src="../assets/redes/twitter/twitter10.png" alt="Logo de Twitter"></a></li>
+                    <li><a href="https://www.youtube.com" target="_blank" title="Visitar nuestro canal de YouTube">
+                        <img src="../assets/redes/youtube/youtube6.png" alt="Logo de YouTube"></a></li>
+                    <li><a href="https://www.tiktok.com" target="_blank" title="Visitar nuestro perfil de TikTok">
+                        <img src="../assets/redes/tiktok/tiktok2.png" alt="Logo de TikTok"></a></li>
+                </ul>
+            </div>
+        </aside>
+
+         <!-- Servicios Section -->
+         <section class="servicios border">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicios-container">
+                <div class="servicio">
+                    <h3>Atención al Cliente</h3>
+                    <p>Ofrecemos atención personalizada para resolver todas tus dudas y necesidades.</p>
+                </div>
+                <div class="servicio">
+                    <h3>Mantenimiento de Canchas</h3>
+                    <p>Mantenemos nuestras canchas en óptimas condiciones para garantizar tu mejor experiencia.</p>
+                </div>
+                <div class="servicio">
+                    <h3>Eventos Especiales</h3>
+                    <p>Organizamos torneos y eventos para que disfrutes del fútbol en comunidad.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="border">
+            <hr>
+            <h4>&copy; Copyright (c) 2024 Emiliano Mansilla Maciel</h4>
         </footer>
     </main>
 </body>
 </html>
-
-
-
-
-
