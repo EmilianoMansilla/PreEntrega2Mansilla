@@ -1,53 +1,107 @@
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 
+body {
+    background: rgb(163, 177, 138);
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
 
-
+/* Tipografía */
 @font-face {
-    font-family: Roboto; 
+    font-family: 'Roboto';
     src: url(assets/fonts/Roboto-Medium.ttf);
 }
 
-
-
-
-body {
-    font-family: Roboto, sans-serif;
-    background: rgb(82, 121, 111);
-}
-
-
-
-header {
-    width: 100%;
-    margin: 0;
-}
-
-
-.menu ul{
-    list-style: none;
-    display: block;
-    margin: 20px 10px;
-  }
-  
-  .menu ul li{
-    display: block;
-    margin: 20px 0;
-}
-
-.menu ul li a{
-    text-decoration: none;
-    font-size: 16px;
-    color: #fff;
+h1, h2, h3 {
+    margin-bottom: 20px;
     font-weight: 700;
-  }
+}
 
-  .logo-nav {
+h1 {
+    font-size: 2.5rem;
+    color: rgb(242, 242, 242);
+}
+
+h2 {
+    font-size: 2rem;
+    color: rgb(224, 224, 224);
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: rgb(208, 208, 208);
+}
+
+/* Contenedores */
+nav {
+    justify-content: space-between;
+    display: flex;
+    background: rgb(47, 62, 70);
+    width: 100%;
+}
+
+
+/* Enlaces */
+button, .button-index-hero {
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 34, 84);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover, .button-index-hero:hover {
+    background: rgb(255, 85, 102);
+}
+
+
+/* Header y Nav */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-items {
+    position: relative;
+}
+
+.menu-items ul {
+    list-style: none;
+    display: none;
+    position: absolute;
+}
+
+.menu-items ul li {
+    margin: 10px 5px;
+}
+
+.menu-items ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+.menu-items ul li a:hover {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.menu-toggle:checked ~ ul {
+    display: block;
+}
+
+.logo-nav {
     width: 65px;
     height: 65px;
 }
@@ -58,35 +112,43 @@ header {
 }
 
 
-nav {
-    width: 100%;
-    background: rgb(47, 62, 70);
-    padding: 15px 10px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    height: 90px;
+/* Hero Section */
+.hero {
+    height: 70vh;
+    background-image: url(../assets/img/imagen6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.button-index-hero {
+    font-size: 1.2rem;
 }
 
 @media (min-width: 1024px) {
     .menu-items {
-    display: flex;
-    align-items: center;
+        display: flex;
+        align-items: center;
     }
 }
-
-.menu-items ul {
-    position: absolute;
-    top: 90px;
-    left: 0;
-    display: none;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    padding: 15px 10px;
-    background-color: rgb(237, 64, 64);
-}
-
 
 @media (min-width: 1024px) {
     .menu-items ul {
@@ -96,189 +158,111 @@ nav {
         margin: 5px;
         flex-direction: row;
     }
+    .menu-items label {
+        display: none;
+    }
+    .menu-toggle:checked ~ ul {
+        display: flex;
+    }
 }
-
-
-
 
 .img_nav {
-    display: inline-flex;  
-    align-items: center;              
+    display: inline-flex;
+    align-items: center;
 }
-
-
-
 
 .img_nav img {
     width: 72px;
 }
 
-
-
-
 .nav_buscar {
     display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 22px;
+    align-items: center;
 }
 
-
-
-
-.input_buscar {
-    padding: 6px;
-    border: none;
-    border-radius: 5px;
-    color: rgb(181, 176, 176);
-    background-color: rgb(46, 47, 46); 
-    width: 270px;
-    transition: background 0.3s;
-}
-
-.input_buscar:focus {
-    background: rgb(202, 210, 197);
-    color: black;
-    width: 340px;
-    height: 30px;
-}
-
-
-.input_buscar::placeholder {
-    font-size: 15px;
-    text-align: center;
-    color: rgb(255, 22, 84);
-}
-
-
-
-
-.boton_buscar {
+button {
     cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    width: 60px;
-    height: 25px;
-    margin-left: 4px;
-    background-color: rgb(46, 47, 46);
-    color: rgb(255, 255, 255);
-}
-
-.boton_buscar:hover {
-    color: rgb(0, 0, 0);
-	background-color: rgb(202, 210, 197);
-}
-
-.boton_buscar::placeholder {
-    font-size: 10px;
+    margin: 10px 5px;
 }
 
 
-
-
-
-
-.menu_nav {
-    display: inline-flex;
-    content: "❤️";
+/* Productos Section */
+.productos {
+    background: rgb(58, 90, 64);
+    padding: 40px 20px;
+    text-align: center;
 }
 
-
-
-
-
-.menu_nav ul {
+.productos-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 50px;
+}
+
+.producto {
+    background: rgb(31, 43, 49);
+    padding: 20px;
+    border-radius: 10px;
+    flex-grow: 1;           /* flex grow, shrink, basis - Indica que el elemento puede crecer y reducirse segun sea necesario para ajustarse al espacio disponigle en su contenedor con un tamaño inicial de 250px */
+    flex-shrink: 1;
+    flex-basis: 250px;
+    max-width: 300px;
+}
+
+.producto h3 {
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-size: 1rem;
 }
 
 
-
-
-.menu_nav ul li {
-    display: inline-flex;
-    margin-bottom: 5px;
+/* Servicios Section */
+.servicios {
+    background: rgb(88, 129, 87);
+    padding: 40px 20px;
+    text-align: center;
 }
 
-
-
-
-.menu-items ul li a {
-    font-size: 17px;
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
-    text-decoration-color: rgb(255, 22, 84);
-    padding: 5px 10px;
-    border-radius: 7px;
-}
-
-.menu_nav ul li a:hover {
-    background-color: rgba(255, 255, 255, .1);                  /* Cambia el color de fondo al pasar el mouse */
-}
-
-
-
-
-.img_perfil {
-    display: inline-flex;
-    justify-content: flex-end;
-    width: 41px;
-    margin-top: -30px;
-}
-
-
-
-
-.main_section_index {
-    height: 100vh;
-    background-image: url(assets/img/imagen6.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-
-
-
-a:link {
-    color: rgb(255, 22, 84);
-}
-
-a:visited {
-    color: rgb(0, 0, 0);
-}
-
-
-
-section {
-    background: rgb(132, 169, 140);
-    width: 100%;
+.servicios-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
 }
 
+.servicio {
+    background: rgb(47, 62, 70);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 250px;
+    max-width: 300px;
+}
+
+.servicio h3 {
+    margin-bottom: 10px;
+}
+
+.servicio p {
+    font-size: 1rem;
+}
 
 
 aside {
-    background: rgb(53, 79, 82);
-    height: 300px;
+    background: rgb(36, 41, 42);
+    height: 350px;
     width: 130px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     transition: background 1s, height 0.5s, width 0.4s;
 }
-
-
 aside:hover {
-    height: 320px;
+    height: 370px;
     width: 140px;
 }
-
-
 
 
 aside img {
@@ -294,14 +278,9 @@ aside img:hover {
 }
 
 
-
-
-
 .redes_sociales {
     margin-top: 10px;
 }
-
-
 
 
 .tituloh2_aside {
@@ -310,301 +289,13 @@ aside img:hover {
 }
 
 
-
+/* Footer */
 footer {
-    width: 100%;
-    height: 100%;
-    background: rgb(202, 210, 197);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-
-
-.horarios_contactos img {
-    width: 50px;
-}
-
-
-
-.footer_mapa img {
-    width: 200px;
-}
-
-
-
-.footer_tabla {
+    background: rgb(220, 225, 222);
     text-align: center;
+    padding: 20px;
 }
 
-.menu-items ul li a {
-    text-decoration: none;
-    color: rgb(17, 16, 16);
-    font-size: 18px;
+footer h4 {
+    margin-top: 10px;
 }
-
-
-.menu-toggle {
-    display: none;
-}
-
-
-@media (min-width: 1024px) {
-    .menu-items label {
-        display: none;
-    }
-}
-
-
-.menu-toggle:checked ~ ul {
-    display: flex;
-}
-
-/* ------------------------------------------- */
-            /* TABLA DE POSICIONES */
-
-.tabla_posiciones_torneos {
-    display: grid;
-    grid-template-columns: 1fr 3fr repeat(8, 1fr);
-    gap: 2px;
-    text-align: center;
-}
-
-.tabla_posiciones_torneos > div {
-    padding: 8px;
-    border: 1px solid #ddd;
-}
-
-.cabecera_posicion {
-    background-color: #f2f2f2;
-    font-weight: bold;
-}
-
-.posicion,
-.equipo,
-.datos {
-    grid-row: span 2;
-}
-
-/* estilos para las filas pares e impares */
-.tabla_posiciones_torneos > div:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-.tabla_posiciones_torneos > div:nth-child(odd) {
-    background-color: #e9e9e9;
-}
-
-/* centrar el texto verticalmente */
-.tabla_posiciones_torneos > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-
-/* ------------------------------------------- */
-            /* GRUPOS */
-
-.grupo {
-display: grid;
-grid-template-columns: repeat(10, 1fr);
-gap: 5px;
-margin-bottom: 20px;
-}
-                
-.cabecera_posicion, .cabecera_equipo, .cabecera_datos {
-background-color: #f2f2f2;
-padding: 8px;
-text-align: center;
-}
-                            
-.posicion, .equipo, .datos {
-border: 1px solid #ddd;
-padding: 8px;
-text-align: center;
-}
-
-
-
-
-/* ------------------------------------------- */
-            /* FIXTURES */
-            
-.torneo-container {
-display: grid;
-grid-template-columns: repeat(5, 1fr);      /* 5 columnas iguales */
-grid-auto-rows: minmax(100px, auto);        /* altura mínima de 100px y altura máxima igualmente distribuida */
-gap: 80px;    
-align-content: end;
-}
-            
-.etapa {
-display: grid;
-grid-auto-flow: row;
-gap: 30px;
-text-align: center;
-align-items: start;
-}
-            
-.etapa-title {
-grid-column: 1 / -1; 
-justify-self: center; 
-font-weight: bold;
-text-transform: uppercase; 
-font-size: 18px; 
-margin-bottom: 10px; 
-}
-            
-.partido-container {
-display: grid;
-grid-auto-flow: row;
-gap: 10px; 
-padding: 15px;                  /* Reducción del padding */
-width: 250px;                   /* Aumento del ancho */            
-border-radius: 5px; 
-}
-            
-.vs-container {
-grid-column: 1 / -1;
-font-size: 20px;
-}
-            
-.equipo-container {
-padding: 8px;
-background-color: #fff;
-grid-column: 1 / -1;
-}
-            
-.campeon-container {
-border: 1px solid #000000;
-display: grid;
-grid-auto-flow: row;
-justify-content: center;
-align-items: center;
-height: 250px;
-width: 250px;
-}
-            
-.octavos {
-grid-column: 1 / 2; 
-}
-            
-.cuartos {
-grid-column: 2 / 3;
-}
-            
-.semifinales {
-grid-column: 3 / 4; 
-}
-            
-.final {
-grid-column: 4 / 5; 
-}
-
-.campeon {
-grid-column: 5;
-}
-            
-            .partido-container.winner1 {
-                background-color: #aaffaa;          /* Color de fondo para resaltar al equipo ganador */
-                border: 1px solid #00aa00;          /* Borde para resaltar al equipo ganador */
-            }
-/* ------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-/* ------------------------------------------- */
-        /* DEFINIR GRID */
-#grilla {
-    height: 100dvh; /* DVH dinamic viwport height - medida nueva por los celulares cosito en la pantalla */
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px, 1fr, 2fr, 2fr, 1fr, 100px;
-
-    grid-template-areas: 
-    "header"
-    "nav"
-    "productos"
-    "servicios"
-    "aside"
-    "footer"
-    ;
-
-    row-gap: 10px;
-}
-
-
-
-/* TABLET */
-@media (min-width: 768px) {
-    .grilla {
-        grid-template-columns: 20% auto 15%;
-        grid-template-rows: 1fr 1fr 1fr 120px;
-
-        grid-template-areas: 
-        "header header header"
-        "nav productos aside"
-        "nav servicios servicios"
-        "footer footer footer"
-        ;
-    }
-}
-
-
-/* DESKTOP */
-@media (min-width: 1024px) {
-    .grilla {
-        grid-template-rows: 100px 1fr 1fr 200px;
-
-        grid-template-areas: 
-        "header header header"
-        "nav productos aside"
-        "nav servicios servicios"
-        "footer footer footer"
-        ;
-    }
-}
-
-
-header {
-    grid-area: header;
-    background-color: rgb(47, 62, 70);
-
-}
-
-.productos {
-    grid-area: productos;
-    background-color: rgb(82, 121, 111);
-}
-
-.servicios {
-    grid-area: servicios;
-    background-color: rgb(132, 169, 140);
-}
-
-.nav-area {
-    grid-area: nav;
-    background-color: rgb(144, 158, 166);
-}
-
-aside {
-    grid-area: aside;
-    background-color: rgb(53, 79, 82);
-}
-
-footer {
-    grid-area: footer;
-    background-color: rgb(202, 210, 197);
-}
-/* ------------------------------------------- */
