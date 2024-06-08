@@ -58,7 +58,7 @@ button:hover, .button-index-hero:hover {
 .logo-nav {
     width: 65px;
     height: 65px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 nav {
@@ -428,7 +428,8 @@ footer h4 {
 
 .login-form input[type="email"],
 .login-form input[type="password"] {
-    width: calc(100% - 20px); 
+    width: calc(100% - 20px);
+    margin-right: 20px; 
 }
 
 /* FORMULARIO */
@@ -475,7 +476,6 @@ legend {
     width: calc(90% - 20px); 
 }
 
-/* Estilos para campos de entrada */
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -487,7 +487,6 @@ input[type="date"],
 input[type="file"] {
     width: calc(90% - 20px);
     padding: 12px; 
-    margin-bottom: 20px;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 5px;
     box-sizing: border-box;
@@ -497,14 +496,14 @@ input[type="file"] {
 }
 
 input[type="color"] {
-    width: calc(60% - 40px);
+    width: calc(45% - 40px);
     padding: 3px; 
     margin-bottom: 20px;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 5px;
     box-sizing: border-box;
     display: block;
-    margin: 0 auto;
+    margin: 0 25px;
     font-size: 1rem; 
 }
 
@@ -532,7 +531,7 @@ input[type="file"] {
 input[type="submit"],
 input[type="reset"] {
     padding: 10px 20px; 
-    color: #fff;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -558,10 +557,6 @@ input[type="reset"] {
 .terminos-container {
     display: flex;
     align-items: center;
-}
-
-input[type="checkbox"] {
-    margin-left: 11px;
 }
 
 label[for="terminos"] {
@@ -633,4 +628,111 @@ label[for="terminos"] {
     margin-top: 15px; 
     margin-left: 25px;
     margin-bottom: 10px;
+}
+ 
+@media (min-width: 1024px) {
+    .form-registrarme label {
+        display: inline-block;
+        width: 35%;
+        color: rgb(51, 51, 51); 
+    }
+
+    .form-registrarme input[type="text"],
+    .form-registrarme input[type="password"],
+    .form-registrarme input[type="email"],
+    .form-registrarme input[type="tel"],
+    .form-registrarme textarea,
+    .form-registrarme input[type="file"] {
+        width: 40%; 
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .botones-container {
+        text-align: center;
+    }
+
+    .form-registrarme select {
+        width: 40%; 
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .form-registrarme input[type="number"] {
+        width: 20%; 
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .form-registrarme input[type="color"] {
+        width: 20%; 
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .form-registrarme input[type="date"] {
+        width: 30%; 
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+
+    .form-registrarme input[type="submit"] {
+        padding: 12px 24px;
+        background-color: rgb(255, 34, 84);
+        border: none;
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .form-registrarme input[type="reset"] {
+        padding: 12px 18px;
+        background-color: rgb(0, 123, 255);
+        border: none;
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .form-registrarme input[type="submit"]:hover {
+        background-color: rgb(255, 85, 102);
+    }
+
+    .form-registrarme input[type="reset"]:hover {
+        background-color: rgb(0, 86, 179);
+    }
+
+    .terminos-container {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    /* Estilo para el enfoque de los inputs */
+    .form-registrarme input[type="text"]:focus,
+    .form-registrarme input[type="password"]:focus,
+    .form-registrarme input[type="email"]:focus,
+    .form-registrarme input[type="tel"]:focus,
+    .form-registrarme input[type="number"]:focus,
+    .form-registrarme textarea:focus,
+    .form-registrarme select:focus,
+    .form-registrarme input[type="date"]:focus,
+    .form-registrarme input[type="file"]:focus,
+    .form-registrarme input[type="color"]:focus {
+        outline: none;                                       /* Elimina el borde predeterminado */
+        border: 2px solid rgb(131, 11, 131); 
+        box-shadow: 0 0 5px rgba(128, 0, 128, 0.5); 
+    }
 }
