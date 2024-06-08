@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Emiliano Mansilla Maciel">
-    <meta name="description" content="Somos una empresa que brindamos el servicio de tener a tu LOCAL de alquiler de canchas de futbol 5 en un solo sitio web y aplicación móvil">
-    <link rel="shortcut icon" href="assets/icono/icono.png" type="image/x-icon">
+    <meta name="description" content="Somos una empresa que brindamos el servicio de tener a tu LOCAL de alquiler de canchas de futbol 5 en un solo sitio web y aplicación móvil. Descripción del sitio web para motores de búsqueda.">
+    <meta name="keywords" content="alquiler canchas futbol 5, reserva online, futbol 5, GolDirecto">
+    <link rel="shortcut icon" href="./assets/icono/icono.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <title>Bienvenidos - GolDirecto</title>
 </head>
-
 <body>
     <main class="grilla">
         <header class="border">
@@ -22,13 +21,13 @@
                     </a>
                 </div>
                 <div class="menu-items">
-                    <input type="checkbox" class="menu-toggle">
-                    <label>
-                        <img src="./assets/menu/menu.png" class="icono-nav" alt="Icono de menú">
+                    <input type="checkbox" class="menu-toggle" id="menu-toggle">
+                    <label for="menu-toggle">
+                        <img src="./assets/menu/menu1.png" class="icono-nav" alt="Icono de menú">
                     </label>
                     <ul>
-                        <li><a href="./pages/iniciarsesion.html">Inicio de Sesión</a></li>
-                        <li><a href="./pages/registrarme.html">Registrarme</a></li>
+                        <li><a href="./pages/login.html" target="_blank">Inicio de Sesión</a></li>
+                        <li><a href="./pages/registrarme.html" target="_blank">Registrarme</a></li>
                     </ul>
                 </div>
             </nav>
@@ -42,23 +41,29 @@
                 <a href="./pages/registrarme.html" class="button-index-hero">Regístrate Ahora</a>
             </div>
         </section>
-                
+
         <!-- Productos Section -->
         <section class="productos border">
             <h2>Nuestros Productos</h2>
             <div class="productos-container">
-                <div class="producto">
-                    <h3>Reserva Online</h3>
-                    <p>Reserva tu cancha de fútbol 5 desde la comodidad de tu hogar.</p>
-                </div>
-                <div class="producto">
-                    <h3>Aplicación Móvil</h3>
-                    <p>Descarga nuestra app y lleva tus reservas contigo.</p>
-                </div>
-                <div class="producto">
-                    <h3>Promociones Especiales</h3>
-                    <p>Accede a promociones exclusivas solo para usuarios registrados.</p>
-                </div>
+                <a href="./pages/reserva_online.html" class="producto-link">
+                    <div class="producto">
+                        <h3>Reserva Online</h3>
+                        <p>Reserva tu cancha de fútbol 5 desde la comodidad de tu hogar.</p>
+                    </div>
+                </a>
+                <a href="./pages/aplicacion_movil.html" class="producto-link">
+                    <div class="producto">
+                        <h3>Aplicación Móvil</h3>
+                        <p>Descarga nuestra app y lleva tus reservas contigo.</p>
+                    </div>
+                </a>
+                <a href="./pages/promociones_especiales.html" class="producto-link">
+                    <div class="producto">
+                        <h3>Promociones Especiales</h3>
+                        <p>Accede a promociones exclusivas solo para usuarios registrados.</p>
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -81,29 +86,35 @@
             </div>
         </aside>
 
-         <!-- Servicios Section -->
-         <section class="servicios border">
+        <!-- Servicios Section -->
+        <section class="servicios border">
             <h2>Nuestros Servicios</h2>
             <div class="servicios-container">
-                <div class="servicio">
-                    <h3>Atención al Cliente</h3>
-                    <p>Ofrecemos atención personalizada para resolver todas tus dudas y necesidades.</p>
-                </div>
-                <div class="servicio">
-                    <h3>Mantenimiento de Canchas</h3>
-                    <p>Mantenemos nuestras canchas en óptimas condiciones para garantizar tu mejor experiencia.</p>
-                </div>
-                <div class="servicio">
-                    <h3>Eventos Especiales</h3>
-                    <p>Organizamos torneos y eventos para que disfrutes del fútbol en comunidad.</p>
-                </div>
+                <a href="./pages/atencion_cliente.html" class="servicio-link">
+                    <div class="servicio">
+                        <h3>Atención al Cliente</h3>
+                        <p>Ofrecemos atención personalizada para resolver todas tus dudas y necesidades.</p>
+                    </div>
+                </a>
+                <a href="./pages/mantenimiento_canchas.html" class="servicio-link">
+                    <div class="servicio">
+                        <h3>Mantenimiento de Canchas</h3>
+                        <p>Mantenemos nuestras canchas en óptimas condiciones para garantizar tu mejor experiencia.</p>
+                    </div>
+                </a>
+                <a href="./pages/eventos_especiales.html" class="servicio-link">
+                    <div class="servicio">
+                        <h3>Eventos Especiales</h3>
+                        <p>Organizamos torneos y eventos para que disfrutes del fútbol en comunidad.</p>
+                    </div>
+                </a>
             </div>
         </section>
 
         <!-- Footer -->
         <footer class="border">
             <hr>
-            <h4>&copy; Copyright (c) 2024 Emiliano Mansilla Maciel</h4>
+            <h4>&copy; Copyright 2024 (c) Emiliano Mansilla Maciel</h4>
         </footer>
     </main>
 </body>
