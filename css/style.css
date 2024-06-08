@@ -12,9 +12,7 @@ body {
     line-height: 1.6;
 }
 
-/* INDEX */
-
-/* Tipografía */
+/* Font */
 @font-face {
     font-family: 'Roboto';
     src: url(assets/fonts/Roboto-Medium.ttf);
@@ -40,8 +38,7 @@ h3 {
     color: rgb(208, 208, 208);
 }
 
-
-/* Enlaces */
+/* Links */
 button, .button-index-hero {
     display: inline-block;
     padding: 10px 20px;
@@ -52,15 +49,16 @@ button, .button-index-hero {
     text-decoration: none;
     transition: background 0.3s ease-in-out;
 }
+
 button:hover, .button-index-hero:hover {
     background: rgb(255, 85, 102);
 }
 
-
-/* Estilos para el menú */
+/* Navbar */
 .logo-nav {
     width: 65px;
     height: 65px;
+    margin-left: 20px;
 }
 
 nav {
@@ -72,6 +70,12 @@ nav {
     align-items: center;
     position: relative;
     height: 85px;
+}
+
+.menu-items {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .menu-items ul {
@@ -118,15 +122,6 @@ nav {
 
 .menu-toggle {
     display: none;
-}
-
-.icono-nav {
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-}
-
-.menu-toggle {
     position: absolute;
     top: 50px;
     left: 50px;
@@ -145,7 +140,6 @@ nav {
     }
     .menu-items {
         margin-top: 20px;
-        margin-left: 80px;
         justify-content: flex-end;
         align-items: center; 
     }
@@ -182,49 +176,6 @@ nav {
     font-size: 1.2rem;
 }
 
-@media (min-width: 1024px) {
-    .menu-items {
-        display: flex;
-        align-items: center;
-    }
-}
-
-@media (min-width: 1024px) {
-    .menu-items ul {
-        position: inherit;
-        display: flex;
-        padding: 3px;
-        margin: 5px;
-        flex-direction: row;
-    }
-    .menu-items label {
-        display: none;
-    }
-    .menu-toggle:checked ~ ul {
-        display: flex;
-    }
-}
-
-.img_nav {
-    display: inline-flex;
-    align-items: center;
-}
-
-.img_nav img {
-    width: 72px;
-}
-
-.nav_buscar {
-    display: inline-flex;
-    align-items: center;
-}
-
-button {
-    cursor: pointer;
-    margin: 10px 5px;
-}
-
-
 /* Productos Section */
 .productos {
     background: rgb(58, 90, 64);
@@ -243,7 +194,7 @@ button {
     background: rgb(31, 43, 49);
     padding: 20px;
     border-radius: 10px;
-    flex-grow: 1;               /* especifica cuánto espacio adicional deben ocupar los elementos flexibles en relación con los demás elementos flexibles dentro del mismo contenedor flex */
+    flex-grow: 1;
     max-width: 350px; 
     text-align: center; 
 }
@@ -258,14 +209,13 @@ button {
 
 .producto-link {
     text-decoration: none; 
-    color: inherit;             /* Hereda el color del texto */
+    color: inherit;
 }
 
 .producto-link:hover {
     text-decoration: none; 
-    color: inherit; 
+    color: inherit;
 }
-
 
 /* Servicios Section */
 .servicios {
@@ -285,6 +235,7 @@ button {
     text-decoration: none;
     color: inherit;
 }
+
 .servicio-link:hover {
     text-decoration: none;
     color: inherit;
@@ -306,7 +257,7 @@ button {
     font-size: 1rem;
 }
 
-
+/* ASIDE */
 aside {
     background: rgb(36, 41, 42);
     height: 350px;
@@ -316,11 +267,11 @@ aside {
     flex-wrap: wrap;
     transition: background 1s, height 0.5s, width 0.4s;
 }
+
 aside:hover {
     height: 370px;
     width: 140px;
 }
-
 
 aside img {
     width: 40px;
@@ -329,24 +280,20 @@ aside img {
     transition: height 0.2s, width 0.3s;
 }
 
-
 aside img:hover {
     width: 57px;
 }
 
-
 .redes_sociales {
     margin-top: 10px;
 }
-
 
 .tituloh2_aside {
     font-size: 15px;
     color: rgb(255, 255, 255);
 }
 
-
-/* Footer */
+/* FOOTER */
 footer {
     background: rgb(220, 225, 222);
     text-align: center;
@@ -357,10 +304,40 @@ footer h4 {
     margin-top: 10px;
 }
 
-/* --------------------------------------------------- */
+.div_footer img {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
 
+.div_footer img:last-child {
+    margin-right: 0;
+}
 
-/* LOGIN */
+/* WhatsApp Icon */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-icon img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.whatsapp-icon img:hover {
+    transform: scale(1.1);        
+}
+
+/* LOGIN*/
 .login-main {
     display: flex;
     flex-direction: column;
@@ -368,7 +345,7 @@ footer h4 {
 }
 
 .login-section {
-    flex: 1;             /* especifica cuánto espacio adicional deben ocupar los elementos flexibles en relación con los demás elementos flexibles dentro del mismo contenedor flex */
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -389,7 +366,7 @@ footer h4 {
 .login-container h1 {
     font-size: 2rem;
     color: rgb(242, 242, 242);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .login-form .form-group {
@@ -409,7 +386,7 @@ footer h4 {
     border-radius: 5px;
     border: 1px solid rgb(51, 51, 51);
     font-size: 1rem;
-    background: rgb(47, 62, 70);
+    background: (47, 62, 70);
     color: rgb(255, 255, 255);
 }
 
@@ -447,4 +424,213 @@ footer h4 {
 
 .login-container a:hover {
     color: rgb(255, 85, 102);
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: calc(100% - 20px); 
+}
+
+/* FORMULARIO */
+.form-registrarme {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.titulo-principal {
+    font-size: 2.2rem;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.link-registrarme {
+    color: rgb(255, 0, 0);
+}
+
+.subtitulo {
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-registrarme label {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 3px;
+    margin-left: 25px;
+    font-size: 1rem;
+    text-align: left; 
+    width: calc(90% - 20px); 
+}
+
+/* Estilos para campos de entrada */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select,
+input[type="date"],
+input[type="file"] {
+    width: calc(90% - 20px);
+    padding: 12px; 
+    margin-bottom: 20px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem; 
+}
+
+input[type="color"] {
+    width: calc(60% - 40px);
+    padding: 3px; 
+    margin-bottom: 20px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem; 
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="number"]::placeholder,
+textarea::placeholder {
+    color: rgb(153, 153, 153); 
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select,
+input[type="date"],
+input[type="file"] {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-right: 10px; 
+}
+
+input[type="submit"] {
+    background-color: rgb(220, 53, 69); 
+}
+
+input[type="reset"] {
+    background-color: rgb(0, 123, 255);
+    font-size: 1rem;
+}
+
+.botones-container {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.terminos-container {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    margin-left: 11px;
+}
+
+label[for="terminos"] {
+    font-size: 0.9rem;
+}
+
+/* Estilo para el checkbox y su etiqueta */
+input[type="checkbox"] {
+    appearance: none; /* Oculta el estilo nativo del checkbox */
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    vertical-align: middle;
+    position: relative;
+    margin-right: 10px; 
+}
+
+label[for="terminos"] {
+    font-size: 0.9rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+    margin-left: 0px; 
+    margin-top: -2px; 
+}
+
+/* Estilo para el checkbox seleccionado */
+input[type="checkbox"]:checked {
+    background-color: #2196F3;
+}
+
+/* Estilo para el cuadradito de checkbox */
+input[type="checkbox"]::after {
+    content: '\2714';           /* Para el tick */
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+/* Estilo para el checkbox cuando está seleccionado */
+input[type="checkbox"]:checked::after {
+    opacity: 1; 
+}
+
+label[for="terminos"] {
+    font-size: 0.9rem;
+    display: inline-block; 
+    vertical-align: middle;
+    margin-bottom: 0; 
+}
+
+.descargar-link {
+    color: rgb(33, 150, 243); 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.descargar-link:hover {
+    color: rgb(13, 71, 161); 
+}
+
+.descargar-reglas {
+    margin-top: 15px; 
+    margin-left: 25px;
+    margin-bottom: 10px;
 }
