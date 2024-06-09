@@ -645,7 +645,6 @@ label[for="terminos"] {
         display: inline-block;
         margin-left: 10px;
         margin-top: 20px;
-        text-align: center;
     }
     
     .form-registrarme input[type="number"] {
@@ -723,3 +722,161 @@ label[for="terminos"] {
         box-shadow: 0 0 5px rgba(128, 0, 128, 0.5); 
     }
 }
+
+
+
+
+
+
+/* ------------------------------------------- */
+            /* TABLA DE POSICIONES */
+
+            .tabla_posiciones_torneos {
+                display: grid;
+                grid-template-columns: 1fr 3fr repeat(8, 1fr);
+                gap: 2px;
+                text-align: center;
+            }
+            
+            .tabla_posiciones_torneos > div {
+                padding: 8px;
+                border: 1px solid #ddd;
+            }
+            
+            .cabecera_posicion {
+                background-color: #f2f2f2;
+                font-weight: bold;
+            }
+            
+            .posicion,
+            .equipo,
+            .datos {
+                grid-row: span 2;
+            }
+            
+            /* estilos para las filas pares e impares */
+            .tabla_posiciones_torneos > div:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            
+            .tabla_posiciones_torneos > div:nth-child(odd) {
+                background-color: #e9e9e9;
+            }
+            
+            /* centrar el texto verticalmente */
+            .tabla_posiciones_torneos > div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            
+            
+            
+            /* ------------------------------------------- */
+                        /* GRUPOS */
+            
+            .grupo {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 5px;
+            margin-bottom: 20px;
+            }
+                            
+            .cabecera_posicion, .cabecera_equipo, .cabecera_datos {
+            background-color: #f2f2f2;
+            padding: 8px;
+            text-align: center;
+            }
+                                        
+            .posicion, .equipo, .datos {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            }
+            
+            
+            
+            
+            /* ------------------------------------------- */
+                        /* FIXTURES */
+                        
+            .torneo-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);      /* 5 columnas iguales */
+            grid-auto-rows: minmax(100px, auto);        /* altura mínima de 100px y altura máxima igualmente distribuida */
+            gap: 80px;    
+            align-content: end;
+            }
+                        
+            .etapa {
+            display: grid;
+            grid-auto-flow: row;
+            gap: 30px;
+            text-align: center;
+            align-items: start;
+            }
+                        
+            .etapa-title {
+            grid-column: 1 / -1; 
+            justify-self: center; 
+            font-weight: bold;
+            text-transform: uppercase; 
+            font-size: 18px; 
+            margin-bottom: 10px; 
+            }
+                        
+            .partido-container {
+            display: grid;
+            grid-auto-flow: row;
+            gap: 10px; 
+            padding: 15px;                  /* Reducción del padding */
+            width: 250px;                   /* Aumento del ancho */            
+            border-radius: 5px; 
+            }
+                        
+            .vs-container {
+            grid-column: 1 / -1;
+            font-size: 20px;
+            }
+                        
+            .equipo-container {
+            padding: 8px;
+            background-color: #fff;
+            grid-column: 1 / -1;
+            }
+                        
+            .campeon-container {
+            border: 1px solid #000000;
+            display: grid;
+            grid-auto-flow: row;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            width: 250px;
+            }
+                        
+            .octavos {
+            grid-column: 1 / 2; 
+            }
+                        
+            .cuartos {
+            grid-column: 2 / 3;
+            }
+                        
+            .semifinales {
+            grid-column: 3 / 4; 
+            }
+                        
+            .final {
+            grid-column: 4 / 5; 
+            }
+            
+            .campeon {
+            grid-column: 5;
+            }
+                        
+                        .partido-container.winner1 {
+                            background-color: #aaffaa;          /* Color de fondo para resaltar al equipo ganador */
+                            border: 1px solid #00aa00;          /* Borde para resaltar al equipo ganador */
+                        }
