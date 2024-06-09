@@ -304,19 +304,6 @@ footer h4 {
     margin-top: 10px;
 }
 
-.div_footer img {
-    display: block;
-    float: left;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-.div_footer img:last-child {
-    margin-right: 0;
-}
-
 /* WhatsApp Icon */
 .whatsapp-icon {
     position: fixed;
