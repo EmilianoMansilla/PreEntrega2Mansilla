@@ -1,0 +1,20 @@
+h1, h2, h3 {
+    font-family: $font-family-primary;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: rgb(242, 242, 242);
+}
+
+h2 {
+    font-size: 2rem;
+    color: rgb(224, 224, 224);
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: rgb(208, 208, 208);
+}
