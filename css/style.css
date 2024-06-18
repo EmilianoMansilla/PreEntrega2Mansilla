@@ -18,7 +18,9 @@ body {
     src: url(assets/fonts/Roboto-Medium.ttf);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     margin-bottom: 20px;
     font-weight: 700;
 }
@@ -39,7 +41,8 @@ h3 {
 }
 
 /* Links */
-button, .button-index-hero {
+button,
+.button-index-hero {
     display: inline-block;
     padding: 10px 20px;
     color: rgb(255, 255, 255);
@@ -50,16 +53,17 @@ button, .button-index-hero {
     transition: background 0.3s ease-in-out;
 }
 
-button:hover, .button-index-hero:hover {
+button:hover,
+.button-index-hero:hover {
     background: rgb(255, 85, 102);
 }
 
 /* Navbar */
 .logo-nav {
-    width: 65px;
-    height: 65px;
-    margin-left: 10px;
-    margin-top: 3px;
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
+    margin-top: 15px;
 }
 
 nav {
@@ -75,23 +79,24 @@ nav {
 
 .menu-items {
     margin-right: 20px;
-    margin-top: 15px;
+    margin-top: 18px;
     display: flex;
     align-items: center;
 }
 
 .menu-items ul {
     position: absolute;
-    top: 87px;     /* Si queres sacarle el borde al menu cuando se despliega */
+    top: 87px;
+    /* Si queres sacarle el borde al menu cuando se despliega */
     left: 0;
     display: none;
     flex-direction: column;
     gap: 20px;
     width: 100%;
     padding: 15px 10px;
-    background-color: rgba(11, 11, 11, 0.9); 
-    border-radius: 5px; 
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+    background-color: rgba(11, 11, 11, 0.9);
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .menu-items ul li {
@@ -109,10 +114,10 @@ nav {
 }
 
 .menu-items ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1); 
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-.menu-toggle:checked ~ ul {
+.menu-toggle:checked~ul {
     display: flex;
 }
 
@@ -133,6 +138,7 @@ nav {
     .menu-items label {
         display: none;
     }
+
     .menu-items ul {
         position: inherit;
         display: flex;
@@ -140,10 +146,11 @@ nav {
         margin: 5px;
         flex-direction: row;
     }
+
     .menu-items {
         margin-top: 20px;
         justify-content: flex-end;
-        align-items: center; 
+        align-items: center;
     }
 }
 
@@ -157,8 +164,8 @@ nav {
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 100px 20px;
-    background-color: rgba(34, 34, 34, 0.6); /* Fondo translúcido */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para el contenedor */
+    background-color: rgba(34, 34, 34, 0.6);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero-content {
@@ -175,12 +182,13 @@ nav {
 .hero p {
     font-size: 1.25rem;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .button-index-hero {
     font-size: 1.2rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);    /* Sombra de texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    /* Sombra de texto */
 }
 
 /* SECCION PRODUCTOS */
@@ -194,9 +202,10 @@ nav {
 .productos h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    text-transform: uppercase;  /* Convertir el texto a mayúsculas */
-    letter-spacing: 2px; 
-    color: rgb(255, 255, 255); 
+    text-transform: uppercase;
+    /* Convertir el texto a mayúsculas */
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
 }
 
 .productos p {
@@ -215,14 +224,16 @@ nav {
 }
 
 .producto {
-    background: rgb(34, 34, 34); 
+    background: rgb(34, 34, 34);
     padding: 30px;
     border-radius: 10px;
-    flex: 1 1 300px;                                   /* Ancho flexible para todos los productos */
+    flex: 1 1 300px;
+    /* Ancho flexible para todos los productos */
     max-width: 100%;
     text-align: center;
     transition: transform 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);       /* Sombra suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
 }
 
 .producto:hover {
@@ -265,7 +276,7 @@ nav {
     margin-bottom: 50px;
     font-weight: 700;
     letter-spacing: 1px;
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
 }
 
 .servicios-container {
@@ -282,21 +293,23 @@ nav {
 }
 
 .servicio-link:hover {
-    transform: scale(1.05);         /* Efecto de zoom suave al pasar el cursor */
+    transform: scale(1.05);
+    /* Efecto de zoom suave al pasar el cursor */
 }
 
 .servicio {
-    background: rgb(34, 34, 34); 
-    padding: 30px; 
+    background: rgb(34, 34, 34);
+    padding: 30px;
     border-radius: 15px;
     flex: 1 1 250px;
     max-width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);       /* Sombra sutil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
     transition: box-shadow 0.3s ease;
 }
 
 .servicio:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .servicio h3 {
@@ -359,8 +372,9 @@ footer {
 footer h4 {
     margin-top: 10px;
     max-width: 100%;
-    font-size: 0.9rem; 
-    line-height: 1.3;   /* Espaciado de línea */
+    font-size: 0.9rem;
+    line-height: 1.3;
+    /* Espaciado de línea */
 }
 
 @media (min-width: 1024px) {
@@ -372,8 +386,8 @@ footer h4 {
 /* WhatsApp Icon */
 .whatsapp-icon {
     position: fixed;
-    bottom: 20px; 
-    right: 30px; 
+    bottom: 20px;
+    right: 30px;
     z-index: 100;
     transition: all 0.3s ease;
 }
@@ -386,19 +400,19 @@ footer h4 {
 }
 
 .whatsapp-icon img:hover {
-    transform: scale(1.1);        
+    transform: scale(1.1);
 }
 
 /* WhatsApp Icon Index */
 .whatsapp-icon-index {
     position: fixed;
-    bottom: 20px; 
-    right: 30px; 
+    bottom: 20px;
+    right: 30px;
     z-index: 100;
     transition: all 0.3s ease;
 }
 
-.whatsapp-icon-index  img {
+.whatsapp-icon-index img {
     width: 40px;
     height: 40px;
     margin-bottom: 10px;
@@ -406,7 +420,7 @@ footer h4 {
 }
 
 .whatsapp-icon-index img:hover {
-    transform: scale(1.1);        
+    transform: scale(1.1);
 }
 
 /* LOGIN*/
@@ -501,7 +515,7 @@ footer h4 {
 .login-form input[type="email"],
 .login-form input[type="password"] {
     width: calc(100% - 20px);
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 /* FORMULARIO */
@@ -511,7 +525,7 @@ footer h4 {
     padding: 20px;
     background-color: rgb(249, 249, 249);
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 legend {
@@ -521,10 +535,11 @@ legend {
 }
 
 .titulo-principal {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     color: rgb(51, 51, 51);
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .link-registrarme {
@@ -544,8 +559,8 @@ legend {
     margin-bottom: 3px;
     margin-left: 25px;
     font-size: 1rem;
-    text-align: left; 
-    width: calc(90% - 20px); 
+    text-align: left;
+    width: calc(90% - 20px);
 }
 
 input[type="text"],
@@ -557,25 +572,25 @@ select,
 input[type="date"],
 input[type="file"] {
     width: calc(90% - 20px);
-    padding: 12px; 
+    padding: 12px;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 5px;
     box-sizing: border-box;
     display: block;
     margin: 0 auto;
-    font-size: 1rem; 
+    font-size: 1rem;
 }
 
 input[type="color"] {
     width: calc(45% - 40px);
-    padding: 3px; 
+    padding: 3px;
     margin-bottom: 20px;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 5px;
     box-sizing: border-box;
     display: block;
     margin: 0 25px;
-    font-size: 1rem; 
+    font-size: 1rem;
 }
 
 input[type="text"]::placeholder,
@@ -583,7 +598,7 @@ input[type="password"]::placeholder,
 input[type="email"]::placeholder,
 input[type="tel"]::placeholder,
 input[type="number"]::placeholder {
-    color: rgb(153, 153, 153); 
+    color: rgb(153, 153, 153);
 }
 
 input[type="text"],
@@ -599,18 +614,18 @@ input[type="file"] {
 
 input[type="submit"],
 input[type="reset"] {
-    padding: 10px 20px; 
+    padding: 10px 20px;
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     display: inline-block;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 input[type="submit"] {
-    background-color: rgb(220, 53, 69); 
+    background-color: rgb(220, 53, 69);
 }
 
 input[type="reset"] {
@@ -620,7 +635,7 @@ input[type="reset"] {
 
 .botones-container {
     text-align: center;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .terminos-container {
@@ -634,7 +649,8 @@ label[for="terminos"] {
 
 /* Estilo para el checkbox y su etiqueta */
 input[type="checkbox"] {
-    appearance: none;       /* Oculta el estilo nativo del checkbox */
+    appearance: none;
+    /* Oculta el estilo nativo del checkbox */
     width: 20px;
     height: 20px;
     border: 1px solid #ccc;
@@ -642,7 +658,7 @@ input[type="checkbox"] {
     cursor: pointer;
     vertical-align: middle;
     position: relative;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 label[for="terminos"] {
@@ -650,8 +666,8 @@ label[for="terminos"] {
     display: inline-block;
     vertical-align: middle;
     margin-bottom: 0;
-    margin-left: 0px; 
-    margin-top: -2px; 
+    margin-left: 0px;
+    margin-top: -2px;
 }
 
 input[type="checkbox"]:checked {
@@ -660,7 +676,8 @@ input[type="checkbox"]:checked {
 
 /* Estilo para el cuadradito de checkbox */
 input[type="checkbox"]::after {
-    content: '\2714';           /* Para el tick */
+    content: '\2714';
+    /* Para el tick */
     font-size: 16px;
     color: rgb(255, 255, 255);
     position: absolute;
@@ -671,48 +688,49 @@ input[type="checkbox"]::after {
 }
 
 input[type="checkbox"]:checked::after {
-    opacity: 1; 
+    opacity: 1;
 }
 
 label[for="terminos"] {
     font-size: 0.9rem;
-    display: inline-block; 
+    display: inline-block;
     vertical-align: middle;
-    margin-bottom: 0; 
+    margin-bottom: 0;
+    margin-top: 15px;
 }
 
 .descargar-link {
-    color: rgb(33, 150, 243); 
+    color: rgb(33, 150, 243);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .descargar-link:hover {
-    color: rgb(13, 71, 161); 
+    color: rgb(13, 71, 161);
 }
 
 .descargar-reglas {
-    margin-top: 15px; 
+    margin-top: 15px;
     margin-left: 25px;
     margin-bottom: 10px;
 }
 
 .sexo-container {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     align-items: center;
     margin: 20px auto;
-    width: 90%; 
+    width: 90%;
 }
 
 
 .sexo-container label {
     font-size: 1rem;
     color: rgb(51, 51, 51);
-    cursor: pointer; 
-    display: flex; 
+    cursor: pointer;
+    display: flex;
     align-items: center;
-    gap: 5px; 
+    gap: 5px;
 }
 
 .sexo-container input[type="radio"] {
@@ -723,23 +741,25 @@ label[for="terminos"] {
 
 .form-registrarme textarea {
     width: calc(90% - 20px);
-    padding: 12px; 
+    padding: 12px;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 5px;
     box-sizing: border-box;
     display: block;
-    margin: 10px auto; 
+    margin: 10px auto;
     font-size: 1rem;
-    resize: vertical;           /* Permite que el textarea sea redimensionable verticalmente */
+    resize: vertical;
+    /* Permite que el textarea sea redimensionable verticalmente */
 }
 
 .form-registrarme textarea::placeholder {
-    color: rgb(153, 153, 153); 
+    color: rgb(153, 153, 153);
 }
 
 .form-registrarme textarea:focus {
-    outline: none;              /* Elimina el borde de enfoque predeterminado */
-    border-color: rgb(131, 11, 131); 
+    outline: none;
+    /* Elimina el borde de enfoque predeterminado */
+    border-color: rgb(131, 11, 131);
     box-shadow: 0 0 5px rgba(128, 0, 128, 0.5);
 }
 
@@ -747,7 +767,11 @@ label[for="terminos"] {
     .form-registrarme label {
         display: inline-block;
         width: 35%;
-        color: rgb(51, 51, 51); 
+        color: rgb(51, 51, 51);
+    }
+
+    label[for="terminos"] {
+        width: 38%;
     }
 
     .form-registrarme input[type="text"],
@@ -756,7 +780,7 @@ label[for="terminos"] {
     .form-registrarme input[type="tel"],
     .form-registrarme textarea,
     .form-registrarme input[type="file"] {
-        width: 40%; 
+        width: 40%;
         display: inline-block;
         margin-left: 10px;
         margin-top: 20px;
@@ -767,14 +791,14 @@ label[for="terminos"] {
     }
 
     .form-registrarme select {
-        width: 40%; 
+        width: 40%;
         display: inline-block;
         margin-left: 10px;
         margin-top: 20px;
     }
-    
+
     .form-registrarme input[type="number"] {
-        width: 20%; 
+        width: 20%;
         display: inline-block;
         margin-left: 10px;
         margin-top: 20px;
@@ -782,14 +806,14 @@ label[for="terminos"] {
     }
 
     .form-registrarme input[type="color"] {
-        width: 20%; 
+        width: 20%;
         display: inline-block;
         margin-left: 10px;
         margin-top: 20px;
     }
 
     .form-registrarme input[type="date"] {
-        width: 30%; 
+        width: 30%;
         display: inline-block;
         margin-left: 10px;
         margin-top: 20px;
@@ -829,6 +853,7 @@ label[for="terminos"] {
 
     .terminos-container {
         margin-top: 20px;
+        margin-left: 20px;
         text-align: center;
     }
 
@@ -843,13 +868,14 @@ label[for="terminos"] {
     .form-registrarme input[type="date"]:focus,
     .form-registrarme input[type="file"]:focus,
     .form-registrarme input[type="color"]:focus {
-        outline: none;                                       /* Elimina el borde predeterminado */
-        border: 2px solid rgb(131, 11, 131); 
-        box-shadow: 0 0 5px rgba(128, 0, 128, 0.5); 
+        outline: none;
+        /* Elimina el borde predeterminado */
+        border: 2px solid rgb(131, 11, 131);
+        box-shadow: 0 0 5px rgba(128, 0, 128, 0.5);
     }
-    
+
     .sexo-container {
-        width: 70%; 
+        width: 70%;
     }
 
     .sexo-container label {
@@ -858,9 +884,9 @@ label[for="terminos"] {
     }
 
     .form-registrarme textarea {
-        width: 70%; 
-        margin-left: 15%; 
-        margin-top: 10px; 
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 10px;
     }
 
     .form-registrarme textarea:focus {
@@ -871,14 +897,14 @@ label[for="terminos"] {
 /* RESERVAS ONLINE */
 .local-detallado {
     margin-bottom: 40px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .local-detallado h2 {
-    color: #333;
+    color: rgb(51, 51, 51);
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -908,7 +934,7 @@ article label {
 article input[type=date] {
     padding: 8px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
     border-radius: 4px;
     width: 70%;
     max-width: 300px;
@@ -930,25 +956,10 @@ article ul li {
     margin-left: 20px;
 }
 
-article .boton {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-article .boton:hover {
-    background-color: #0056b3;
-}
-
 /* Estilos para el Carrusel de Locales */
-.carousel-locales {
+.section-carousel {
     margin-bottom: 40px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -960,11 +971,14 @@ article .boton:hover {
 }
 
 .carousel .local-slide {
-    background-color: #f9f9f9;
+    background-color: rgb(245, 245, 245);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
@@ -986,50 +1000,75 @@ article .boton:hover {
     margin-left: 20px;
 }
 
-.carousel .local-slide .boton {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-.carousel .local-slide .boton:hover {
-    background-color: #0056b3;
-}
-
 /* Estilos para los botones */
 .reservar-boton {
     display: inline-block;
-    background-color: #007bff;
-    color: white;
+    background-color: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
     text-align: center;
     transition: background-color 0.3s ease;
+    margin-left: 20%;
+    margin-top: 10px;
 }
 
 .reservar-boton:hover {
-    background-color: #0056b3;
+    background-color: rgb(0, 86, 179);
 }
 
-.boton {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+/* Estilos para los títulos */
+.titulo-reserva {
+    font-size: 3rem;
+    color: rgb(26, 26, 26);
     text-align: center;
-    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
-.boton:hover {
-    background-color: #0056b3;
+.titulo-detallado {
+    font-size: 2rem;
+    color: rgb(51, 51, 51);
+    margin-bottom: 15px;
+}
+
+.titulo-carousel {
+    font-size: 1.8rem;
+    color: rgb(51, 51, 51);
+    margin-bottom: 20px;
+}
+
+.local-slide h3.titulo-nombre {
+    font-size: 1.5rem;
+    color: rgb(51, 51, 51);
+    margin-bottom: 10px;
+}
+
+.local-imagen {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .carousel .local-slide {
+        width: 80%;
+        margin-left: 40px;
+    }
+
+    .local-imagen {
+        display: inline-block;
+        float: right;
+        max-width: 35%;
+        margin-right: 2%;
+        margin-top: 6%;
+    }
+
+    .reservar-boton {
+        margin-top: 25px;
+    }
 }
 
 /* TORNEOS */
@@ -1041,8 +1080,10 @@ article .boton:hover {
     margin: auto;
     font-family: Arial, sans-serif;
     font-size: 15px;
-    max-width: 100%;        /* Ajuste para evitar desbordamiento */
-    table-layout: fixed;    /* Fijar el ancho de la tabla para mejor control en móviles */
+    max-width: 100%;
+    /* Ajuste para evitar desbordamiento */
+    table-layout: fixed;
+    /* Fijar el ancho de la tabla para mejor control en móviles */
 }
 
 .cabecera-tabla,
@@ -1051,48 +1092,49 @@ article .boton:hover {
     text-align: center;
     border-bottom: 1px solid rgb(221, 221, 221);
     white-space: nowrap;
-    overflow: hidden;               /* Ocultar el texto que desborda */
+    overflow: hidden;
+    /* Ocultar el texto que desborda */
 }
 
 .cabecera-tabla {
     background-color: rgb(242, 242, 242);
     font-weight: bold;
     color: rgb(51, 51, 51);
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 .celda-tabla {
-    background-color: rgb(255, 255, 255); 
+    background-color: rgb(255, 255, 255);
 }
 
 .cabecera-tabla:first-child,
 .celda-tabla:first-child {
-    width: 8%; /* Ancho ajustado para la primera columna */
+    width: 8%;
 }
 
 .cabecera-tabla:nth-child(2),
 .celda-tabla:nth-child(2) {
-    width: 25%; /* Ancho ajustado para la segunda columna */
+    width: 25%;
 }
 
 .cabecera-tabla:nth-child(3),
 .celda-tabla:nth-child(3) {
-    width: 10%; /* Ancho ajustado para la tercera columna */
+    width: 10%;
 }
 
 .cabecera-tabla:nth-child(4),
 .celda-tabla:nth-child(4) {
-    width: 8%; /* Ancho ajustado para la cuarta columna */
+    width: 8%;
 }
 
 .cabecera-tabla:nth-child(5),
 .celda-tabla:nth-child(5) {
-    width: 7%; /* Ancho ajustado para la quinta columna */
+    width: 7%;
 }
 
 .cabecera-tabla:nth-child(6),
 .celda-tabla:nth-child(6) {
-    width: 7%; /* Ancho ajustado para la sexta columna */
+    width: 7%;
 }
 
 .contenedor-torneo h1 {
@@ -1108,8 +1150,8 @@ article .boton:hover {
 
 .cabecera-tabla:first-child,
 .celda-tabla:first-child {
-    width: 10%; 
-    text-align: left; 
+    width: 10%;
+    text-align: left;
     position: relative;
 }
 
@@ -1117,39 +1159,43 @@ article .boton:hover {
 .celda-tabla:first-child::before {
     display: block;
     color: #555;
-    font-size: 11px; 
-    font-weight: bold; 
-    position: absolute; 
-    top: 50%; 
-    transform: translateY(-50%); 
-    left: 7px; 
+    font-size: 11px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7px;
 }
 
 @media (min-width: 1024px) {
+
     .cabecera-tabla:first-child,
     .celda-tabla:first-child {
         width: 10%;
-        text-align: center; 
+        text-align: center;
         position: relative;
     }
 
     .cabecera-tabla:first-child::before,
     .celda-tabla:first-child::before {
         display: block;
-        color: rgb(85, 85, 85); 
-        font-size: 11px; 
-        font-weight: bold; 
-        position: absolute; 
-        top: 50%; 
-        transform: translateY(-50%);    /* Alinear verticalmente al centro */
-        left: 50%;                      /* Alinear horizontalmente al centro */
-        transform: translateX(-50%);    /* Alinear horizontalmente al centro */
+        color: rgb(85, 85, 85);
+        font-size: 11px;
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        /* Alinear verticalmente al centro */
+        left: 50%;
+        /* Alinear horizontalmente al centro */
+        transform: translateX(-50%);
+        /* Alinear horizontalmente al centro */
     }
 
     .tabla-personalizada {
-        font-size: 12px; 
-        max-width: 300%; 
-        margin-bottom: 20px; 
+        font-size: 12px;
+        max-width: 300%;
+        margin-bottom: 20px;
     }
 
     .cabecera-tabla,
@@ -1158,8 +1204,8 @@ article .boton:hover {
     }
 
     .cabecera-tabla {
-        font-size: 13px; 
-        color: rgb(51, 51, 51); 
+        font-size: 13px;
+        color: rgb(51, 51, 51);
         background-color: rgb(242, 242, 242);
         font-weight: bold;
     }
@@ -1167,30 +1213,30 @@ article .boton:hover {
     .celda-tabla {
         background-color: rgb(255, 255, 255);
     }
-    
+
     .cabecera-tabla:nth-child(2),
     .celda-tabla:nth-child(2) {
-        width: 25%; /* Ancho ajustado para la segunda columna */
+        width: 25%;
     }
 
     .cabecera-tabla:nth-child(3),
     .celda-tabla:nth-child(3) {
-        width: 10%; /* Ancho ajustado para la tercera columna */
+        width: 10%;
     }
 
     .cabecera-tabla:nth-child(4),
     .celda-tabla:nth-child(4) {
-        width: 8%; /* Ancho ajustado para la cuarta columna */
+        width: 8%;
     }
 
     .cabecera-tabla:nth-child(5),
     .celda-tabla:nth-child(5) {
-        width: 7%; /* Ancho ajustado para la quinta columna */
+        width: 7%;
     }
 
     .cabecera-tabla:nth-child(6),
     .celda-tabla:nth-child(6) {
-        width: 7%; /* Ancho ajustado para la sexta columna */
+        width: 7%;
     }
 }
 
@@ -1199,14 +1245,14 @@ article .boton:hover {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgb(245, 245, 245); 
+    background-color: rgb(245, 245, 245);
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .pie .ir-pie {
     display: inline-block;
-    color: rgb(17, 17, 17); 
+    color: rgb(17, 17, 17);
     transition: background-color 0.3s ease;
 }
 
@@ -1219,12 +1265,12 @@ article .boton:hover {
 
 .contenedor-torneo .torneo h2 {
     font-size: 1.8rem;
-    color: rgb(231, 76, 60); 
+    color: rgb(231, 76, 60);
     margin-bottom: 10px;
 }
 
 .contenedor-torneo .torneo {
-    background-color: rgb(255, 255, 255); 
+    background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -1232,7 +1278,7 @@ article .boton:hover {
 }
 
 .contenedor-torneo .torneo p {
-    color: rgb(85, 85, 85); 
+    color: rgb(85, 85, 85);
 }
 
 .contenedor-torneo .torneo ul {
@@ -1275,7 +1321,8 @@ article .boton:hover {
 }
 
 .red-social:hover {
-    transform: scale(1.2);      /* Aumenta el tamaño del ícono al hacer hover */
+    transform: scale(1.2);
+    /* Aumenta el tamaño del ícono al hacer hover */
 }
 
 @media (min-width: 1024px) {
@@ -1284,7 +1331,7 @@ article .boton:hover {
     }
 
     .contenedor-torneo h1 {
-        font-size: 2.5rem; 
+        font-size: 2.5rem;
     }
 
     .contenedor-torneo .torneo {
@@ -1298,8 +1345,8 @@ article .boton:hover {
         justify-items: center;
         align-items: center;
         background-color: rgba(255, 255, 255, 0.1);
-        padding: 20px; 
-        border-radius: 10px; 
+        padding: 20px;
+        border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
@@ -1313,6 +1360,7 @@ article .boton:hover {
     }
 
     .red-social:hover {
-        transform: scale(1.2);      /* Efecto de escala al hacer hover */
+        transform: scale(1.2);
+        /* Efecto de escala al hacer hover */
     }
 }
