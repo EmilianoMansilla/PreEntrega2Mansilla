@@ -86,8 +86,7 @@ nav {
 
 .menu-items ul {
     position: absolute;
-    top: 87px;
-    /* Si queres sacarle el borde al menu cuando se despliega */
+    top: 87px;                      /* Si queres sacarle el borde al menu cuando se despliega */
     left: 0;
     display: none;
     flex-direction: column;
@@ -187,8 +186,7 @@ nav {
 
 .button-index-hero {
     font-size: 1.2rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-    /* Sombra de texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);         /* Sombra de texto */
 }
 
 /* SECCION PRODUCTOS */
@@ -202,8 +200,7 @@ nav {
 .productos h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    text-transform: uppercase;
-    /* Convertir el texto a mayúsculas */
+    text-transform: uppercase;            /* Convertir el texto a mayúsculas */
     letter-spacing: 2px;
     color: rgb(255, 255, 255);
 }
@@ -227,13 +224,11 @@ nav {
     background: rgb(34, 34, 34);
     padding: 30px;
     border-radius: 10px;
-    flex: 1 1 300px;
-    /* Ancho flexible para todos los productos */
+    flex: 1 1 300px;                                   /* Ancho flexible para todos los productos */
     max-width: 100%;
     text-align: center;
     transition: transform 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);        /* Sombra suave */
 }
 
 .producto:hover {
@@ -293,8 +288,7 @@ nav {
 }
 
 .servicio-link:hover {
-    transform: scale(1.05);
-    /* Efecto de zoom suave al pasar el cursor */
+    transform: scale(1.05);                          /* Efecto de zoom suave al pasar el cursor */
 }
 
 .servicio {
@@ -303,8 +297,7 @@ nav {
     border-radius: 15px;
     flex: 1 1 250px;
     max-width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra sutil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);       /* Sombra sutil */
     transition: box-shadow 0.3s ease;
 }
 
@@ -373,8 +366,7 @@ footer h4 {
     margin-top: 10px;
     max-width: 100%;
     font-size: 0.9rem;
-    line-height: 1.3;
-    /* Espaciado de línea */
+    line-height: 1.3;                /* Espaciado de línea */
 }
 
 @media (min-width: 1024px) {
@@ -649,8 +641,7 @@ label[for="terminos"] {
 
 /* Estilo para el checkbox y su etiqueta */
 input[type="checkbox"] {
-    appearance: none;
-    /* Oculta el estilo nativo del checkbox */
+    appearance: none;             /* Oculta el estilo nativo del checkbox */
     width: 20px;
     height: 20px;
     border: 1px solid #ccc;
@@ -676,8 +667,7 @@ input[type="checkbox"]:checked {
 
 /* Estilo para el cuadradito de checkbox */
 input[type="checkbox"]::after {
-    content: '\2714';
-    /* Para el tick */
+    content: '\2714';                  /* Para el tick */
     font-size: 16px;
     color: rgb(255, 255, 255);
     position: absolute;
@@ -748,8 +738,7 @@ label[for="terminos"] {
     display: block;
     margin: 10px auto;
     font-size: 1rem;
-    resize: vertical;
-    /* Permite que el textarea sea redimensionable verticalmente */
+    resize: vertical;                    /* Permite que el textarea sea redimensionable verticalmente */
 }
 
 .form-registrarme textarea::placeholder {
@@ -757,8 +746,7 @@ label[for="terminos"] {
 }
 
 .form-registrarme textarea:focus {
-    outline: none;
-    /* Elimina el borde de enfoque predeterminado */
+    outline: none;                      /* Elimina el borde de enfoque predeterminado */
     border-color: rgb(131, 11, 131);
     box-shadow: 0 0 5px rgba(128, 0, 128, 0.5);
 }
@@ -1080,10 +1068,8 @@ article ul li {
     margin: auto;
     font-family: Arial, sans-serif;
     font-size: 15px;
-    max-width: 100%;
-    /* Ajuste para evitar desbordamiento */
-    table-layout: fixed;
-    /* Fijar el ancho de la tabla para mejor control en móviles */
+    max-width: 100%;                  /* Ajuste para evitar desbordamiento */
+    table-layout: fixed;              /* Fijar el ancho de la tabla para mejor control en movil */
 }
 
 .cabecera-tabla,
@@ -1092,8 +1078,7 @@ article ul li {
     text-align: center;
     border-bottom: 1px solid rgb(221, 221, 221);
     white-space: nowrap;
-    overflow: hidden;
-    /* Ocultar el texto que desborda */
+    overflow: hidden;                 /* Ocultar el texto que desborda */
 }
 
 .cabecera-tabla {
@@ -1158,86 +1143,13 @@ article ul li {
 .cabecera-tabla:first-child::before,
 .celda-tabla:first-child::before {
     display: block;
-    color: #555;
+    color: rgb(85, 85, 85);
     font-size: 11px;
     font-weight: bold;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 7px;
-}
-
-@media (min-width: 1024px) {
-
-    .cabecera-tabla:first-child,
-    .celda-tabla:first-child {
-        width: 10%;
-        text-align: center;
-        position: relative;
-    }
-
-    .cabecera-tabla:first-child::before,
-    .celda-tabla:first-child::before {
-        display: block;
-        color: rgb(85, 85, 85);
-        font-size: 11px;
-        font-weight: bold;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        /* Alinear verticalmente al centro */
-        left: 50%;
-        /* Alinear horizontalmente al centro */
-        transform: translateX(-50%);
-        /* Alinear horizontalmente al centro */
-    }
-
-    .tabla-personalizada {
-        font-size: 12px;
-        max-width: 300%;
-        margin-bottom: 20px;
-    }
-
-    .cabecera-tabla,
-    .celda-tabla {
-        padding: 10px;
-    }
-
-    .cabecera-tabla {
-        font-size: 13px;
-        color: rgb(51, 51, 51);
-        background-color: rgb(242, 242, 242);
-        font-weight: bold;
-    }
-
-    .celda-tabla {
-        background-color: rgb(255, 255, 255);
-    }
-
-    .cabecera-tabla:nth-child(2),
-    .celda-tabla:nth-child(2) {
-        width: 25%;
-    }
-
-    .cabecera-tabla:nth-child(3),
-    .celda-tabla:nth-child(3) {
-        width: 10%;
-    }
-
-    .cabecera-tabla:nth-child(4),
-    .celda-tabla:nth-child(4) {
-        width: 8%;
-    }
-
-    .cabecera-tabla:nth-child(5),
-    .celda-tabla:nth-child(5) {
-        width: 7%;
-    }
-
-    .cabecera-tabla:nth-child(6),
-    .celda-tabla:nth-child(6) {
-        width: 7%;
-    }
 }
 
 /* ESTILOS PARA SECTION PRINCIPAL TORNEOS */
@@ -1250,16 +1162,11 @@ article ul li {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.pie .ir-pie {
-    display: inline-block;
-    color: rgb(17, 17, 17);
-    transition: background-color 0.3s ease;
-}
-
 .contenedor-torneo h1 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin-bottom: 20px;
+    margin-top: 10px;
     color: rgb(51, 51, 51);
 }
 
@@ -1321,21 +1228,72 @@ article ul li {
 }
 
 .red-social:hover {
-    transform: scale(1.2);
-    /* Aumenta el tamaño del ícono al hacer hover */
+    transform: scale(1.2);                                  /* Aumenta el tamaño del ícono al hacer hover */
+}
+
+.contenedor-tabla {
+    overflow-x: auto;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);             /* Sombra más pronunciada para profesionalismo */
+    transition: box-shadow 0.3s ease-in-out;                  /* Transición para el hover */
+}
+
+.contenedor-tabla:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);              /* Sombra más pronunciada al hacer hover */
+}
+
+.contenedor-tabla h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: rgb(51, 51, 51);
+    font-weight: bold;                      
+}
+
+.caption-torneos {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.texto-torneos {
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(85, 85, 85);
+    margin-bottom: 15px; 
+    padding: 10px;
+    background-color: rgb(245, 245, 245); 
+    border-left: 4px solid rgb(231, 76, 60);        /* Borde izquierdo colorido */
+    border-radius: 4px;
 }
 
 @media (min-width: 1024px) {
     .contenedor-torneo {
         width: 100%;
+        background-color: rgba(255, 255, 255, 0.755); 
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);        /* Sombra suave */
+        margin-bottom: 30px; 
     }
 
     .contenedor-torneo h1 {
         font-size: 2.5rem;
-    }
-
-    .contenedor-torneo .torneo {
-        padding: 40px;
+        text-align: center;
+        color: rgb(51, 51, 51);
+        margin-bottom: 0px; 
     }
 
     .redes-sociales-container {
@@ -1344,12 +1302,12 @@ article ul li {
         gap: 10px;
         justify-items: center;
         align-items: center;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(31, 47, 55, 0.879);
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-top: 30px; 
     }
-
     .red-social {
         transition: transform 0.3s ease-in-out;
     }
@@ -1360,7 +1318,70 @@ article ul li {
     }
 
     .red-social:hover {
-        transform: scale(1.2);
-        /* Efecto de escala al hacer hover */
+        transform: scale(1.2);                  /* Efecto de escala al hacer hover */
+    }
+    
+    .contenedor-titulo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 40px;
+        text-align: center;
+        background-color: rgb(242, 242, 242); 
+        border-radius: 10px; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);           /* Sombra suave */
+        margin-bottom: 30px; 
+    }
+
+    .contenedor-titulo h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        color: rgb(51, 51, 51); 
+    }
+
+    .contenedor-titulo p {
+        font-size: 16px;
+        max-width: 900px;
+        margin-bottom: 20px;
+        color: rgb(85, 85, 85); 
+    }
+
+    .contenedor-tabla {
+        overflow-x: auto;
+        margin-top: 20px;
+        background-color: rgb(255, 255, 255);
+        padding: 20px; 
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);           /* Sombra suave */
+    }
+
+    .tabla-personalizada {
+        font-size: 16px;
+        width: 100%;                    /* Ancho completo */
+        max-width: 1200px;              /* Ancho máximo */
+        margin: 0 auto;
+        border-collapse: collapse;      /* Colapsar bordes de la tabla */
+    }
+
+    /* Estilo de las celdas de la tabla */
+    .tabla-personalizada th,
+    .tabla-personalizada td {
+        padding: 12px;
+        border: 1px solid rgb(221, 221, 221);
+        text-align: center;
+    }
+    
+    .pie {
+        text-align: center;
+        font-size: 1rem;
+        color: rgb(119, 119, 119);
+        padding: 10px;
+        background-color: rgb(242, 242, 242);
+        border-radius: 10px;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        width: 10%;
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }
