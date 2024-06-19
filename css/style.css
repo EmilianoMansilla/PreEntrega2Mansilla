@@ -1750,4 +1750,165 @@ article ul li {
     }
 }
 
+/* INICIO */
+.columna-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
 
+.date-noticias {
+    margin-top: 40%;
+}
+
+.columna-1 .articulo-noticia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center; 
+    padding: 0 10px; 
+}
+
+.columna-1 .foto-noticias {
+    width: 284px;
+    height: 284px;
+    border-radius: 8px;
+    object-fit: cover;          /* Ajuste del tamaño de la imagen */
+}
+
+.columna-1 .articulo-noticia .date-noticias {
+    color: rgb(226, 18, 18);
+}
+
+.columna-1 .articulo-noticia .footer-noticias {
+    display: flex;
+    gap: 10px;
+}
+
+/* Columna 2 */
+.columna-2 .articulo-noticia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.columna-2 .articulo-noticia .foto-noticias {
+    width: 284px;
+    height: 284px;
+    border-radius: 8px; 
+    object-fit: cover; 
+}
+
+.columna-2 .articulo-noticia .date-noticias {
+    color: rgb(226, 18, 18);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px; 
+    margin-top: 20px; 
+}
+
+@media (min-width: 1024px) {
+    .columna-1 article {
+        align-items: flex-start;
+    }
+
+    .columna-1 article .date-noticias {
+        display: block;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+    }
+}
+
+/* ASIDE - INICIO */
+.aside-inicio {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Espacio inferior para separarlo del footer */
+    background-color: rgb(242, 242, 242);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: calc(100vw - 40px); /* Ancho máximo para evitar desbordamiento */
+}
+
+.aside-inicio > div {
+    display: block; /* Muestra el contenido principal en móviles */
+    margin-bottom: 20px; /* Espacio entre las listas */
+}
+
+.aside-inicio ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aside-inicio a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    display: block;
+    margin-bottom: 10px; /* Espacio entre enlaces */
+}
+
+.titulo-aside-inicio {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.subtitulo-aside-inicio {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.texto-aside-inicio {
+    color: rgb(102, 102, 102);
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1024px) {
+    .texto-aside-inicio {
+        display: block; /* Mostrar el texto solo en pantallas grandes */
+    }
+
+    .aside-inicio {
+        position: fixed; /* Fija el aside en la pantalla */
+        top: 0; /* Alinea el aside al tope */
+        left: 0; /* Lo sitúa a la izquierda */
+        bottom: 0; /* Ocupa todo el alto disponible */
+        width: 300px; /* Ancho fijo del aside */
+        background-color: #fff; /* Fondo blanco */
+        z-index: 1000; /* Z-index para asegurarse que esté sobre el contenido */
+        padding: 20px; /* Espaciado interno */
+        overflow-y: auto; /* Scroll vertical si es necesario */
+        margin-top: 20px; /* Espacio superior */
+    }
+
+    .aside-inicio > div {
+        background-color: transparent; /* Fondo transparente */
+        padding: 0; /* Quita el espaciado interno */
+    }
+
+    .aside-inicio ul {
+        margin-bottom: 20px; /* Espacio entre listas */
+    }
+
+    .aside-inicio a {
+        margin-bottom: 6px; /* Espacio entre enlaces */
+    }
+
+    .redes-sociales-container-inicio {
+        display: block; /* Muestra las redes sociales en pantallas grandes */
+        margin-top: 20px;
+    }
+}

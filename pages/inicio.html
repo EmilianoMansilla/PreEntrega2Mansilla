@@ -4,273 +4,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Emiliano Mansilla Maciel">
-    <meta name="description" content="Somos una empresa que brindamos el servicio de tener a tu LOCAL de alquiler de canchas de futbol 5 en un solo sitio web y aplicacion">
+    <meta name="description" content="Somos una empresa especializada en alquiler de canchas de fútbol 5. Centraliza la gestión de tu local en nuestro sitio web y aplicación móvil.">
+    <meta name="keywords" content="Palabras clave relevantes para el sitio web (agregar al final)">
     <link rel="shortcut icon" href="../assets/icono/icono.png" type="image/x-icon">
-    <link rel="stylesheet" href="../style.css"> 
-    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>GolDirecto</title>
 </head>
 
 <body>
-    <div class="grilla">
-        <div class="contenedor">
-            <header class="border">
-                <nav>
-                    <div class="img_nav">
-                        <a href="./pages/torneos.html">
-                            <img src="../assets/logo/logo25.png" alt="Logo y redirección del sitio web">
-                        </a>
-                    </div>
-        
-                    <form action="/buscar" method="post" class="nav_buscar">
-                        <input type="text" name="buscar" placeholder="Buscar..." class="input_buscar">
-                        <button type="submit" class="boton_buscar">Buscar</button>
-                    </form>
-        
-                    <div class="menu_nav">
-                        <ul>
-                            <li><a href="../pages/inicio.html">Inicio</a></li>
-                            <li><a href="../pages/registrarme.html" target="_blank">Registrarme</a></li>
-                            <li><a href="../pages/equipos.html" target="_blank">Equipos</a></li>
-                            <li><a href="../pages/torneos.html" target="_blank">Torneos</a></li>
-                            <li><a href="../pages/ubicaciones.html" target="_blank">Ubicaciones</a></li>
-                            <li><a href="../pages/noticias.html" target="_blank">Noticias</a></li>
-                            <li><a href="../pages/miperfil.html" target="_blank">Mi Perfil</a></li>
-                        </ul>
-        
-                        <ul>
-                            <li><a href="../miperfil.html"><img class="img_perfil" src="../assets/perfil/usuario1.png" alt="Logo de Mi perfil para ingresar"></a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-        </div>
-
-<main class="main_section_index">
-    
-    <div class="pie">
-        <a href="#pie">Ir al pie de página</a>
-    </div>
-    
-    <div>
-        <section class="productos">
-            <article>
-                <h1>Titulo principal (de la seccion) SEO</h1>
+    <div class="contenedor">
+        <header>
+            <nav>
                 <div>
-                    <p>Carrucel</p>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <a href="../../index.html">
+                        <img src="../../assets/home/casa6.png" class="logo-nav" alt="Logo de GolDirecto">
+                    </a>
                 </div>
-            </article>
-        
-            <article>
-                <h2>Titulo 2 SEO</h2>
-            </article>    
-        </section>
+                <div class="menu-items">
+                    <input type="checkbox" class="menu-toggle" id="menu-toggle">
+                    <label for="menu-toggle">
+                        <img src="../../assets/menu/menu6.png" class="icono-nav" alt="Icono de menú">
+                    </label>
+                    <ul>
+                        <li><a href="../pages/login/login.html">Inicio de Sesión</a></li>
+                        <li><a href="../pages/login/registrarme.html">Registrarme</a></li>
+                        <li><a href="../pages/equipos.html">Equipos</a></li>
+                        <li><a href="../pages/productos/reserva-online.html">Reservas</a></li>
+                        <li><a href="../pages/productos/torneos.html">Torneos</a></li>
+                        <li><a href="../pages/ubicaciones.html">Ubicaciones</a></li>
+                        <li><a href="../pages/productos/aplicacion-movil.html">Download</a></li>
+                        <li><a href="../pages/miperfil.html">Mi Cuenta</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
     </div>
+    
+    <main>
+        <h1 class="titulo-inicio">Bienvenido a GolDirecto</h1>
+        <p class="texto-inicio">¡Mantente al tanto de todas las novedades y mejoras en nuestra plataforma!</p>
+        
+        <section>
+            <h2 class="subtitulo-inicio">Noticias y Actualizaciones</h2>
+        
+            <div class="grid">
+                <!-- Columna 1 -->
+                <div class="columna columna-1">
+                    <!-- Noticia 1: Nuevas Instalaciones -->
+                    <article class="articulo-noticia">
+                        <img src="../assets/noticias/imagen1.png" alt="Nuevas Instalaciones" class="foto-noticias">
+                        <div class="contenido-noticia">
+                            <span class="date-noticias">Deportes Hoy - 19/06/2024</span>
+                            <h3 class="titulo-noticia">Inauguración de Nuevas Canchas de Fútbol 5 en Nuestra Plataforma</h3>
+                            <p class="texto-noticia">Estamos emocionados de anunciar la inauguración de nuevas canchas de fútbol 5 en nuestra plataforma. Estas instalaciones están ubicadas estratégicamente para ofrecer comodidad y accesibilidad a nuestros usuarios.</p>
+                            <div class="tags-noticia">
+                                <span class="tag-noticia">Deportes</span>
+                                <span class="tag-noticia">Fútbol 5</span>
+                                <span class="tag-noticia">Nuevas Instalaciones</span>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <!-- Noticia 2: Expansión de Servicios -->
+                    <article class="articulo-noticia">
+                        <img src="../assets/noticias/cancha1.png" alt="Expansión de Servicios" class="foto-noticias">
+                        <div class="contenido-noticia">
+                            <span class="date-noticias">El País - 18/06/2024</span>
+                            <h3 class="titulo-noticia">Expansión de Nuestros Servicios a Nuevos Locales</h3>
+                            <p class="texto-noticia">Nos complace anunciar que hemos expandido nuestros servicios a nuevos locales en tu área. Ahora puedes encontrar más opciones de canchas de fútbol 5 disponibles para reservar a través de nuestra aplicación o sitio web.</p>
+                            <div class="tags-noticia">
+                                <span class="tag-noticia">Expansión</span>
+                                <span class="tag-noticia">Canchas de Fútbol 5</span>
+                                <span class="tag-noticia">Nuevos Locales</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+        
+                <!-- Columna 2 -->
+                <div class="columna columna-2">
+                    <!-- Noticia 3: Tecnología Innovadora -->
+                    <article class="articulo-noticia">
+                        <img src="../assets/noticias/imagen3.png" alt="Tecnología Innovadora" class="foto-noticias">
+                        <div class="contenido-noticia">
+                            <span class="date-noticias">ABC Tecnología - 17/06/2024</span>
+                            <h3 class="titulo-noticia">Integración de Tecnología Innovadora en Nuestros Servicios</h3>
+                            <p class="texto-noticia">Hemos integrado tecnología de última generación para mejorar tu experiencia al reservar nuestras canchas de fútbol 5. Ahora puedes gestionar tus reservas de manera más eficiente y con mayor comodidad desde nuestra plataforma.</p>
+                            <div class="tags-noticia">
+                                <span class="tag-noticia">Tecnología</span>
+                                <span class="tag-noticia">Innovación</span>
+                                <span class="tag-noticia">Experiencia de Usuario</span>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <!-- Noticia 4: Promociones Especiales -->
+                    <article class="articulo-noticia">
+                        <img src="../assets/noticias/cancha.png" alt="Promociones Especiales" class="foto-noticias">
+                        <div class="contenido-noticia">
+                            <span class="date-noticias">La Vanguardia - 16/06/2024</span>
+                            <h3 class="titulo-noticia">Promociones Especiales en Reservas de Canchas de Fútbol 5</h3>
+                            <p class="texto-noticia">Aprovecha nuestras promociones especiales en reservas de canchas de fútbol 5 durante esta temporada. Obtén descuentos exclusivos y beneficios adicionales al reservar con nosotros.</p>
+                            <div class="tags-noticia">
+                                <span class="tag-noticia">Promociones</span>
+                                <span class="tag-noticia">Descuentos</span>
+                                <span class="tag-noticia">Reservas</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-
-    <div>
-        <nav class="nav-area">
+        <aside class="aside-inicio">
             <div>
                 <ul>
                     <li>
-                        <h2 id="pie">Te quería decir...</h2>
-                        <a href="equipos.html">Equipos</a>
-                        <a href="torneos.html">Torneos</a>
-                        <a href="ubicaciones.html">Ubicaciones</a>
-                        <a href="micuenta.html">Iniciar Sesión</a>
-                        <a href="registrarme.html">Registrarme</a>
+                        <h2 class="titulo-aside-inicio">Explora nuestras opciones</h2>
+                        <p class="texto-aside-inicio">Descubre todo lo que tenemos para ofrecerte:</p>
+                        <a href="../pages/equipos.html">Equipos</a>
+                        <a href="../pages/productos/torneos.html">Torneos</a>
+                        <a href="../pages/ubicaciones.html">Ubicaciones</a>
+                        <a href="../pages/login/login.html">Iniciar Sesión</a>
+                        <a href="../pages/login/registrarme.html">Registrarme</a>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <h4>Enlaces</h4>
-                        <a href="equipos.html">Equipos</a>
-                        <a href="torneos.html">Torneos</a>
-                        <a href="ubicaciones.html">Ubicaciones</a>
-                        <a href="micuenta.html">Iniciar Sesión</a>
-                        <a href="registrarme.html">Registrarme</a>
+                        <h3 class="subtitulo-aside-inicio">Accesos rápidos</h3>
+                        <p class="texto-aside-inicio">Enlaces directos para facilitar tu navegación:</p>
+                        <a href="../pages/equipos.html">Equipos</a>
+                        <a href="../pages/productos/torneos.html">Torneos</a>
+                        <a href="../pages/ubicaciones.html">Ubicaciones</a>
+                        <a href="../pages/login/login.html">Iniciar Sesión</a>
+                        <a href="../pages/login/registrarme.html">Registrarme</a>
                     </li>
                 </ul>
             </div>
-        </nav>
-    </div>
-
-    <div>
-        <aside>
-            <div class="redes_sociales">
-                <ul>
-                    <h2 class="tituloh2_aside">Redes Sociales</h2>
-                    <li><a href="https://www.facebook.com" target="_blank" title="Ingresar a nuestro perfil de Facebook">
-                    <img src="../assets/redes/facebook/facebook9.png" alt="Logo de facebook para ingresar"></a></li>
-            
-                    <li><a href="https://www.instagram.com/" target="_blank" title="Ingresar a nuestro perfil de Instagram">
-                    <img src="../assets/redes/instagram/instagram4.png" alt="Logo de instagram para ingresar"></a></li>
-            
-                    <li><a href="https://www.twitter.com" target="_blank" title="Ingresar a nuestro Twitter">
-                    <img src="../assets/redes/twitter/twitter10.png" alt="Logo de twitter para ingresar"></a></li>
-            
-                    <li><a href="https://www.youtube.com" target="_blank" title="Visitar nuestro canal de Youtube">
-                    <img src="../assets/redes/youtube/youtube6.png" alt="Logo de youtube para ingresar"></a></li>
-            
-                    <li><a href="https://www.tiktok.com" target="_blank" title="Visitar nuestro canal de Tiktok">
-                    <img src="../assets/redes/tiktok/tiktok2.png" alt="Logo de Tiktok para ingresar"></a></li>
-
-                    <li>
-                        <p>Horarios y Contactos</p>
-                        <img src="../assets/redes/contacto/contacto3.png" alt="Logo de Contactos">
-                        <p>Nuestro número de teléfono: 2204 5199</p>
-                    </li>  
-    
-                    <li>
-                        <a href="https://web.whatsapp.com" target="_blank" title="Ingresar a nuestro chat de Whatsapp">
-                            <img src="../assets/redes/whatsapp/whatsapp7.png" alt="Logo de Whatsapp para ingresar">
-                            <p>Nuestro Whatsapp: (+598) 98 264 654</p>
-                        </a>
-                    </li>  
-                    
-                    <li>
-                        <a href="https://gmail.com" target="_blank" title="Ingresar a Gmail chat de Whatsapp">
-                            <img src="../assets/redes/gmail/gmail3.png" alt="Logo de Gmail para ingresar">
-                            <p>Nuestro correo electrónico: Emii_mansilla@gmail.com</p>
-                        </a>
-                    </li>
-                    <li>
-                        <img src="../assets/redes/mapa/mapa5.png" alt="Logo del mapa para ingresar">
-                        <p>Nuestra ubicación</p>
-                    </li>
-                </ul>
-            </div>    
-        </aside>
-    </div>
-
-    <div>
-        <a href="reglas.pdf" download>Descargar Reglas</a>
-    </div>
-
-<div class="div_footer">
-    <footer class="border">
-        <div class="horarios_contactos">
-            <ul>
-                <li>
-                    <p>Horarios y Contactos</p>
-                    <img src="../assets/redes/contacto/contacto3.png" alt="Logo de Contactos">
-                    <p>Nuestro número de teléfono: 2204 5199</p>
-                </li>  
-
-                <li>
-                    <a href="https://web.whatsapp.com" target="_blank" title="Ingresar a nuestro chat de Whatsapp">
-                        <img src="../assets/redes/whatsapp/whatsapp7.png" alt="Logo de Whatsapp para ingresar">
-                        <p>Nuestro Whatsapp: (+598) 98 264 654</p>
-                    </a>
-                </li>  
-                
-                <li>
-                    <a href="https://gmail.com" target="_blank" title="Ingresar a Gmail chat de Whatsapp">
-                        <img src="../assets/redes/gmail/gmail3.png" alt="Logo de Gmail para ingresar">
-                        <p>Nuestro correo electrónico: Emii_mansilla@gmail.com</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="footer_tabla">
-            <fieldset>
-                <legend>Horarios</legend>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Día</th>
-                            <th>De Mañana</th>
-                            <th>De Tarde</th>
-                            <th>De Noche</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Lunes</td>
-                            <td>Cerrado</td>
-                            <td>14:00 - 18:00</td>
-                            <td>19:00 - 23:30</td>
-                        </tr>
-                        <tr>
-                            <td>Martes</td>
-                            <td>Cerrado</td>
-                            <td>14:00 - 18:00</td>
-                            <td>19:00 - 23:30</td>
-                        </tr>
-                        <tr>
-                            <td>Miercoles</td>
-                            <td>09:00 - 13:00</td>
-                            <td>14:00 - 18:00</td>
-                            <td>19:00 - 23:30</td>
-                        </tr>
-                        <tr>
-                            <td>Jueves</td>
-                            <td>09:00 - 13:00</td>
-                            <td>14:00 - 18:00</td>
-                            <td>19:00 - 00:00</td>
-                        </tr>
-                        <tr>
-                            <td>Viernes</td>
-                            <td>09:00 - 13:00</td>
-                            <td>14:00 - 18:00</td>
-                            <td>19:00 - 01:00</td>
-                        </tr>
-                        <tr>
-                            <td>Sabado</td>
-                            <td>09:00 - 13:00</td>
-                            <td>14:00 - 18:00</td>
-                            <td>19:00 - 01:00</td>
-                        </tr>
-                        <tr>
-                            <td>Domingo</td>
-                            <td>09:00 - 13:00</td>
-                            <td>14:00 - 18:00</td>
-                            <td>19:00 - 23:00</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </fieldset>
-        </div>
-
-        <div>
-            <ul>
-                <li>
-                    <h2 id="pie">Te quería decir...</h2>
-                    <a href="equipos.html">Equipos</a>
-                    <a href="torneos.html">Torneos</a>
-                    <a href="ubicaciones.html">Ubicaciones</a>
-                    <a href="micuenta.html">Iniciar Sesión</a>
-                    <a href="registrarme.html">Registrarme</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <h4>Enlaces</h4>
-                    <a href="equipos.html">Equipos</a>
-                    <a href="torneos.html">Torneos</a>
-                    <a href="ubicaciones.html">Ubicaciones</a>
-                    <a href="micuenta.html">Iniciar Sesión</a>
-                    <a href="registrarme.html">Registrarme</a>
-                </li>
-            </ul>
-        </div>
         
-        <div class="footer_mapa">
-            <img src="../assets/redes/mapa/mapa5.png" alt="Logo del mapa para ingresar">
-            <p>Nuestra ubicación</p>
-        </div>
+            <div class="redes-sociales-container-inicio">
+                <a href="https://www.facebook.com" target="_blank" title="Facebook" class="red-social-inicio" aria-label="Facebook">
+                    <img src="../assets/redes/facebook/facebook9.png" alt="Logo de Facebook">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" title="Instagram" class="red-social-inicio" aria-label="Instagram">
+                    <img src="../assets/redes/instagram/instagram4.png" alt="Logo de Instagram">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" title="Twitter" class="red-social-inicio" aria-label="Twitter">
+                    <img src="../assets/redes/twitter/twitter10.png" alt="Logo de Twitter">
+                </a>
+                <a href="https://www.youtube.com" target="_blank" title="Youtube" class="red-social-inicio" aria-label="Youtube">
+                    <img src="../assets/redes/youtube/youtube6.png" alt="Logo de Youtube">
+                </a>
+                <a href="https://www.tiktok.com" target="_blank" title="TikTok" class="red-social-inicio" aria-label="TikTok">
+                    <img src="../assets/redes/tiktok/tiktok2.png" alt="Logo de TikTok">
+                </a>
+                <a href="https://wa.me/59898279349" target="_blank" title="Whatsapp" class="red-social-inicio" aria-label="Whatsapp (chat directo)">
+                    <img src="../assets/redes/whatsapp/whatsapp7.png" alt="Logo de Whatsapp">
+                </a>
+                <a href="mailto:Goldirecto.2024@gmail.com" target="_blank" title="Correo electrónico" class="red-social-inicio" aria-label="Correo electrónico">
+                    <img src="../assets/redes/gmail/gmail3.png" alt="Logo de Gmail">
+                </a>
+                <a href="https://maps.app.goo.gl/S5Vjvrqn1w6YiTYV9" target="_blank" title="Ubicación en Google Maps" class="red-social-inicio" aria-label="Ubicación en Google Maps">
+                    <img src="../assets/redes/mapa/mapa5.png" alt="Logo del mapa">
+                </a>
+            </div>
+        </aside>
+    </main>
 
-        <div class="copyright">
-            <h4>&copy; Derechos de autor - Todos los derechos reservados</h4>
-        </div>
-
+    <footer class="border" id="pie">
+        <hr>
+        <h4>&copy; Copyright 2024 (c) Emiliano Mansilla Maciel</h4>
     </footer>
-</div>
-</div>
-</main>
 </body>
 </html>
