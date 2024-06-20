@@ -1964,10 +1964,10 @@ article ul li {
 
 .redes-sociales-container-inicio {
     display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    gap: 10px; /* Espacio entre las imágenes */
-    margin-top: 20px; /* Margen superior */
-    margin-bottom: 20px; /* Margen inferior */
+    justify-content: center;                                /* Centrar horizontalmente */
+    gap: 10px; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
 }
 
 .redes-sociales-container-inicio a {
@@ -1976,17 +1976,16 @@ article ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent; /* Fondo transparente */
-    padding: 0; /* Eliminar padding */
-    border: none; /* Eliminar borde */
-    transition: color 0.3s; /* Transición para el color del texto */
+    background-color: transparent;                          /* Fondo transparente */
+    padding: 0; 
+    border: none;                                           /* Eliminar borde */
+    transition: color 0.3s;                                 /* Transición para el color del texto */
 }
 
 .redes-sociales-container-inicio a img {
-    width: 32px; /* Tamaño de las imágenes */
-    height: 32px; /* Tamaño de las imágenes */
+    width: 32px;
+    height: 32px;
     display: block;
 }
 
-/* Estilos para pantallas grandes */
 @media (min-width: 1024px)
