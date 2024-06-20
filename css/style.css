@@ -1901,84 +1901,92 @@ article ul li {
     }
 }
 
+/* ASIDE - INICIO */
 .aside-inicio {
-    position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: rgb(242, 242, 242);
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
-    max-width: calc(100vw - 40px);
+    max-width: 360px;
+    width: 100%;
+    height: 100%;
 }
 
-.aside-inicio > div {
-    display: block;
+.aside-inicio article {
     margin-bottom: 20px;
 }
 
+.titulo-aside-inicio, .subtitulo-aside-inicio {
+    color: rgb(51, 51, 51);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 15%;
+}
+
+.subtitulo-aside-inicio {
+    font-size: 1rem;
+}
+
+.texto-aside-inicio {
+    color: rgb(102, 102, 102);
+    font-size: 0.9rem;
+    margin-bottom: 12%;
+}
+
 .aside-inicio ul {
-    list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+.aside-inicio ul li {
+    margin-bottom: 10px;
+    list-style: none;                                     /* Elimina los puntos del listado */
 }
 
 .aside-inicio a {
     text-decoration: none;
     color: rgb(51, 51, 51);
     display: block;
-    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    width: calc(100% - 42px);                               /* Ajusta el ancho para incluir el padding y borde */
+    box-sizing: border-box;                                 /* Agrega el padding y borde en el ancho total */
 }
 
-.titulo-aside-inicio {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+.aside-inicio a:hover {
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
 }
 
-.subtitulo-aside-inicio {
-    font-size: 1rem;
-    margin-bottom: 8px;
+.redes-sociales-container-inicio {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-top: 20px; /* Margen superior */
+    margin-bottom: 20px; /* Margen inferior */
 }
 
-.texto-aside-inicio {
-    color: rgb(102, 102, 102);
-    font-size: 0.9rem;
-    margin-bottom: 12px;
+.redes-sociales-container-inicio a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* Fondo transparente */
+    padding: 0; /* Eliminar padding */
+    border: none; /* Eliminar borde */
+    transition: color 0.3s; /* Transición para el color del texto */
+}
+
+.redes-sociales-container-inicio a img {
+    width: 32px; /* Tamaño de las imágenes */
+    height: 32px; /* Tamaño de las imágenes */
+    display: block;
 }
 
 /* Estilos para pantallas grandes */
-@media (min-width: 1024px) {
-    .texto-aside-inicio {
-        display: block; /* Mostrar el texto solo en pantallas grandes */
-    }
-
-    .aside-inicio {
-        position: fixed; /* Fija el aside en la pantalla */
-        top: 0; /* Alinea el aside al tope */
-        left: 0; /* Lo sitúa a la izquierda */
-        bottom: 0; /* Ocupa todo el alto disponible */
-        width: 300px; /* Ancho fijo del aside */
-        background-color: #fff; /* Fondo blanco */
-        z-index: 1000; /* Z-index para asegurarse que esté sobre el contenido */
-        padding: 20px; /* Espaciado interno */
-        overflow-y: auto; /* Scroll vertical si es necesario */
-        margin-top: 20px; /* Espacio superior */
-    }
-
-    .aside-inicio > div {
-        background-color: transparent; /* Fondo transparente */
-        padding: 0; /* Quita el espaciado interno */
-    }
-
-    .aside-inicio ul {
-        margin-bottom: 20px; /* Espacio entre listas */
-    }
-
-    .aside-inicio a {
-        margin-bottom: 6px; /* Espacio entre enlaces */
-    }
-
-    .redes-sociales-container-inicio {
-        display: block; /* Muestra las redes sociales en pantallas grandes */
-        margin-top: 20px;
-    }
-}
+@media (min-width: 1024px)
