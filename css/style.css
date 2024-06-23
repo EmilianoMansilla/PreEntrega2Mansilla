@@ -2549,6 +2549,8 @@ article ul li {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .subtitulo-ubicaciones {
@@ -2602,4 +2604,36 @@ article ul li {
     background-color: rgb(211, 47, 47); 
     border-color: rgb(211, 47, 47);
     color: rgb(255, 255, 255); 
+}
+
+@media (min-width: 1024px) {
+    .titulo-ubicaciones {
+        font-size: 30px; 
+        margin-bottom: 30px; 
+    }
+
+    .titulo-texto-ubicaciones {
+        font-size: 18px;
+        line-height: 1.8; 
+        padding: 30px; 
+        max-width: 1000px; 
+    }
+
+    .mapa-grande {
+        width: 70%; 
+        margin: 20px auto;                                  /* Margen ajustado para centrar */
+        height: 550px; 
+    }
+
+    .ubicacion-item {
+        width: 350px;                              
+    }
+
+    .subtitulo-ubicaciones {
+        font-size: 26px; 
+    }
+
+    .texto-ubicaciones {
+        font-size: 16px; 
+    }
 }
