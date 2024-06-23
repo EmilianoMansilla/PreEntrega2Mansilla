@@ -2491,3 +2491,60 @@ article ul li {
 }
 
 /* UBICACIONES */
+.main-ubicaciones {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.titulo-ubicaciones {
+    font-size: 36px;
+    font-weight: 700;
+    color: rgb(0, 0, 0); 
+    margin-bottom: 30px; 
+    text-align: center; 
+    text-transform: uppercase;                      /* Convertir a mayúsculas */
+}
+
+.mapa-grande {
+    width: 100%;
+    height: 600px; 
+    margin-bottom: 50px; 
+}
+
+.ubicaciones-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.ubicacion-item {
+    width: 300px; 
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.subtitulo-ubicaciones {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(230, 76, 60); 
+}
+
+.texto-ubicaciones {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: rgb(92, 101, 116); 
+}
+
+.mapa a {
+    color: rgb(230, 76, 60); 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.mapa a:hover {
+    color: rgb(211, 47, 47);
+}
