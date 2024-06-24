@@ -1,0 +1,70 @@
+body {
+    font-family: $fuente-primaria;
+    font-size: $tamano-fuente-base;
+    line-height: $linea-altura-base;
+    color: $color-texto-principal;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $fuente-secundaria;
+    line-height: $linea-altura-titulo;
+    font-weight: $peso-fuente-negrita;
+    margin-bottom: $espaciado-mediano;
+  }
+  
+  h1 {
+    font-size: $tamano-fuente-enorme;
+  }
+  
+  h2 {
+    font-size: $tamano-fuente-grande;
+  }
+  
+  h3 {
+    font-size: $tamano-fuente-mediano;
+  }
+  
+  h4 {
+    font-size: $tamano-fuente-mediano;
+  }
+  
+  h5 {
+    font-size: $tamano-fuente-pequeno;
+  }
+  
+  h6 {
+    font-size: $tamano-fuente-pequeno;
+  }
+  
+  p {
+    margin-bottom: $espaciado-mediano;
+  }
+  
+  a {
+    color: $color-enlace;
+    text-decoration: none;
+    transition: color $transicion-normal;
+  
+    &:hover {
+      color: $color-enlace-hover;
+    }
+  }
+  
+  // Estilos de texto específicos
+  .sidebar {
+    font-family: $fuente-primaria;
+    font-size: $tamano-fuente-mediano;
+    color: $color-texto-sidebar;
+  }
+  
+  .header {
+    font-family: $fuente-primaria;
+    font-size: $tamano-fuente-mediano;
+    color: $color-texto-principal;
+  }
+  
+  .footer {
+    font-family: $fuente-primaria;
+    font-size: $tamano-fuente-pequeno;
+    color: $color-texto-footer;
+  }
