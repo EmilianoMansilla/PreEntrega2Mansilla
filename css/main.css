@@ -1,51 +1,18 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 2 |     font-family: $fuente-primaria;
+ *   |                  ^^^^^^^^^^^^^^^^
+ *   '
+ *   scss\base\_typography.scss 2:18  @import
+ *   scss\main.scss 4:9               root stylesheet */
 
-/* Font */
-@font-face {
-  font-family: "Roboto";
-  src: url(assets/fonts/Roboto-Medium.ttf);
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 2 \2502      font-family: $fuente-primaria;\d\a   \2502                   ^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\base\\_typography.scss 2:18  @import\a   scss\\main.scss 4:9               root stylesheet";
 }
-h1, h2, h3 {
-  font-family: "Roboto", serif;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-h1 {
-  font-size: 2.5rem;
-  color: rgb(242, 242, 242);
-}
-
-h2 {
-  font-size: 2rem;
-  color: rgb(224, 224, 224);
-}
-
-h3 {
-  font-size: 1.5rem;
-  color: rgb(208, 208, 208);
-}
-
-.button-login {
-  width: 100%;
-  padding: 10px;
-  background: rgb(255, 34, 84);
-  border: none;
-  border-radius: 5px;
-  color: rgb(255, 255, 255);
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: background 0.3s ease-in-out;
-}
-
-.button-login:hover {
-  background: rgb(255, 85, 102);
-} 
-
-/*# sourceMappingURL=main.css.map */
