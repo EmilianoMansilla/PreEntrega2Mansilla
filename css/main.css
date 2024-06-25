@@ -1,18 +1,293 @@
-/* Error: Undefined variable.
- *   ,
- * 2 |     font-family: $fuente-primaria;
- *   |                  ^^^^^^^^^^^^^^^^
- *   '
- *   scss\base\_typography.scss 2:18  @import
- *   scss\main.scss 4:9               root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 2 \2502      font-family: $fuente-primaria;\d\a   \2502                   ^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\base\\_typography.scss 2:18  @import\a   scss\\main.scss 4:9               root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
+
+@font-face {
+  font-family: "Roboto";
+  src: url(/assets/fonts/Roboto-Medium.ttf);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgb(51, 51, 51);
+  line-height: 1.6;
+}
+
+.menu-items ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+}
+
+.menu-items ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer h4 {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+@media (min-width: 1024px) {
+  footer h4 {
+    font-size: 1.1rem;
+  }
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 20px 0;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button,
+.button-index-hero {
+  font-size: 1.2rem;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.productos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.productos p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: rgb(255, 255, 255);
+}
+
+.producto h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(231, 76, 60);
+}
+
+.producto p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: rgb(255, 255, 255);
+}
+
+.servicios h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.servicio h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: rgb(231, 76, 60);
+}
+
+.servicio p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgb(236, 240, 241);
+}
+
+.cabecera-tabla {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.contenedor-torneo h1 {
+  font-size: 24px;
+  color: rgb(51, 51, 51);
+}
+
+.contenedor-torneo .torneo h2 {
+  font-size: 1.8rem;
+  color: rgb(231, 76, 60);
+}
+
+.contenedor-torneo .torneo p {
+  color: rgb(51, 51, 51);
+}
+
+.contenedor-tabla h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+}
+
+.caption-torneos {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+}
+
+.texto-torneos {
+  font-size: 1rem;
+  color: rgb(51, 51, 51);
+}
+
+.pie {
+  font-size: 1rem;
+  color: rgb(51, 51, 51);
+}
+
+.titulo-grupos {
+  font-size: 20px;
+  color: rgb(51, 51, 51);
+}
+
+.texto-grupos {
+  font-size: 14px;
+  color: rgb(92, 101, 116);
+}
+
+.titulo-grupos-tabla {
+  font-size: 16px;
+  color: rgb(36, 35, 35);
+}
+
+.tabla-grupos th {
+  font-size: 11px;
+  color: rgb(51, 51, 51);
+}
+
+.tabla-grupos td {
+  font-size: 11px;
+  color: rgb(51, 51, 51);
+}
+
+.cabecera-tabla-grupos {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+}
+
+.titulo-fixture {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(47, 47, 48);
+}
+
+.texto-fixture {
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+}
+
+.vs-container {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(14, 14, 15);
+}
+
+.etapa-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.texto-grupos::first-letter {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: rgb(231, 76, 60);
+}
+
+.titulo-inicio {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(51, 51, 51);
+}
+
+.subtitulo-inicio {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(92, 101, 116);
+}
+.subtitulo-inicio::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: rgb(235, 110, 38);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.titulo-noticia {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: rgb(16, 26, 36);
+}
+
+/* Inicio */
+.texto-inicio {
+  font-size: 1.25rem;
+  margin: 0;
+  color: rgb(92, 101, 116);
+}
+
+.texto-noticia {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.date-noticias {
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Aside */
+.titulo-aside-inicio,
+.subtitulo-aside-inicio {
+  color: rgb(92, 101, 116);
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitulo-aside-inicio {
+  font-size: 1.5rem;
+}
+
+.texto-aside-inicio {
+  color: rgb(92, 101, 116);
+  font-size: 1.1rem;
+}
+
+/* Enlaces */
+.aside-inicio a {
+  text-decoration: none;
+  color: rgb(92, 101, 116);
+}
+.aside-inicio a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgb(255, 255, 255);
+}
+
+.texto-aside-inicio ul li a {
+  color: rgb(92, 101, 116);
+  text-decoration: none;
+}
+.texto-aside-inicio ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgb(255, 255, 255);
+}
+
+/*# sourceMappingURL=main.css.map */
