@@ -1,0 +1,158 @@
+button,
+.button-index-hero {
+    display: inline-block;
+    padding: 10px 20px;
+    color: $color-texto-nav;
+    background: $color-boton-index;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: $transition-background-button;
+}
+
+button:hover,
+.button-index-hero:hover {
+    background: $color-hover-boton-index;
+}
+
+.button-login {
+    width: 100%;
+    padding: 10px;
+    background: $color-boton-index;
+    border: none;
+    border-radius: 5px;
+    color: $color-texto-nav;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: $transition-background-button;
+}
+
+.button-login:hover {
+    background: $color-hover-boton-index;
+}
+
+.equipo-container {
+    padding: $padding-general;
+    background-color: $color-fondo-principal;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: background-color $transicion-rapida ease;
+}
+
+.equipo-container:hover {
+    background-color: darken($color-fondo-principal, 5%);
+}
+
+.equipo-container.winner1 {
+    background-color: $color-verde-claro;
+    border: 1px solid $color-verde-oscuro;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color $transicion-rapida ease, border-color $transicion-rapida ease, box-shadow $transicion-rapida ease;
+}
+
+.equipo-container.winner1:hover {
+    background-color: darken($color-verde-claro, 10%);
+    border-color: $color-verde-oscuro;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.equipo-container.winner2 {
+    background-color: $color-rosa-claro;
+    border: 1px solid $color-rosa-oscuro;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color $transicion-rapida ease, border-color $transicion-rapida ease, box-shadow $transicion-rapida ease;
+}
+
+.equipo-container.winner2:hover {
+    background-color: darken($color-rosa-claro, 10%);
+    border-color: $color-rosa-oscuro;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.aside-inicio a {
+    text-decoration: none;
+    color: $color-texto-secundario;
+    display: block;
+    background-color: $color-fondo;
+    padding: $espaciado-medio $espaciado-grande;
+    border: 1px solid $color-borde;
+    border-radius: $border-radius;
+    transition: background-color $transicion-rapida, color $transicion-rapida;
+    width: calc(100% - 42px);
+    box-sizing: border-box;
+}
+
+.aside-inicio a:hover {
+    background-color: $color-texto-secundario;
+    color: $color-fondo;
+}
+
+.redes-sociales-container-inicio a {
+    text-decoration: none;
+    color: $color-texto-secundario;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    transition: color $transicion-rapida;
+}
+
+.redes-sociales-container-inicio a img {
+    width: 29px;
+    height: 29px;
+    display: block;
+}
+
+.app-hero-menu-item a {
+    text-decoration: none;
+    color: $color-texto-secundario;
+    transition: color $transicion-rapida ease;
+}
+
+.app-hero-menu-item a:hover {
+    color: $color-destacado;
+}
+
+.app-link-boton {
+    padding: $espaciado-medio $espaciado-grande;
+    border-radius: $border-radius $border-radius 0 $border-radius;
+    text-decoration: none;
+    font-size: $font-size-h2-servicios;
+    font-weight: $font-weight-negrita;
+    color: $color-texto-body;
+    box-shadow: 0px $espaciado-medio $espaciado-grande rgba(0, 0, 0, 0.15);
+    transition: background-color $transicion-rapida ease;
+    margin-top: $espaciado-medio;
+}
+
+.app-link-boton.boton-secundario {
+    background-color: $color-botones-secundario;
+}
+
+.app-link-boton.boton-app {
+    background-color: $color-botones;
+}
+
+.app-link-boton:hover {
+    background-color: $color-hover-boton-index;
+}
+
+.boton-noticia {
+    background-color: $color-boton-reserva;
+    color: $color-fondo-whatsapp-icon;
+    padding: $espaciado-medio $espaciado-grande;
+    font-size: $font-size-h1-hero;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: background-color $transicion-rapida ease;
+    white-space: nowrap;
+    min-width: 80px;
+    text-align: center;
+}
+
+.boton-noticia:hover {
+    background-color: $color-hover-boton-reserva;
+}
