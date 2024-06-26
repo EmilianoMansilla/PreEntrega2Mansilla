@@ -2282,6 +2282,15 @@ article ul li {
         text-decoration: none;
         background-color: rgb(235, 150, 90);
     }
+    
+    .contenedor-boton-windows {
+        margin-top: 50px;
+        margin-bottom: -30px;
+    }
+
+    .app-hero-menu {
+        display: none;
+    }
 }
 
 @media (min-width: 1024px) {
