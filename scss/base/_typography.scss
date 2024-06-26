@@ -1,11 +1,9 @@
-// Body
 body {
   font-family: $font-principal;
   color: $color-texto-body;
   line-height: $line-height-body;
 }
 
-// Navegador
 .menu-items ul li a {
   text-decoration: none;
   color: $color-texto-menu-link;
@@ -19,20 +17,12 @@ body {
   background-color: $color-hover-menu-link;
 }
 
-// Footer
 footer h4 {
   margin-top: $espaciado-pequeno;
   font-size: $font-size-h4-footer;
   line-height: $line-height-h4-footer;
 }
 
-@media (min-width: $breakpoint-grande) {
-  footer h4 {
-      font-size: $font-size-h4-footer-large;
-  }
-}
-
-// Index
 .hero h1 {
   font-size: $font-size-h1-hero;
   margin-bottom: $espaciado-medio;
@@ -45,14 +35,12 @@ footer h4 {
   text-shadow: $box-shadow-hero;
 }
 
-// Botones y Enlaces
 button,
 .button-index-hero {
   font-size: $font-size-button-index;
   text-shadow: $box-shadow-hero;
 }
 
-// Sección Productos
 .productos h2 {
   font-size: $font-size-h2-productos;
   margin-bottom: $espaciado-grande;
@@ -78,7 +66,6 @@ button,
   color: $color-texto-productos;
 }
 
-// Sección Servicios
 .servicios h2 {
   font-size: $font-size-h2-servicios;
   margin-bottom: $espaciado-grande;
@@ -232,7 +219,6 @@ button,
   color: $color-texto-primario;
 }
 
-/* Inicio */
 .texto-inicio {
   font-size: $font-size-p-hero;
   margin: 0;
@@ -251,7 +237,6 @@ button,
   text-transform: uppercase;
 }
 
-/* Aside */
 .titulo-aside-inicio,
 .subtitulo-aside-inicio {
   color: $color-texto-secundario;
@@ -268,7 +253,6 @@ button,
   font-size: $font-size-p-servicio;
 }
 
-/* Enlaces */
 .aside-inicio a {
   text-decoration: none;
   color: $color-texto-secundario;
@@ -288,3 +272,8 @@ button,
       color: $color-texto-menu-link;
   }
 }
+
+
+
+
+

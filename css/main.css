@@ -229,7 +229,6 @@ button,
   color: rgb(16, 26, 36);
 }
 
-/* Inicio */
 .texto-inicio {
   font-size: 1.25rem;
   margin: 0;
@@ -248,7 +247,6 @@ button,
   text-transform: uppercase;
 }
 
-/* Aside */
 .titulo-aside-inicio,
 .subtitulo-aside-inicio {
   color: rgb(92, 101, 116);
@@ -265,7 +263,6 @@ button,
   font-size: 1.1rem;
 }
 
-/* Enlaces */
 .aside-inicio a {
   text-decoration: none;
   color: rgb(92, 101, 116);
