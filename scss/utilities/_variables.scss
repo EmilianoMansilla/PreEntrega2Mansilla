@@ -1,54 +1,101 @@
-// Colores
-$color-fondo-body: rgb(163, 177, 138);
-$color-texto-body: rgb(51, 51, 51);
-$color-fondo-nav: rgb(11, 11, 11);
-$color-texto-nav: rgb(255, 255, 255);
-$color-fondo-menu-desplegable: rgba(11, 11, 11, 0.9);
-$color-texto-menu-link: rgb(255, 255, 255);
-$color-hover-menu-link: rgba(255, 255, 255, 0.1);
-$color-sombra-menu: rgba(0, 0, 0, 0.2);
+// PALETA DE COLORES 
+$color-negro: rgb(0, 0, 0); 
+$color-azul: rgb(0, 0, 255); 
+$color-rojo: rgb(255, 0, 0);
+$color-blanco: rgb(255, 255, 255);
+$color-hover-a: rgba(255, 255, 255, 0.1);
+
+$color-texto-productos: rgb(204, 204, 204);
+$color-fondo-tabla-personalizada: rgb(204, 229, 255);
+$color-texto-login: rgb(208, 208, 208);
 $color-fondo-footer: rgb(220, 225, 222);
-$color-texto-footer: rgb(51, 51, 51);
-$color-fondo-hero: rgba(34, 34, 34, 0.6);
-$color-texto-hero: rgb(255, 255, 255);
-$color-sombra-hero: rgba(0, 0, 0, 0.3);
-$color-fondo-productos: rgb(53, 79, 82);
-$color-texto-productos: rgb(255, 255, 255);
-$color-fondo-servicios: rgb(53, 79, 82);
+$color-bordes-tabla: rgb(221, 221, 221);
+$color-fondo-ubicacion: rgba(222, 219, 219, 0.907);
 $color-texto-servicios: rgb(236, 240, 241);
-$color-fondo-aside: rgb(36, 41, 42);
-$color-fondo-whatsapp-icon: rgba(255, 255, 255, 0.9);
-$color-texto-whatsapp-icon: rgb(255, 255, 255);
-$color-fondo-whatsapp-icon-hover: rgba(255, 255, 255, 0.1);
-$color-fondo-login: rgb(58, 90, 64);
-$color-texto-login: rgb(242, 242, 242);
+$color-hover-contenedor-equipo: rgb(230, 230, 230); 
+$color-titulo-login: rgb(242, 242, 242);
+$color-texto-label: rgb(224, 224, 224);
+$color-fondo-contactos: rgb(240, 240, 240);
+$color-fondo-caption-torneo: rgb(242, 242, 242);
+$color-fondo-carousel: rgb(245, 245, 245);
+$color-fondo-noticia: rgb(248, 248, 248);
 $color-fondo-formulario: rgb(249, 249, 249);
-$color-texto-formulario: rgb(51, 51, 51);
-$color-checkbox-checked: rgb(33, 150, 243);
-$color-boton-index: rgb(255, 34, 84);
-$color-hover-boton-index: rgb(255, 85, 102);
-$color-boton-reserva: rgb(0, 123, 255);
-$color-hover-boton-reserva: rgb(0, 86, 179);
+$color-fondo-tabla-grupos: rgb(250, 250, 250); 
 
-$color-fondo-principal: rgb(245, 245, 245);
-$color-borde: rgb(221, 221, 221);
-$color-destacado: rgb(44, 130, 201);
-$color-amarillo: rgb(231, 76, 60);
-$color-verde-claro: rgb(166, 223, 154);
-$color-verde-oscuro: rgb(88, 166, 0);
-$color-rosa-claro: rgb(224, 192, 192);
-$color-rosa-oscuro: rgb(166, 66, 66);
+$color-input-placeholder: rgb(153, 153, 153);
+$color-body-fondo: rgb(163, 177, 138);
 
-$color-texto-primario: rgb(16, 26, 36);
-$color-texto-secundario: rgb(92, 101, 116);
-$color-destacado: rgb(235, 110, 38);
-$color-fondo: rgb(255, 255, 255);
-$color-botones: rgb(234, 109, 39);
-$color-botones-secundario: rgb(16, 26, 36);
+$color-hover-fixture: rgba(44, 130, 201, 0.1); 
+$color-titulo-fixture: rgb(47, 47, 48);  
+$color-body-texto: rgb(51, 51, 51);
+$color-fondo-productos: rgb(53, 79, 82);
+$color-texto-ubicaciones: rgb(57, 60, 64);
+$color-fondo-login: rgb(58, 90, 64);
 
-$color-gris-oscuro: rgb(36, 35, 35);
-$color-gris-muy-claro: rgb(47, 47, 48);
-$color-negro: rgb(14, 14, 15);
+$color-texto-cabecera1: rgb(85, 85, 85);
+$color-texto-grupos: rgb(102, 102, 102);
+
+$color-nav-fondo-menu-ul: rgba(11, 11, 11, 0.9);
+$color-nav-fondo: rgb(11, 11, 11);
+$color-input-login: rgb(12, 12, 12);
+$color-contenedor-vs: rgb(14, 14, 15);
+$color-titulo-reserva: rgb(26, 26, 26);
+$color-fondo-contenedor-login: rgb(31, 43, 49);
+$color-fondo-tarjeta-productos: rgb(34, 34, 34);
+$color-fondo-hero: rgba(34, 34, 34, 0.6);
+$color-fondo-aside: rgb(36, 41, 42);
+
+$color-hover-boton-reservar: rgb(0, 86, 179);
+$color-hover-boton: rgb(0, 100, 220);   
+$color-boton-noticia: rgb(0, 120, 255);  
+$color-boton-cancelar: rgb(0, 123, 255);
+$color-hover-link: rgb(13, 71, 161);
+$color-checkbox: rgb(33, 150, 243);
+$color-titulo-etapa: rgb(44, 130, 201); 
+
+$color-bordes-input: rgb(131, 11, 131);
+
+$color-hover-a-mapa: rgb(211, 47, 47);
+$color-boton-enviar: rgb(220, 53, 69);
+$color-reserva-mapa: rgb(230, 76, 60);
+$color-subtitulo-ubicaciones: rgb(230, 78, 61); 
+$color-titulo-productos: rgb(231, 76, 60);
+$color-fondo-boton-hero: rgb(255, 34, 84);
+$color-hover-fondo-buton: rgb(255, 85, 102);
+$color-date-noticia: rgb(226, 26, 26); 
+
+$color-fondo-contenedor-equipo-ganador: rgb(166, 223, 154);  
+$color-borde-contenedor-equipo-ganador: rgb(112, 191, 87);  
+$color-fondo-hover-contenedor-equipo-ganador: rgb(146, 208, 80); 
+$color-borde--hover-contenedor-equipo-ganador: rgb(88, 166, 0);
+
+$color-fondo-contenedor-equipo-perdedor: rgb(224, 192, 192);   
+$color-borde-contenedor-equipo-perdedor: rgb(191, 109, 109); 
+$color-fondo-hover-contenedor-equipo-perdedor: rgb(214, 161, 161);  
+$color-borde--hover-contenedor-equipo-perdedor: rgb(166, 66, 66);  
+
+
+//Sombras 
+$sombras-box-placeholder: 0 0 5px rgba(0, 0, 0, 0.1);
+$sombras-local-detallado: 0 0 10px rgba(0, 0, 0, 0.1);
+$sombras-box-item-ubicaciones: 0 0 15px rgba(0, 0, 0, 0.1);
+$sombras-box-ubicaciones: 0px 0px 20px rgba(0, 0, 0, 0.1);
+$sombras-box-pie: 0 -2px 4px rgba(0, 0, 0, 0.1);
+$sombras-box-contenedor-torneo: 0 2px 4px rgba(0, 0, 0, 0.1);
+$sombras-productos: 0 4px 8px rgba(0, 0, 0, 0.1); 
+$sombras-contenedor-torneo: 0 4px 12px rgba(0, 0, 0, 0.1);
+$sombras-box-contenedor-equipo-ganador: 0 4px 8px rgba(0, 0, 0, 0.2); 
+$sombras-nav-menu-ul: 0px 2px 5px rgba(0, 0, 0, 0.2);
+$sombras-hover-productos: 0 6px 12px rgba(0, 0, 0, 0.2);
+$sombras-box-contenedor-tabla: 0 6px 18px rgba(0, 0, 0, 0.2);  
+$sombras-box-contenedor: 0px 2px 10px rgba(0, 0, 0, 0.2);
+$sombras-box-servicios: 0 8px 16px rgba(0, 0, 0, 0.2);
+$sombras-box-carousel: 0 0 10px rgba(0, 0, 0, 0.3);
+$sombras-box-hero: 0px 4px 10px rgba(0, 0, 0, 0.3);
+$sombras-titulo-hero: 2px 2px 4px rgba(0, 0, 0, 0.7);
+$sombras-texto-hero: 2px 2px 4px rgba(0, 0, 0, 0.8);
+$sombras-texto-boton-hero: 1px 1px 2px rgba(0, 0, 0, 0.8); 
+$sombras-textarea-focus: 0 0 5px rgba(128, 0, 128, 0.5);
 
 // Tamaños
 $ancho-logo-nav: 45px;
