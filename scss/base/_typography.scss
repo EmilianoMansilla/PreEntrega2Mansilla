@@ -1,0 +1,103 @@
+body {
+  font-family: $fuente-principal;
+  background: $color-body-fondo;
+  color: $color-body-texto;
+  line-height: $altura-linea-body;
+}
+
+// NAVEGADOR 
+.menu-items ul {
+  position: $absolute;
+  top: $superior-87;                      /* Si queres sacarle el borde al menu cuando se despliega */
+  left: $izquierda-0;
+  display: $none;
+  flex-direction: $column;
+  gap: $espacio-20;
+  width: $ancho-100;
+  padding: $relleno-15-10;
+  background-color: $color-nav-fondo;
+  border-radius: $redondear-5;
+  box-shadow: $sombras-nav-menu-ul;
+}
+
+.menu-items ul li {
+  list-style: $none;
+}
+
+.menu-items ul li a {
+  text-decoration: $none;
+  color: $color-blanco;
+  font-size: $tamano-fuente-18;
+  padding: $relleno-10-15;
+  gap: $espacio-20;
+  border-radius: $redondear-8;
+  transition: $transition-background-menu-link;
+}
+
+.menu-items ul li a:hover {
+  background-color: $color-hover-a;
+}
+
+.menu-toggle:checked~ul {
+  display: $flex;
+}
+
+// FOOTER
+footer h4 {
+  margin-top: $margen-superior-10;
+  max-width: $ancho-maximo-100;
+  font-size: $tamano-fuente-rem-0-9;
+  line-height: $altura-linea-footer;              
+}
+
+// INDEX
+.hero h1 {
+  font-size: $tamano-fuente-rem-3;
+  margin-bottom: $margen-inferior-20;
+  text-shadow: $sombras-titulo-hero;
+}
+
+.hero p {
+  font-size: $tamano-fuente-rem-1-4;
+  margin-bottom: $espacio-20;
+  text-shadow: $sombras-texto-hero;
+}
+
+.productos h2 {
+  font-size: $tamano-fuente-rem-2-5;
+  margin-bottom: $margin-inferior-40;
+  text-transform: $uppercase;           
+  letter-spacing: $espaciado-letra-2;
+  color: $color-blanco;
+}
+
+.productos p {
+  font-size: $tamano-fuente-rem-1-2;
+  line-height: $altura-linea-body;
+  color: $color-texto-productos;
+  max-width: $ancho-maximo-800;
+  margin: $none;
+}
+
+.producto h3 {
+  font-size: $tamano-fuente-rem-1-8;
+  margin-bottom: $margen-inferior-10;
+  color: $color-titulo-productos;
+}
+
+.producto p {
+  font-size: $tamano-fuente-rem-1-2;
+  line-height: $altura-linea-body;
+  color: $color-texto-productos;
+}
+
+.producto-link {
+  text-decoration: $none;
+  color: $color-texto-productos;
+}
+
+.producto-link:hover {
+  text-decoration: $none;
+  color: $color-blanco;
+}
+

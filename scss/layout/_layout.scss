@@ -1,0 +1,96 @@
+/* NAVEGADOR */
+.logo-nav {
+    width: $ancho-45;
+    height: $alto-45;
+    margin-left: $margen-izquierdo-20;
+    margin-top: $margen-superior-15;
+}
+
+nav {
+    width: $ancho-100;
+    background-color: $color-nav-fondo;
+    padding: $relleno-25-10;
+    display: $flex;
+    justify-content: $space-between;
+    align-items: $align-items;
+    position: $relative;
+    height: $alto-85;
+}
+
+.menu-items {
+    margin-right: $margen-derecho-20;
+    margin-top: $margen-superior-18;
+    display: $flex;
+    align-items: $center;
+}
+
+.icono-nav {
+    width: $ancho-45;
+    height: $alto-45;
+    cursor: $pointer;
+}
+
+.menu-toggle {
+    display: $none;
+    position: $absolute;
+    top: $superior-50;
+    left: $izquierda-50;
+}
+
+// FOOTER
+footer {
+    background: $color-fondo-footer;
+    text-align: $center;
+    padding: $espacio-20;
+}
+
+/* INDEX*/
+.hero {
+    height: $alto-vh-74;
+    background-image: url(../assets/img/imagen6.png);
+    background-repeat: $no-repeat;
+    background-position: $center;
+    background-size: $cover;
+    color: $color-blanco;
+    text-align: $center;
+    padding: $relleno-100-20;
+    background-color: $color-fondo-hero;
+    box-shadow: $sombras-box-hero;
+}
+
+.hero-content {
+    max-width: $ancho-maximo-600;
+    margin: $auto;
+}
+
+/* SECCION PRODUCTOS */
+.productos {
+    background: $color-fondo-productos;
+    padding: $relleno-50-20;
+    text-align: $center;
+    color: $color-blanco;
+}
+
+.productos-container {
+    display: $flex;
+    flex-wrap: $wrap;
+    justify-content: $space-evenly;
+    gap: $espacio-30;
+}
+
+.producto {
+    background: $color-fondo-tarjeta-productos;
+    padding: $relleno-30;
+    border-radius: $redondear-10;
+    flex: 1 1 300px;                                   
+    max-width: $ancho-maximo-100;
+    text-align: $center;
+    transition: $transition-transform-index-producto;
+    box-shadow: $sombras-productos;        
+}
+
+.producto:hover {
+    transform: $transform-translate-index-producto;
+    box-shadow: $sombras-hover-productos;
+}
+

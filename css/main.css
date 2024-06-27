@@ -1,10 +1,10 @@
 /* Error: Undefined variable.
- *   ,
- * 5 |     color: $color-texto-nav;
- *   |            ^^^^^^^^^^^^^^^^
- *   '
- *   scss\components\_button.scss 5:12  @import
- *   scss\main.scss 5:9                 root stylesheet */
+ *    ,
+ * 15 |     align-items: $align-items;
+ *    |                  ^^^^^^^^^^^^
+ *    '
+ *   scss\layout\_layout.scss 15:18  @import
+ *   scss\main.scss 6:9              root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 5 \2502      color: $color-texto-nav;\d\a   \2502             ^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\components\\_button.scss 5:12  @import\a   scss\\main.scss 5:9                 root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 15 \2502      align-items: $align-items;\d\a    \2502                   ^^^^^^^^^^^^\a    \2575 \a   scss\\layout\\_layout.scss 15:18  @import\a   scss\\main.scss 6:9              root stylesheet";
 }
