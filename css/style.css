@@ -8,10 +8,11 @@
 /* TIPOGRAFIA */
 @font-face {
     font-family: 'Roboto';
-    src: url(assets/fonts/Roboto-Medium.ttf);
+    src: url(/assets/fonts/Roboto-Medium.ttf);
 }
 
 body {
+    font-family: 'Roboto';
     background: rgb(163, 177, 138);
     color: rgb(51, 51, 51);
     line-height: 1.6;
@@ -158,7 +159,7 @@ footer h4 {
 }
 
 .hero p {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
@@ -168,7 +169,6 @@ footer h4 {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);         /* Sombra de texto */
 }
 
-/* Links */
 button,
 .button-index-hero {
     display: inline-block;
@@ -352,7 +352,7 @@ aside img:hover {
     color: rgb(255, 255, 255);
 }
 
-/* WhatsApp Icon */
+/* WHATSAPP ICONO*/
 .whatsapp-icon {
     position: fixed;
     bottom: 20px;
@@ -372,7 +372,6 @@ aside img:hover {
     transform: scale(1.1);
 }
 
-/* WhatsApp Icon Index */
 .whatsapp-icon-index {
     position: fixed;
     bottom: 20px;
@@ -441,7 +440,7 @@ aside img:hover {
     border-radius: 5px;
     border: 1px solid rgb(51, 51, 51);
     font-size: 1rem;
-    background: (47, 62, 70);
+    background: rgb(224, 224, 224);
     color: rgb(12, 12, 12);
 }
 
@@ -1128,7 +1127,7 @@ article ul li {
     left: 7px;
 }
 
-/* ESTILOS PARA SECTION PRINCIPAL TORNEOS */
+/* TORNEOS */
 .contenedor-torneo {
     max-width: 1000px;
     margin: 0 auto;
@@ -1588,13 +1587,13 @@ article ul li {
 
 .etapa-title {
     font-weight: bold;
-    text-transform: uppercase;                 /* Convertir texto a mayúsculas */
+    text-transform: uppercase;                     /* Convertir texto a mayúsculas */
     font-size: 18px;
-    color: rgb(255, 255, 255);                  /* Texto blanco */
-    background-color: rgb(44, 130, 201);       /* Azul */
+    color: rgb(255, 255, 255);                  
+    background-color: rgb(44, 130, 201);      
     padding: 8px 16px;
     border-radius: 4px;
-    display: inline-block;                     /* Ajustar al contenido */
+    display: inline-block;                         /* Ajustar al contenido */
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);   /* Sombra suave */
 }
@@ -1612,7 +1611,7 @@ article ul li {
 .vs-container {
     font-size: 16px;
     font-weight: bold;
-    color: rgb(14, 14, 15); /* Púrpura */
+    color: rgb(14, 14, 15); 
 }
 
 .equipo-container {
@@ -1642,29 +1641,29 @@ article ul li {
 }
 
 .equipo-container.winner1 {
-    background-color: rgb(166, 223, 154);           /* Color de fondo verde más claro */
-    border: 1px solid rgb(112, 191, 87);            /* Borde verde más claro */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);       /* Sombra suave */
+    background-color: rgb(166, 223, 154);           
+    border: 1px solid rgb(112, 191, 87);            
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);     
     transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;       /* Transiciones suaves */
 }
 
 .equipo-container.winner1:hover {
-    background-color: rgb(146, 208, 80);            /* Color de fondo verde más oscuro al pasar por encima */
-    border-color: rgb(88, 166, 0);                  /* Borde verde más oscuro al pasar por encima */
+    background-color: rgb(146, 208, 80);            
+    border-color: rgb(88, 166, 0);                 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);       /* Sombra más pronunciada al pasar por encima */
 }
 
 .equipo-container.winner2 {
-    background-color: rgb(224, 192, 192);           /* Color de fondo rosa más claro */
-    border: 1px solid rgb(191, 109, 109);           /* Borde rosa más claro */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);       /* Sombra suave */
+    background-color: rgb(224, 192, 192);           
+    border: 1px solid rgb(191, 109, 109);           
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);       
     transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;       /* Transiciones suaves */
 }
 
 .equipo-container.winner2:hover {
-    background-color: rgb(214, 161, 161);           /* Color de fondo rosa más oscuro al pasar por encima */
-    border-color: rgb(166, 66, 66);                 /* Borde rosa más oscuro al pasar por encima */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);       /* Sombra más pronunciada al pasar por encima */
+    background-color: rgb(214, 161, 161);           
+    border-color: rgb(166, 66, 66);                 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);      
 }
 
 @media (min-width: 1024px) {
@@ -2133,6 +2132,154 @@ article ul li {
     }
 }
 
+/* UBICACIONES */
+.main-ubicaciones {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.titulo-ubicaciones {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(0, 0, 0); 
+    margin-bottom: 20px; 
+    padding-top: 40px; 
+    text-align: center; 
+    text-transform: uppercase;                              /* Convertir a mayúsculas */
+}
+
+.titulo-texto-ubicaciones {
+    font-size: 17px;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;                                       /* Altura de línea para mejor legibilidad */
+    text-align: center; 
+    max-width: 800px; 
+    margin: 0 auto;                                         /* Centrar horizontalmente */
+    background-color: rgba(222, 219, 219, 0.907);         /* Fondo semi-transparente blanco */
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mapa-grande {
+    position: relative;
+    width: 90%; 
+    height: 350px;
+    margin: 15px auto;
+    border: 2px solid rgb(204, 204, 204); 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.mapa-grande iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.ubicaciones-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.ubicacion-item {
+    width: 300px; 
+    background-color: rgba(225, 226, 231, 0.965);                   /* Fondo gris claro con transparencia */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.subtitulo-ubicaciones {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(230, 78, 61); 
+}
+
+.texto-ubicaciones {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: rgb(57, 60, 64);
+    font-weight: bold; 
+}
+
+.mapa a {
+    display: inline-block;                              /* Hace que el enlace sea un bloque en línea */
+    margin-top: 10px;
+    margin-bottom: 13px; 
+    text-decoration: none;
+    color: rgb(230, 76, 60);
+    transition: color 0.3s ease;
+}
+
+.mapa a:hover {
+    color: rgb(211, 47, 47);
+}
+
+.mapa {
+    text-align: center; 
+}
+
+.mapa .reserva-ubicaciones {
+    display: block;                                         /* Convierte el botón en un bloque */
+    padding: 10px 16px; 
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(230, 76, 60);
+    border: 2px solid rgb(230, 76, 60);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 14px; 
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer; 
+}
+
+.mapa .reserva-ubicaciones:hover,
+.mapa .reserva-ubicaciones:visited {                        /* Aplica el mismo estilo cuando se ha visitado el enlace */
+    background-color: rgb(211, 47, 47); 
+    border-color: rgb(211, 47, 47);
+    color: rgb(255, 255, 255); 
+}
+
+@media (min-width: 1024px) {
+    .titulo-ubicaciones {
+        font-size: 30px; 
+        margin-bottom: 30px; 
+    }
+
+    .titulo-texto-ubicaciones {
+        font-size: 18px;
+        line-height: 1.8; 
+        padding: 30px; 
+        max-width: 1000px; 
+    }
+
+    .mapa-grande {
+        width: 70%; 
+        margin: 20px auto;                                  /* Margen ajustado para centrar */
+        height: 550px; 
+    }
+
+    .ubicacion-item {
+        width: 350px;                              
+    }
+
+    .subtitulo-ubicaciones {
+        font-size: 26px; 
+    }
+
+    .texto-ubicaciones {
+        font-size: 16px; 
+    }
+}
+
 /* APLICACION */
 @media (max-width: 360px) {
     .app-hero-container {
@@ -2473,153 +2620,5 @@ article ul li {
     .app-hero-logo img {
         width: 250px;
         height: 100px;
-    }
-}
-
-/* UBICACIONES */
-.main-ubicaciones {
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-}
-
-.titulo-ubicaciones {
-    font-size: 25px;
-    font-weight: 700;
-    color: rgb(0, 0, 0); 
-    margin-bottom: 20px; 
-    padding-top: 40px; 
-    text-align: center; 
-    text-transform: uppercase;                              /* Convertir a mayúsculas */
-}
-
-.titulo-texto-ubicaciones {
-    font-size: 17px;
-    color: rgb(51, 51, 51);
-    line-height: 1.6;                                       /* Altura de línea para mejor legibilidad */
-    text-align: center; 
-    max-width: 800px; 
-    margin: 0 auto;                                         /* Centrar horizontalmente */
-    background-color: rgba(222, 219, 219, 0.907);         /* Fondo semi-transparente blanco */
-    padding: 20px; 
-    border-radius: 10px; 
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-}
-
-.mapa-grande {
-    position: relative;
-    width: 90%; 
-    height: 350px;
-    margin: 15px auto;
-    border: 2px solid rgb(204, 204, 204); 
-    border-radius: 15px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-.mapa-grande iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-.ubicaciones-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-
-.ubicacion-item {
-    width: 300px; 
-    background-color: #e1e2e7f6; /* Fondo gris claro con transparencia */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-.subtitulo-ubicaciones {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: hwb(6 24% 10%); 
-}
-
-.texto-ubicaciones {
-    font-size: 16px;
-    margin-bottom: 8px;
-    color: rgb(57, 60, 64);
-    font-weight: bold; 
-}
-
-.mapa a {
-    display: inline-block;                              /* Hace que el enlace sea un bloque en línea */
-    margin-top: 10px;
-    margin-bottom: 13px; 
-    text-decoration: none;
-    color: rgb(230, 76, 60);
-    transition: color 0.3s ease;
-}
-
-.mapa a:hover {
-    color: rgb(211, 47, 47);
-}
-
-.mapa {
-    text-align: center; 
-}
-
-.mapa .reserva-ubicaciones {
-    display: block;                                         /* Convierte el botón en un bloque */
-    padding: 10px 16px; 
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    background-color: rgb(230, 76, 60);
-    border: 2px solid rgb(230, 76, 60);
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-    font-size: 14px; 
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer; 
-}
-
-.mapa .reserva-ubicaciones:hover,
-.mapa .reserva-ubicaciones:visited {                        /* Aplica el mismo estilo cuando se ha visitado el enlace */
-    background-color: rgb(211, 47, 47); 
-    border-color: rgb(211, 47, 47);
-    color: rgb(255, 255, 255); 
-}
-
-@media (min-width: 1024px) {
-    .titulo-ubicaciones {
-        font-size: 30px; 
-        margin-bottom: 30px; 
-    }
-
-    .titulo-texto-ubicaciones {
-        font-size: 18px;
-        line-height: 1.8; 
-        padding: 30px; 
-        max-width: 1000px; 
-    }
-
-    .mapa-grande {
-        width: 70%; 
-        margin: 20px auto;                                  /* Margen ajustado para centrar */
-        height: 550px; 
-    }
-
-    .ubicacion-item {
-        width: 350px;                              
-    }
-
-    .subtitulo-ubicaciones {
-        font-size: 26px; 
-    }
-
-    .texto-ubicaciones {
-        font-size: 16px; 
     }
 }

@@ -1,192 +1,227 @@
-// Paleta de colores
-:root {
-    --color-fondo: rgb(163, 177, 138);
-    --color-texto: rgb(51, 51, 51);
-    --color-fondo-nav: rgb(11, 11, 11);
-    --color-fondo-menu: rgba(11, 11, 11, 0.9);
-    --color-menu-hover: rgba(255, 255, 255, 0.1);
-    --color-boton: rgb(255, 34, 84);
-    --color-boton-hover: rgb(255, 85, 102);
-    --color-fondo-producto: rgb(34, 34, 34);
-    --color-fondo-servicio: rgb(53, 79, 82);
-    --color-fondo-footer: rgb(220, 225, 222);
-    --color-fondo-aside: rgb(36, 41, 42);
-    --color-fondo-formulario: rgb(31, 43, 49);
-    --color-borde-input: rgb(204, 204, 204);
-    --color-borde-input-focus: rgb(255, 34, 84);
-    --color-checkbox-seleccionado: rgb(33, 150, 243);
-    --color-whatsapp-icono-fondo: rgb(255, 255, 255);
-    --color-whatsapp-icono-hover: rgb(13, 71, 161);
-}
-
-/* Fuentes */
-:root {
-    --tamano-cuerpo: 1rem;
-    --tamano-titulo: 2.5rem;
-    --tamano-subtitulo: 1.3rem;
-}
-
-/* Espaciado */
-:root {
-    --padding-defecto: 20px;
-    --padding-hero: 100px 20px;
-    --padding-producto: 50px 20px;
-    --padding-servicio: 60px 30px;
-    --padding-footer: 20px;
-    --padding-nav: 25px 10px;
-    --padding-menu: 15px 10px;
-    --padding-aside: 20px;
-    --padding-login: 20px;
-    --padding-formulario: 20px;
-    --padding-reserva: 20px;
-    --padding-carousel: 20px;
-}
-
-/* Radio de borde */
-:root {
-    --radio-borde-defecto: 5px;
-    --radio-borde-menu: 5px;
-    --radio-borde-producto: 10px;
-    --radio-borde-servicio: 15px;
-    --radio-borde-footer: 0px;
-    --radio-borde-aside: 8px;
-    --radio-borde-formulario: 10px;
-    --radio-borde-checkbox: 3px;
-}
-
-/* Sombras */
-:root {
-    --sombra-caja: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    --sombra-hover-producto: 0 6px 12px rgba(0, 0, 0, 0.2);
-    --sombra-hover-servicio: 0 8px 16px rgba(0, 0, 0, 0.2);
-    --sombra-hover-aside: 0 0 10px rgba(0, 0, 0, 0.1);
-    --sombra-login: 0px 2px 10px rgba(0, 0, 0, 0.2);
-    --sombra-formulario: 0 0 10px rgba(0, 0, 0, 0.1);
-    --sombra-reserva: 0 0 10px rgba(0, 0, 0, 0.1);
-    --sombra-carousel: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Punto de quiebre */
-:root {
-    --punto-quiebre-desktop: 1024px;
-}
-
-
-
-
-
-
-
-
-
+// PALETA DE COLORES 
+$color-negro: rgb(0, 0, 0); 
+$color-azul: rgb(0, 0, 255); 
+$color-rojo: rgb(255, 0, 0);
 $color-blanco: rgb(255, 255, 255);
-$color-negro: rgb(0, 0, 0);
-$color-gris-claro: rgb(245, 245, 245);
-$color-gris-medio: rgb(204, 204, 204);
-$color-gris-oscuro: rgb(51, 51, 51);
-$color-azul-claro: rgb(30, 144, 255);
-$color-azul: rgb(0, 120, 255);
-$color-azul-oscuro: rgb(0, 86, 179);
-$color-verde: rgb(40, 167, 69);
-$color-amarillo: rgb(255, 193, 7);
-$color-naranja: rgb(255, 69, 0);
-$color-rojo: rgb(220, 53, 69);
-$color-morado: rgb(111, 66, 193);
-$color-fondo-principal: rgb(240, 240, 240);
-$color-texto-sidebar: rgb(102, 102, 102);
+$color-hover-a: rgba(255, 255, 255, 0.1);
 
-// Tipografía
-$tamano-fuente-base: 16px;
-$tamano-fuente-pequeno: 12px;
-$tamano-fuente-mediano: 14px;
-$tamano-fuente-grande: 20px;
-$tamano-fuente-enorme: 24px;
-$linea-altura-base: 1.6;
-$linea-altura-titulo: 1.2;
-$peso-fuente-normal: 400;
-$peso-fuente-negrita: 700;
+$color-texto-productos: rgb(204, 204, 204);
+$color-fondo-tabla-personalizada: rgb(204, 229, 255);
+$color-texto-login: rgb(208, 208, 208);
+$color-fondo-footer: rgb(220, 225, 222);
+$color-bordes-tabla: rgb(221, 221, 221);
+$color-fondo-ubicacion: rgba(222, 219, 219, 0.907);
+$color-hover-contenedor-equipo: rgb(230, 230, 230); 
+$color-fondo-ubicacion-item: rgba(225, 226, 231, 0.965);  
+$color-texto-servicios: rgb(236, 240, 241);
+$color-texto-label: rgb(224, 224, 224);
+$color-fondo-contactos: rgb(240, 240, 240);
+$color-titulo-login: rgb(242, 242, 242);
+$color-fondo-carousel: rgb(245, 245, 245);
+$color-fondo-noticia: rgb(248, 248, 248);
+$color-fondo-formulario: rgb(249, 249, 249);
+$color-fondo-tabla-grupos: rgb(250, 250, 250); 
 
-// Espaciado
-$espaciado-extra-pequeno: 4px;
-$espaciado-pequeno: 8px;
-$espaciado-mediano: 16px;
-$espaciado-grande: 24px;
-$espaciado-extra-grande: 32px;
-$margen-auto: 0 auto;
-$padding-contenedor-principal: 20px;
-$padding-sidebar: 15px;
-$ancho-sidebar: 250px;
-$ancho-maximo-contenedor-principal: 900px;
-$altura-header: 60px;
-$margen-header: 0 auto;
-$padding-header: 0 20px;
-$padding-footer: 10px;
-$padding-enlace: 5px 10px;
+$color-texto-cabecera1: rgb(85, 85, 85);
+$color-texto-grupos: rgb(102, 102, 102);
+$color-texto-pie: rgb(119, 119, 119);
 
-// Bordes y sombras
-$radio-borde-pequeno: 4px;
-$radio-borde-mediano: 8px;
-$radio-borde-grande: 12px;
-$borde-ancho-pequeno: 1px;
-$borde-ancho-mediano: 2px;
-$borde-ancho-grande: 4px;
-$sombra-ligera: 0 1px 3px rgba(0, 0, 0, 0.12);
-$sombra-media: 0 4px 6px rgba(0, 0, 0, 0.16);
-$sombra-pesada: 0 10px 20px rgba(0, 0, 0, 0.19);
+$color-input-placeholder: rgb(153, 153, 153);
+$color-body-fondo: rgb(163, 177, 138);
 
-// Transiciones y animaciones
-$transicion-rapida: 0.2s ease-in-out;
-$transicion-normal: 0.3s ease-in-out;
-$transicion-lenta: 0.5s ease-in-out;
+$color-hover-fixture: rgba(44, 130, 201, 0.1); 
+$color-titulo-fixture: rgb(47, 47, 48);  
+$color-body-texto: rgb(51, 51, 51);
+$color-fondo-productos: rgb(53, 79, 82);
+$color-texto-ubicaciones: rgb(57, 60, 64);
+$color-fondo-login: rgb(58, 90, 64);
 
-// Tamaños de contenedores
-$ancho-maximo-contenedor: 1200px;
-$ancho-maximo-contenedor-mediano: 960px;
-$ancho-maximo-contenedor-pequeno: 720px;
-$ancho-maximo-contenedor-extra-pequeno: 540px;
+$color-nav-fondo-menu-ul: rgba(11, 11, 11, 0.9);
+$color-nav-fondo: rgb(11, 11, 11);
+$color-input-login: rgb(12, 12, 12);
+$color-contenedor-vs: rgb(14, 14, 15);
+$color-titulo-reserva: rgb(26, 26, 26);
+$color-fondo-contenedor-login: rgb(31, 43, 49);
+$color-fondo-tarjeta-productos: rgb(34, 34, 34);
+$color-fondo-hero: rgba(34, 34, 34, 0.6);
+$color-fondo-aside: rgb(36, 41, 42);
+$color-texto-grupos-tabla: rgb(36, 35, 35);
 
-// Botones
-$boton-padding-pequeno: 4px 8px;
-$boton-padding-mediano: 8px 16px;
-$boton-padding-grande: 12px 24px;
-$boton-color-fondo: $color-azul;
-$boton-color-fondo-hover: $color-azul-oscuro;
-$boton-color-texto: $color-blanco;
-$boton-borde-radio: $radio-borde-mediano;
-$boton-borde-ancho: $borde-ancho-pequeno;
-$boton-borde-color: transparent;
+$color-hover-boton-reservar: rgb(0, 86, 179);
+$color-hover-boton: rgb(0, 100, 220);   
+$color-boton-noticia: rgb(0, 120, 255);  
+$color-boton-cancelar: rgb(0, 123, 255);
+$color-hover-link: rgb(13, 71, 161);
+$color-checkbox: rgb(33, 150, 243);
+$color-titulo-etapa: rgb(44, 130, 201); 
 
-// Formularios
-$input-padding: 8px 12px;
-$input-borde-color: $color-gris-medio;
-$input-borde-radio: $radio-borde-pequeno;
-$input-borde-ancho: $borde-ancho-pequeno;
-$input-sombra-focus: 0 0 5px rgba(0, 123, 255, 0.25);
-$label-color: $color-gris-oscuro;
-$label-font-size: $tamano-fuente-base;
+$color-bordes-input: rgb(131, 11, 131);
 
-// Cabeceras
-$cabecera-altura: 60px;
-$cabecera-padding: $espaciado-mediano;
-$cabecera-color-fondo: $color-azul-oscuro;
-$cabecera-color-texto: $color-blanco;
+$color-hover-a-mapa: rgb(211, 47, 47);
+$color-boton-enviar: rgb(220, 53, 69);
+$color-reserva-mapa: rgb(230, 76, 60);
+$color-subtitulo-ubicaciones: rgb(230, 78, 61); 
+$color-titulo-productos: rgb(231, 76, 60);
+$color-fondo-boton-hero: rgb(255, 34, 84);
+$color-hover-fondo-buton: rgb(255, 85, 102);
+$color-date-noticia: rgb(226, 26, 26); 
 
-// Pies de página
-$pie-padding: $espaciado-grande;
-$pie-color-fondo: $color-gris-oscuro;
-$pie-color-texto: $color-blanco;
+$color-fondo-contenedor-equipo-ganador: rgb(166, 223, 154);  
+$color-borde-contenedor-equipo-ganador: rgb(112, 191, 87);  
+$color-fondo-hover-contenedor-equipo-ganador: rgb(146, 208, 80); 
+$color-borde--hover-contenedor-equipo-ganador: rgb(88, 166, 0);
 
-// Contenedores cuadrados "Tarjetas"
-$tarjeta-padding: $espaciado-mediano;
-$tarjeta-margen: $espaciado-mediano;
-$tarjeta-color-fondo: $color-blanco;
-$tarjeta-borde-color: $color-gris-claro;
-$tarjeta-borde-radio: $radio-borde-mediano;
-$tarjeta-sombra: $sombra-ligera;
+$color-fondo-contenedor-equipo-perdedor: rgb(224, 192, 192);   
+$color-borde-contenedor-equipo-perdedor: rgb(191, 109, 109); 
+$color-fondo-hover-contenedor-equipo-perdedor: rgb(214, 161, 161);  
+$color-borde-hover-contenedor-equipo-perdedor: rgb(166, 66, 66);  
 
-// Breakpoints para diseño responsivo
-$breakpoint-xs: 480px;
-$breakpoint-sm: 768px;
-$breakpoint-md: 992px;
-$breakpoint-lg: 1200px;
-$breakpoint-xl: 1400px;
+
+//Sombras 
+$sombras-box-formulario: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+$sombras-box-placeholder: 0 0 5px rgba(0, 0, 0, 0.1);
+$sombras-local-detallado: 0 0 10px rgba(0, 0, 0, 0.1);
+$sombras-box-item-ubicaciones: 0 0 15px rgba(0, 0, 0, 0.1);
+$sombras-box-ubicaciones: 0px 0px 20px rgba(0, 0, 0, 0.1);
+$sombras-box-pie: 0 -2px 4px rgba(0, 0, 0, 0.1);
+$sombras-box-contenedor-torneo: 0 2px 4px rgba(0, 0, 0, 0.1);
+$sombras-productos: 0 4px 8px rgba(0, 0, 0, 0.1); 
+$sombras-contenedor-torneo: 0 4px 12px rgba(0, 0, 0, 0.1);
+$sombras-box-contenedor-equipo-ganador: 0 4px 8px rgba(0, 0, 0, 0.2); 
+$sombras-nav-menu-ul: 0px 2px 5px rgba(0, 0, 0, 0.2);
+$sombras-hover-productos: 0 6px 12px rgba(0, 0, 0, 0.2);
+$sombras-box-contenedor-tabla: 0 6px 18px rgba(0, 0, 0, 0.2);  
+$sombras-box-contenedor: 0px 2px 10px rgba(0, 0, 0, 0.2);
+$sombras-box-servicios: 0 8px 16px rgba(0, 0, 0, 0.2);
+$sombras-box-carousel: 0 0 10px rgba(0, 0, 0, 0.3);
+$sombras-box-hero: 0px 4px 10px rgba(0, 0, 0, 0.3);
+$sombras-titulo-hero: 2px 2px 4px rgba(0, 0, 0, 0.7);
+$sombras-texto-boton-hero: 1px 1px 2px rgba(0, 0, 0, 0.8); 
+$sombras-texto-hero: 2px 2px 4px rgba(0, 0, 0, 0.8);
+$sombras-textarea-focus: 0 0 5px rgba(128, 0, 128, 0.5);
+
+
+// Tipografia 
+$fuente-principal: 'Roboto';
+
+$altura-minima-vh: 100vh; 
+
+$altura-linea-body: 1.6;                        // "Altura-line = line-height "
+$altura-linea-footer: 1.3; 
+
+$tamano-fuente-18: 18px;
+
+$grosor-fuente-600: 600;                        // "Grosor-fuente = font-weight "
+$grosor-fuente-700: 700;                
+
+$tamano-fuente-rem-0-9: 0.9rem;
+$tamano-fuente-rem-1-1: 1.1rem;
+$tamano-fuente-rem-1-2: 1.2rem;
+$tamano-fuente-rem-1-4: 1.4rem;
+$tamano-fuente-rem-1-5: 1.5rem;
+$tamano-fuente-rem-1-8: 1.8rem;
+$tamano-fuente-rem-2-5: 2.5rem;
+$tamano-fuente-rem-3: 3rem;
+
+$espaciado-letra-0-5: 0.5px;                      // "Espacio-letra = letter-spacing "
+$espaciado-letra-1: 1px;                      
+$espaciado-letra-2: 2px;                
+
+
+// Tamaños
+$ancho-45: 45px;
+$ancho-50: 50%;
+$ancho-100: 100%;
+
+$alto-100: 100%;
+
+$relleno-20: 20px;
+$relleno-30: 30px;
+$relleno-10-15: 10px 15px;
+$relleno-10-20: 10px 20px;
+$relleno-15-10: 15px 10px;
+$relleno-25-10: 25px 10px;
+$relleno-50-20: 50px 20px;
+$relleno-60-30: 60px 30px;
+$relleno-100-20: 100px 20px;
+
+$alto-vh-74: 74vh;
+
+$alto-45: 45px;
+$alto-85: 85px;
+
+$superior-87: 87px;                     // "Superior = top "
+$superior-50: 50px;
+
+$izquierda-0: 0;                        // "Izquierda = left " 
+$izquierda-50: 50px;
+
+$margen-izquierdo-20: 20px;
+
+$margen-derecho-20: 20px;
+
+$margen-superior-10: 10px;
+$margen-superior-18: 18px;
+$margen-superior-15: 15px;
+
+$margen-inferior-10: 10px;
+$margen-inferior-15: 15px;
+$margen-inferior-20: 20px;
+$margen-inferior-40: 40px;
+$margen-inferior-50: 50px;
+
+
+$espacio-20: 20px;                          // "Espacio = gap"
+$espacio-30: 30px;
+$espacio-40: 40px;
+
+$redondear-5: 5px;                          // "Redondear = border-radius"  
+$redondear-8: 8px;  
+$redondear-10: 10px;  
+$redondear-15: 15px;
+
+
+// Anchos máximos
+$ancho-maximo-100: 100%;
+
+$ancho-maximo-300: 300px;
+$ancho-maximo-600: 600px;
+$ancho-maximo-800: 800px;
+$ancho-maximo-1000: 1000px;
+
+// Z-Index
+$z-index-100: 100;
+
+// Alineaciones
+$flex: flex;
+$space-between: space-between;
+$center: center;
+$relative: relative;
+$absolute: absolute;
+$none: none;
+$column: column;
+$no-repeat: no-repeat;
+$cover: cover;
+$auto: auto;
+$inline-block: inline-block;
+$wrap: wrap;
+$space-evenly: space-evenly;
+$row: row;
+
+// Transiciones
+$transition-background-menu-link: background-color 0.2s ease;
+$transition-background-boton-index: background 0.3s ease-in-out;
+
+$transition-transform-index-servicio: transform 0.3s ease;
+$transition-transform-index-producto: transform 0.3s ease-in-out;
+
+$transition-box-sombra-index-servicio: box-shadow 0.3s ease;
+
+$transform-translate-index-producto: translateY(-5px);
+
+$transform-zoom-index-servicio:  scale(1.05);           // Efecto de zoom suave al pasar el cursor
+
+// Otros
+$pointer: pointer;                    
+$uppercase: uppercase; 
+$inherit: inherit;                                      // Hereda el mismo que el padre

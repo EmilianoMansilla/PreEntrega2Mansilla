@@ -1,0 +1,1023 @@
+/* NAVEGADOR */
+.logo-nav {
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+nav {
+    width: $ancho-100;
+    background-color: $color-nav-fondo;
+    padding: 25px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 85px;
+}
+
+.menu-items {
+    margin-right: 20px;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.icono-nav {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+// FOOTER
+footer {
+    background: $color-fondo-footer;
+    text-align: center;
+    padding: 20px;
+}
+
+/* INDEX*/
+.hero {
+    height: 74vh;
+    background-image: url(../assets/img/imagen6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: $color-blanco;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: $color-fondo-hero;
+    box-shadow: $sombras-box-hero;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* SECCION PRODUCTOS */
+.productos {
+    background: $color-fondo-productos;
+    padding: 50px 20px;
+    text-align: center;
+    color: $color-blanco;
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.producto {
+    background: $color-fondo-tarjeta-productos;
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1 1 300px;                                   /* Ancho flexible para todos los productos */
+    max-width: $ancho-maximo-100;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: $sombras-productos;                     /* Sombra suave */
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: $sombras-hover-productos;
+}
+
+/* SECCION SERVICIOS */
+.servicios {
+    background: $color-fondo-productos;
+    padding: 60px 30px;
+    text-align: center;
+    color: $color-texto-servicios;
+}
+
+.servicios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.servicio {
+    background: $color-fondo-tarjeta-productos;
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1 1 250px;
+    max-width: $ancho-maximo-300;
+    box-shadow: $sombras-productos;       /* Sombra sutil */
+    transition: box-shadow 0.3s ease;
+}
+
+.servicio:hover {
+    box-shadow: $sombras-box-servicios;
+}
+
+/* ASIDE */
+aside {
+    background: $color-fondo-aside;
+    height: 350px;
+    width: 130px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition: background 1s, height 0.5s, width 0.4s;
+}
+
+aside:hover {
+    height: 370px;
+    width: 140px;
+}
+
+aside img {
+    width: 40px;
+    margin-left: 14px;
+    margin-top: 9px;
+    transition: height 0.2s, width 0.3s;
+}
+
+aside img:hover {
+    width: 57px;
+}
+
+.redes_sociales {
+    margin-top: 10px;
+}
+
+/* WHATSAPP ICONO*/
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: $z-index-100;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-icon img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.whatsapp-icon img:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-icon-index {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: $z-index-100;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-icon-index img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.whatsapp-icon-index img:hover {
+    transform: scale(1.1);
+}
+
+/* LOGIN*/
+.login-main {
+    display: flex;
+    flex-direction: column;
+    min-height: $altura-minima-vh;                  // Altura minima de un elemento
+}
+
+.login-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-fondo-login;
+    padding: 20px;
+}
+
+.login-container {
+    background: $color-fondo-contenedor-login;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px $sombras-box-contenedor;
+    max-width: 400px;
+    width: $ancho-100;
+    text-align: center;
+}
+
+.login-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.login-form label {
+    display: block;
+    color: $color-texto-label;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid $color-body-texto;
+    font-size: 1rem;
+    background: $color-texto-label;
+    color: $color-input-login;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: $color-fondo-boton-hero;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: calc(100% - 20px);
+    margin-right: 20px;
+}
+
+/* FORMULARIO */
+.form-registrarme {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: $color-fondo-formulario;
+    border-radius: 10px;
+    box-shadow: $sombras-box-formulario;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.form-registrarme label {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 3px;
+    margin-left: 25px;
+    font-size: 1rem;
+    text-align: left;
+    width: calc(90% - 20px);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+input[type="date"],
+input[type="file"] {
+    width: calc(90% - 20px);
+    padding: 12px;
+    border: 1px solid $color-texto-productos;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+input[type="color"] {
+    width: calc(45% - 40px);
+    padding: 3px;
+    margin-bottom: 20px;
+    border: 1px solid $color-texto-productos;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 25px;
+    font-size: 1rem;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="number"]::placeholder {
+    color: $color-input-placeholder;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+input[type="date"],
+input[type="file"] {
+    box-shadow: $sombras-box-placeholder;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    color: $color-blanco;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: $color-boton-enviar;
+}
+
+input[type="reset"] {
+    background-color: $color-boton-cancelar;
+    font-size: 1rem;
+}
+
+.botones-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.terminos-container {
+    display: flex;
+    align-items: center;
+}
+
+label[for="terminos"] {
+    font-size: 0.9rem;
+}
+
+/* Estilo para el checkbox y su etiqueta */
+input[type="checkbox"] {
+    appearance: none;             /* Oculta el estilo nativo del checkbox */
+    width: 20px;
+    height: 20px;
+    border: 1px solid $color-texto-productos;
+    border-radius: 3px;
+    cursor: pointer;
+    vertical-align: middle;
+    position: relative;
+    margin-right: 10px;
+}
+
+label[for="terminos"] {
+    font-size: 0.9rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+    margin-left: 0px;
+    margin-top: -2px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: $color-checkbox;
+}
+
+/* Estilo para el cuadradito de checkbox */
+input[type="checkbox"]::after {
+    content: '\2714';                  /* Para el tick */
+    font-size: 16px;
+    color: $color-blanco;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked::after {
+    opacity: 1;
+}
+
+label[for="terminos"] {
+    font-size: 0.9rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.descargar-reglas {
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.sexo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    width: 90%;
+}
+
+
+.sexo-container label {
+    font-size: 1rem;
+    color: $color-body-texto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sexo-container input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.form-registrarme textarea {
+    width: calc(90% - 20px);
+    padding: 12px;
+    border: 1px solid $color-texto-productos;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+    margin: 10px auto;
+    font-size: 1rem;
+    resize: vertical;                    /* Permite que el textarea sea redimensionable verticalmente */
+}
+
+.form-registrarme textarea::placeholder {
+    color: $color-input-placeholder;
+}
+
+.form-registrarme textarea:focus {
+    outline: none;                      /* Elimina el borde de enfoque predeterminado */
+    border-color: $color-bordes-input;
+    box-shadow: $sombras-textarea-focus;
+}
+
+/* RESERVAS ONLINE */
+.local-detallado {
+    margin-bottom: 40px;
+    background-color: $color-blanco;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: $sombras-local-detallado;
+}
+
+.detalles-local {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.detalles-local img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+article {
+    flex: 1;
+}
+
+article label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+article input[type=date] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid $color-texto-productos;
+    border-radius: 4px;
+    width: 70%;
+    max-width: 300px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Estilos para el Carrusel de Locales */
+.section-carousel {
+    margin-bottom: 40px;
+    background-color: $color-blanco;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel .local-slide {
+    background-color: $color-fondo-carousel;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: $sombras-box-carousel;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.local-imagen {
+    display: none;
+}
+
+/* TORNEOS */
+.tabla-personalizada {
+    width: $ancho-100;
+    border-collapse: collapse;
+    border: 1px solid $color-bordes-tabla;
+    background-color: $color-blanco;
+    margin: auto;
+    max-width: $ancho-maximo-100;                  /* Ajuste para evitar desbordamiento */
+    table-layout: fixed;                           /* Fijar el ancho de la tabla para mejor control en movil */
+    text-align: center;
+}
+
+.cabecera-tabla,
+.celda-tabla {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid $color-bordes-tabla;
+    white-space: nowrap;
+    overflow: hidden;                             /* Ocultar el texto que desborda */
+}
+
+.cabecera-tabla {
+    background-color: $color-titulo-login;
+    font-weight: bold;
+    color: $color-body-texto;
+    font-size: 14px;
+}
+
+.celda-tabla {
+    background-color: $color-blanco;
+}
+
+.cabecera-tabla:first-child,
+.celda-tabla:first-child {
+    width: 8%;
+}
+
+.cabecera-tabla:nth-child(2),
+.celda-tabla:nth-child(2) {
+    width: 25%;
+}
+
+.cabecera-tabla:nth-child(3),
+.celda-tabla:nth-child(3) {
+    width: 10%;
+}
+
+.cabecera-tabla:nth-child(4),
+.celda-tabla:nth-child(4) {
+    width: 8%;
+}
+
+.cabecera-tabla:nth-child(5),
+.celda-tabla:nth-child(5) {
+    width: 7%;
+}
+
+.cabecera-tabla:nth-child(6),
+.celda-tabla:nth-child(6) {
+    width: 7%;
+}
+
+.tabla-personalizada tbody tr:hover {
+    background-color: $color-fondo-tabla-personalizada;
+    cursor: pointer;
+}
+
+.cabecera-tabla:first-child,
+.celda-tabla:first-child {
+    width: 10%;
+    text-align: center;
+    position: relative;
+}
+
+.cabecera-tabla:first-child::before,
+.celda-tabla:first-child::before {
+    display: block;
+    color: $color-texto-cabecera1;
+    font-size: 11px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7px;
+}
+
+/* TORNEOS */
+.contenedor-torneo {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $color-fondo-carousel;
+    border-radius: 12px;
+    box-shadow: $sombras-contenedor-torneo;
+}
+
+.contenedor-torneo .torneo {
+    background-color: $color-blanco;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: $sombras-box-contenedor-torneo;
+    margin-bottom: 20px;
+}
+
+.contenedor-torneo .torneo img {
+    display: block;
+    max-width: $ancho-maximo-100;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.redes-contactos-torneos {
+    background-color: $color-fondo-contactos;
+    margin-top: 20px;
+}
+
+.redes-sociales-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.red-social {
+    transition: transform 0.3s ease-in-out;
+}
+
+.red-social img {
+    width: 40px;
+    height: 40px;
+}
+
+.red-social:hover {
+    transform: scale(1.2);                                  /* Aumenta el tamaño del ícono al hacer hover */
+}
+
+.contenedor-tabla {
+    overflow-x: auto;
+    margin-top: 20px;
+    background-color: $color-blanco;
+    padding: auto;
+    border-radius: 10px;
+    box-shadow: $sombras-box-contenedor-torneo;             /* Sombra más pronunciada para profesionalismo */
+    transition: box-shadow 0.3s ease-in-out;                /* Transición para el hover */
+}
+
+.contenedor-tabla:hover {
+    box-shadow: $sombras-box-contenedor-tabla;              /* Sombra más pronunciada al hacer hover */
+}
+
+.caption-torneos {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    color: $color-body-texto;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    background-color: $color-titulo-login;
+    border-radius: 10px;
+    box-shadow: $sombras-box-contenedor-torneo;
+}
+
+.pie {
+    text-align: center;
+    font-size: 1rem;
+    color: $color-texto-pie;
+    padding: 10px;
+    background-color: $color-titulo-login;
+    border-radius: 10px;
+    box-shadow: $sombras-box-pie;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: $ancho-50;
+}
+
+/* GRUPOS */
+.grupos-container {
+    max-width: $ancho-100;
+    margin: 0 auto;
+    padding: 6px;
+    background-color: $color-fondo-formulario;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.tabla-grupos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+.tabla-grupos th,
+.tabla-grupos td {
+    padding: 4px;
+    text-align: center;
+    border: 1px solid $color-bordes-tabla;
+    font-size: 11px;
+    background-color: $color-blanco; 
+    transition: background-color 0.3s ease;                 /* Transición suave del color de fondo */
+}
+
+.tabla-grupos th {
+    background-color: $color-fondo-contactos;
+    color: $color-body-texto;
+    width: 30px;
+    max-width: 25px;
+}
+
+.tabla-grupos td {
+    color: $color-texto-cabecera1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tabla-grupos tr:hover td {
+    background-color: $color-fondo-tabla-personalizada;       /* Cambia el color de fondo de las celdas al pasar el cursor */
+    cursor: pointer;
+}
+
+.cabecera-tabla-grupos {
+    background-color: $color-fondo-contactos;   
+    color: $color-body-texto;                 
+    font-weight: bold;                      
+    text-align: center;                    
+    padding: 15px;                         
+    border: 1px solid $color-bordes-tabla;  
+    font-size: 15px;                       
+    overflow: hidden;
+    white-space: nowrap;                                     /* Evitar salto de línea */
+}
+
+/* FIXTURE */
+.article-section {
+    background-color: $color-fondo-carousel;       
+    padding: 20px;
+    box-shadow: $sombras-local-detallado;                   /* Sombra suave */
+    border-radius: 8px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.torneo-container-fixture {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+    align-content: center;
+}
+
+.etapa {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: $color-blanco;      
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.partido-container {
+    padding: 15px;
+    border-radius: 5px;
+    width: $ancho-100;
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: $color-hover-contenedor-equipo;       
+    margin-bottom: 60px;
+}
+
+.equipo-container {
+    padding: 8px;
+    background-color: $color-fondo-carousel;      
+    border-radius: 4px;
+    cursor: pointer;                           
+    transition: background-color 0.3s ease;
+}
+
+.equipo-container:hover {
+    background-color: $color-hover-contenedor-equipo;     
+}
+
+.campeon-container {
+    height: auto;                                       /* Altura automática para adaptarse al contenido */
+    max-width: $ancho-maximo-100;
+    overflow: hidden;                                   /* Ocultar cualquier parte de la imagen que se desborde */
+}   
+
+.campeon-container img {
+    width: $ancho-maximo-100;
+    height: auto;                                       /* Altura automática para mantener la proporción */
+    display: block;                                     /* Ajustar correctamente el espacio de línea */
+    margin: 0 auto;                                     /* Centrar la imagen horizontalmente */
+    max-height: 250px;
+}
+
+.equipo-container.winner1 {
+    background-color: $color-fondo-contenedor-equipo-ganador;           
+    border: 1px solid $color-borde-contenedor-equipo-ganador;            
+    box-shadow: $sombras-box-contenedor-torneo;     
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;       /* Transiciones suaves */
+}
+
+.equipo-container.winner1:hover {
+    background-color: $color-fondo-hover-contenedor-equipo-ganador;            
+    border-color: $color-borde--hover-contenedor-equipo-ganador;                 
+    box-shadow: $sombras-box-contenedor-equipo-ganador;       /* Sombra más pronunciada al pasar por encima */
+}
+
+.equipo-container.winner2 {
+    background-color: $color-fondo-contenedor-equipo-perdedor;           
+    border: 1px solid $color-borde-contenedor-equipo-perdedor;           
+    box-shadow: $sombras-box-contenedor-torneo;       
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;       /* Transiciones suaves */
+}
+
+.equipo-container.winner2:hover {
+    background-color: $color-fondo-hover-contenedor-equipo-perdedor;           
+    border-color: $color-borde-hover-contenedor-equipo-perdedor;                 
+    box-shadow: $sombras-box-contenedor-equipo-ganador;      
+}
+
+/* INICIO */
+.inicio-section-container {
+    background-color: $color-fondo-carousel; 
+    padding: 20px; 
+    border-radius: 8px; 
+    text-align: center; 
+    box-shadow: $sombras-box-contenedor-torneo;           /* Sombra para efecto de elevación */
+    margin-top: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px; 
+    margin-top: 20px; 
+}
+
+.columna-1, .columna-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.articulo-noticia {
+    background-color: $color-fondo-noticia;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: $sombras-box-contenedor-torneo;                 /* Sombra ligera para resaltar */
+    width: $ancho-100;                                          /* Asegurar que el artículo tome todo el ancho disponible */
+}
+
+.foto-noticias {
+    width: $ancho-100;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;                                          /* Ajusta el tamaño de la imagen */
+}
+
+.date-noticias {
+    color: $color-blanco;                      
+    font-size: 12px;                  
+    font-weight: bold;                                           /* Texto en negrita */
+    text-transform: uppercase;                                   /* Convertir el texto a mayúsculas */
+    background-color: $color-date-noticia;             
+    padding: 6px 12px;               
+    border-radius: 4px;               
+    display: inline-block;                                        /* Mostrar en línea */
+    box-shadow: $sombras-box-contenedor-torneo;                   /* Sombra suave */
+    margin-top: 5px;
+}
+
+.columna-1 .articulo-noticia, .columna-2 .articulo-noticia {        /* Estilos específicos para columnas */
+    align-items: center;
+    text-align: center; 
+    padding: 14px; 
+}
+
+.columna-1 .footer-noticias, .columna-2 .footer-noticias {
+    display: flex;
+    gap: 10px;
+}
+
+/* ASIDE - INICIO */
+.aside-inicio {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: $color-titulo-login;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 360px;
+    width: $ancho-100;
+    height: $alto-100;
+}
+
+.aside-inicio article {
+    margin-bottom: 20px;
+}
+
+.redes-sociales-container-inicio {
+    display: flex;
+    justify-content: center;                                /* Centrar horizontalmente */
+    margin-top: 5px; 
+    margin-bottom: 20px;
+    margin-left: -15px;
+}
+
+.redes-sociales-container-inicio a img {
+    width: 29px;
+    height: 29px;
+    display: block;
+}
+
+/* UBICACIONES */
+.main-ubicaciones {
+    text-align: center;
+    background-color: $color-blanco;
+}
+
+.mapa-grande {
+    position: relative;
+    width: 90%; 
+    height: 350px;
+    margin: 15px auto;
+    border: 2px solid $color-texto-productos; 
+    border-radius: 15px; 
+    box-shadow: $sombras-productos; 
+}
+
+.mapa-grande iframe {
+    width: $ancho-100;
+    height: $alto-100;
+    border: none;
+}
+
+.ubicaciones-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.ubicacion-item {
+    width: 300px; 
+    background-color: $color-fondo-ubicacion-item;                   /* Fondo gris claro con transparencia */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: $sombras-box-item-ubicaciones;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.mapa {
+    text-align: center; 
+}
+
+.mapa .reserva-ubicaciones {
+    display: block;                                         /* Convierte el botón en un bloque */
+    padding: 10px 16px; 
+    text-decoration: none;
+    color: $color-blanco;
+    background-color: $color-reserva-mapa;
+    border: 2px solid $color-titulo-productos;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 14px; 
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer; 
+}
+
+.mapa .reserva-ubicaciones:hover,
+.mapa .reserva-ubicaciones:visited {                        /* Aplica el mismo estilo cuando se ha visitado el enlace */
+    background-color: $color-hover-a-mapa; 
+    border-color: $color-fondo-boton-hero;
+    color: $color-blanco; 
+}
