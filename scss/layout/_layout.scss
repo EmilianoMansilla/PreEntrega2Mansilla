@@ -1021,3 +1021,113 @@ article input[type=date] {
     border-color: $color-fondo-boton-hero;
     color: $color-blanco; 
 }
+
+// UBICACIONES 
+.app-hero-container {
+    padding: 20px 0;
+    background-color: $color-blanco;
+    width: $ancho-100;
+    text-align: center;
+}
+
+.app-hero-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.app-hero-menu-item {
+    font-size: 14px;
+    font-weight: 500;
+    color: $color-texto-item-ubicaciones;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.app-hero-menu-item:hover {
+    color: $color-hover-item-ubicaciones;
+}
+
+.app-hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    gap: 30px;
+}
+
+.app-hero-content-container .app-hero-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: $color-titulo-ubicaciones;
+    margin-bottom: 15px;
+}
+
+.app-hero-content-container .app-hero-description {
+    font-size: 14px;
+    color: $color-texto-item-ubicaciones;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.app-hero-botones-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.app-hero-footer-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.app-hero-footer-logos .app-hero-linea {
+    height: 1px;
+    width: $ancho-50;
+    background-color: $color-negro;
+    margin-top: 5px;
+}
+
+.app-hero-imagen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.app-hero-imagen-container .app-hero-imagen,
+.app-hero-imagen-container .app-hero-imagen-flotante,
+.app-hero-imagen-container .app-hero-imagen-flotante-apple,
+.app-hero-imagen-container .app-hero-imagen-flotante-android {
+    max-width: $ancho-maximo-100;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.app-container-center {
+    padding: 0 10px;
+    max-width: $ancho-maximo-1152;
+    margin: 0 auto;
+}
+
+.app-hero-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.app-hero-logo img {
+    width: 160px;
+    height: 64px;
+}
+
+.app-hero-menu {
+    display: none;
+}

@@ -23,6 +23,7 @@ $color-fondo-formulario: rgb(249, 249, 249);
 $color-fondo-tabla-grupos: rgb(250, 250, 250); 
 
 $color-texto-cabecera1: rgb(85, 85, 85);
+$color-texto-item-ubicaciones: rgb(92, 101, 116);
 $color-texto-grupos: rgb(102, 102, 102);
 $color-texto-pie: rgb(119, 119, 119);
 
@@ -40,6 +41,7 @@ $color-nav-fondo-menu-ul: rgba(11, 11, 11, 0.9);
 $color-nav-fondo: rgb(11, 11, 11);
 $color-input-login: rgb(12, 12, 12);
 $color-contenedor-vs: rgb(14, 14, 15);
+$color-titulo-ubicaciones: rgb(16, 26, 36);
 $color-titulo-reserva: rgb(26, 26, 26);
 $color-fondo-contenedor-login: rgb(31, 43, 49);
 $color-fondo-tarjeta-productos: rgb(34, 34, 34);
@@ -62,6 +64,10 @@ $color-boton-enviar: rgb(220, 53, 69);
 $color-reserva-mapa: rgb(230, 76, 60);
 $color-subtitulo-ubicaciones: rgb(230, 78, 61); 
 $color-titulo-productos: rgb(231, 76, 60);
+$color-boton-ubicaciones: rgb(234, 109, 39);
+$color-hover-item-ubicaciones: rgb(235, 110, 38);
+$color-fondo-hover-boton-ubicaciones: rgb(235, 150, 90);
+$color-fondo-boton-app: rgb(255, 69, 0);
 $color-fondo-boton-hero: rgb(255, 34, 84);
 $color-hover-fondo-buton: rgb(255, 85, 102);
 $color-date-noticia: rgb(226, 26, 26); 
@@ -98,6 +104,7 @@ $sombras-box-hero: 0px 4px 10px rgba(0, 0, 0, 0.3);
 $sombras-titulo-hero: 2px 2px 4px rgba(0, 0, 0, 0.7);
 $sombras-texto-boton-hero: 1px 1px 2px rgba(0, 0, 0, 0.8); 
 $sombras-texto-hero: 2px 2px 4px rgba(0, 0, 0, 0.8);
+$sombra-boton-ubicaciones: 0px 15px 30px rgba(0, 0, 0, 0.15);
 $sombras-textarea-focus: 0 0 5px rgba(128, 0, 128, 0.5);
 
 
@@ -183,6 +190,7 @@ $redondear-15: 15px;
 
 // Anchos máximos
 $ancho-maximo-100: 100%;
+$ancho-maximo-1152: 1152px; 
 
 $ancho-maximo-300: 300px;
 $ancho-maximo-600: 600px;

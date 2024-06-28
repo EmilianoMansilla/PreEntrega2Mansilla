@@ -540,3 +540,21 @@ article ul li {
   color: $color-hover-a-mapa;
 }
 
+// UBICACIONES 
+.app-hero-container h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: $color-titulo-ubicaciones;
+  margin-bottom: 15px;
+}
+
+.app-hero-menu-item a {
+  text-decoration: none;
+  color: $color-texto-item-ubicaciones;
+  transition: color 0.3s ease;
+}
+
+.app-hero-menu-item a:hover {
+  color: $color-hover-item-ubicaciones;
+}
+
