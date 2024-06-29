@@ -1,0 +1,63 @@
+.hero {
+    height: 74vh;
+    background-image: url(../assets/img/imagen6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: $color-blanco;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: $color-fondo-hero;
+    box-shadow: $sombras-box-hero;
+  
+    .hero-content {
+      max-width: 600px;
+      margin: auto;
+    }
+  
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: $sombras-box-hero;
+    }
+  
+    p {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      text-shadow: $sombras-titulo-hero;
+    }
+  
+    .button-index-hero {
+      font-size: 1.2rem;
+      text-shadow: $sombras-texto-boton-hero;         /* Sombra de texto */
+  
+      display: inline-block;
+      padding: 10px 20px;
+      color: $color-blanco;
+      background: $color-fondo-boton-hero;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease-in-out;
+  
+      &:hover {
+        background: rgb(255, 85, 102);
+      }
+    }
+  }
+  
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: $color-blanco;
+    background: $color-fondo-boton-hero;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+  
+    &:hover {
+      background: $color-hover-fondo-buton;
+    }
+  }
+

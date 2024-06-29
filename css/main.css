@@ -542,6 +542,23 @@ article ul li {
   color: rgb(211, 47, 47);
 }
 
+.app-hero-container h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(16, 26, 36);
+  margin-bottom: 15px;
+}
+
+.app-hero-menu-item a {
+  text-decoration: none;
+  color: rgb(92, 101, 116);
+  transition: color 0.3s ease;
+}
+
+.app-hero-menu-item a:hover {
+  color: rgb(235, 110, 38);
+}
+
 .button-index-hero {
   font-size: 1.2rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Sombra de texto */
@@ -623,6 +640,37 @@ button:hover,
 
 .boton-noticia:hover {
   background-color: rgb(0, 100, 220);
+}
+
+.app-link-boton {
+  padding: 12px 14px;
+  border-radius: 12px 0 12px 0;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+  background-color: rgb(234, 109, 39);
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.app-link-boton.boton-secundario {
+  background-color: rgb(16, 26, 36);
+}
+
+.app-link-boton.boton-app {
+  background-color: rgb(255, 69, 0);
+}
+
+.app-link-boton:hover {
+  text-decoration: none;
+  background-color: rgb(235, 150, 90);
+}
+
+.contenedor-boton-windows {
+  margin-top: 50px;
+  margin-bottom: -30px;
 }
 
 /* NAVEGADOR */
@@ -1645,6 +1693,171 @@ article input[type=date] {
   background-color: rgb(211, 47, 47);
   border-color: rgb(255, 34, 84);
   color: rgb(255, 255, 255);
+}
+
+.app-hero-container {
+  padding: 20px 0;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  text-align: center;
+}
+
+.app-hero-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.app-hero-menu-item {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(92, 101, 116);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.app-hero-menu-item:hover {
+  color: rgb(235, 110, 38);
+}
+
+.app-hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  gap: 30px;
+}
+
+.app-hero-content-container .app-hero-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(16, 26, 36);
+  margin-bottom: 15px;
+}
+
+.app-hero-content-container .app-hero-description {
+  font-size: 14px;
+  color: rgb(92, 101, 116);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.app-hero-botones-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.app-hero-footer-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.app-hero-footer-logos .app-hero-linea {
+  height: 1px;
+  width: 50%;
+  background-color: rgb(0, 0, 0);
+  margin-top: 5px;
+}
+
+.app-hero-imagen-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.app-hero-imagen-container .app-hero-imagen,
+.app-hero-imagen-container .app-hero-imagen-flotante,
+.app-hero-imagen-container .app-hero-imagen-flotante-apple,
+.app-hero-imagen-container .app-hero-imagen-flotante-android {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.app-container-center {
+  padding: 0 10px;
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.app-hero-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.app-hero-logo img {
+  width: 160px;
+  height: 64px;
+}
+
+.app-hero-menu {
+  display: none;
+}
+
+.hero {
+  height: 74vh;
+  background-image: url(../assets/img/imagen6.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 100px 20px;
+  background-color: rgba(34, 34, 34, 0.6);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.hero .hero-content {
+  max-width: 600px;
+  margin: auto;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.hero p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.hero .button-index-hero {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Sombra de texto */
+  display: inline-block;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  background: rgb(255, 34, 84);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+.hero .button-index-hero:hover {
+  background: rgb(255, 85, 102);
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  background: rgb(255, 34, 84);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+button:hover {
+  background: rgb(255, 85, 102);
 }
 
 /*# sourceMappingURL=main.css.map */

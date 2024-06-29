@@ -2281,7 +2281,7 @@ article ul li {
 }
 
 /* APLICACION */
-@media (max-width: 360px) {
+@media (max-width: 360px) {         /* Pasar a _header el hero */  /* sacar el 360 que quede mismo en el css */
     .app-hero-container {
         padding: 20px 0;
         background-color: rgb(255, 255, 255);
@@ -2524,7 +2524,7 @@ article ul li {
         padding-top: 30px;
         padding-bottom: 90px;
         background-color: rgb(255, 255, 255);
-        width: 110%;
+        width: 100%;
     }
 
     .app-hero-section {
