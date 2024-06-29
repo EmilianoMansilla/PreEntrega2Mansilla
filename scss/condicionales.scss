@@ -1,0 +1,30 @@
+$condicion: false;  // Cambiar a false
+
+@if $condicion {
+// Codigo si la condicion es verdadera
+   .condicional {
+      color: red;
+   } 
+        
+} @else {
+// Codigo si la condicion es falsa 
+    .condicional {
+       color: blue;
+    } 
+}
+
+
+
+
+// bucle for para crear una clase para margenes
+@for $i from 1 through 10 {
+    .m-r#{$i} {                         // m-r = Margin Right
+        margin: $i * 10px;
+    }
+}
+
+@for $i from 1 through 10 {
+    .m-l#{$i} {                         // m-l = Margin Left
+        margin: $i * 20px;
+    }
+}
