@@ -405,6 +405,7 @@ aside img:hover {
     align-items: center;
     background: rgb(58, 90, 64);
     padding: 20px;
+    margin-bottom: 70px;
 }
 
 .login-container {
@@ -2281,7 +2282,7 @@ article ul li {
 }
 
 /* APLICACION */
-@media (max-width: 360px) {
+@media (max-width: 360px) {         /* Pasar a _header el hero */  /* sacar el 360 que quede mismo en el css */
     .app-hero-container {
         padding: 20px 0;
         background-color: rgb(255, 255, 255);
