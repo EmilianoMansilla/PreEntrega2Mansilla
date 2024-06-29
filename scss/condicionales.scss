@@ -23,8 +23,17 @@ $condicion: false;  // Cambiar a false
     }
 }
 
-@for $i from 1 through 10 {
+@for $i from 1 through 5 {
     .m-l#{$i} {                         // m-l = Margin Left
         margin: $i * 20px;
+    }
+}
+
+
+
+
+@for $i from 1 through 10 {
+    .pais-#{$i} {
+        background-color: rgb(7, 120, 249);
     }
 }

@@ -62,24 +62,44 @@
   margin: 100px;
 }
 
-.m-l6 {
-  margin: 120px;
+.pais-1 {
+  background-color: rgb(7, 120, 249);
 }
 
-.m-l7 {
-  margin: 140px;
+.pais-2 {
+  background-color: rgb(7, 120, 249);
 }
 
-.m-l8 {
-  margin: 160px;
+.pais-3 {
+  background-color: rgb(7, 120, 249);
 }
 
-.m-l9 {
-  margin: 180px;
+.pais-4 {
+  background-color: rgb(7, 120, 249);
 }
 
-.m-l10 {
-  margin: 200px;
+.pais-5 {
+  background-color: rgb(7, 120, 249);
+}
+
+.pais-6 {
+  background-color: rgb(7, 120, 249);
+}
+
+.pais-7 {
+  background-color: rgb(7, 120, 249);
+}
+
+.pais-8 {
+  background-color: rgb(7, 120, 249);
+}
+
+.pais-9 {
+  background-color: rgb(7, 120, 249);
+}
+
+.pais-10 {
+  background-color: rgb(7, 120, 249);
 }
 
 /*# sourceMappingURL=condicionales.css.map */
