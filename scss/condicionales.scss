@@ -1,3 +1,4 @@
+// condicionales 
 $condicion: false;  // Cambiar a false
 
 @if $condicion {
@@ -30,10 +31,170 @@ $condicion: false;  // Cambiar a false
 }
 
 
-
-
 @for $i from 1 through 10 {
     .pais-#{$i} {
         background-color: rgb(7, 120, 249);
     }
+}
+
+
+
+
+// bucle each para una lista de colores 
+$colors: red, blue, green, yellow, purple, pink, brown, white;
+
+@each $color in $colors {
+    .text-#{$color} {
+        color: $color;
+    }
+}
+
+
+
+
+
+// maps para paises
+$colorsMap: (
+   primary: red,
+   secondary: blue,
+   success: green, 
+);
+
+@each $key, $value in $colorsMap {
+    .bg-#{$key} {
+        background-color: $value;
+    }
+}
+
+// aca 
+$paisesMap: (
+   argentina: red,
+   brasil: blue,
+   chile: green,
+   uruguay: purple,
+);
+
+@each $key, $value in $paisesMap {
+   .paises-#{$key} {
+    background-color: $value;
+   }
+}
+
+
+
+// extend 
+.button {
+    display: flex;
+    padding: 15px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button-primary {
+    @extend .button;
+    background-color: map-get($colorsMap, primary);
+    color: map-get($colorsMap, secondary);
+}
+
+.button-secondary {
+    @extend .button;
+    background-color: map-get($colorsMap, secondary);
+    color: map-get($colorsMap, primary);
+}
+
+
+
+
+// mixin para flex - SIN parametros 
+@mixin flex-column-center {
+    // estilos basicos para un button
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    padding: 15px 20px;
+    @include flex-column-center();
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card {
+    width: 300px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 20px 5px 20px 5px;
+    @include flex-column-center()
+}
+
+
+
+//mixin para button - CON parametros
+@mixin button-con-parametros {
+    // estilos basicos para un button
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 15px 20px;
+    @include button-con-parametros()
+}
+
+.button-primary {
+    @include button(transparent, black)
+}
+
+
+
+
+
+// mixin para MEDIAQUERY
+@mixin respond-to($media) {
+    @if $media == 'mobile' {
+        @media (min-width: 640px) {
+            @content;  //aca se va a poner el contenido 
+        }
+    }   @else if $media == 'tablet' {
+        @media (min-width: 768px) {
+            @content;  //aca se va a poner el contenido 
+        }
+    }   @else if $media == 'desktop' {
+        @media (min-width: 1024px) {
+            @content; //aca se va a poner el contenido 
+        }
+    }
+}
+
+.card {
+    width: 300px;
+    height: 450px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px 5px 20px 5px;
+    color: black;
+    @include flex-column-center;  // no se si va asi
+}
+
+@include respond-to('mobile') {
+    width: 100%;
+    height: 300px;
+}
+
+@include respond-to('tablet') {
+    height: 400px;
+    @include button-con-parametros;  // no se si va asi
+}
+
+@include respond-to('desktop') {
+    width: 25%;
+    height: 500px;
 }

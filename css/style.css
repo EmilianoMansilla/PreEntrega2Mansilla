@@ -1070,6 +1070,8 @@ article ul li {
 .cabecera-tabla:first-child,
 .celda-tabla:first-child {
     width: 8%;
+    text-align: center;
+    position: relative;
 }
 
 .cabecera-tabla:nth-child(2),
@@ -1097,24 +1099,6 @@ article ul li {
     width: 7%;
 }
 
-.contenedor-torneo h1 {
-    margin-bottom: 10px;
-    font-size: 24px;
-    color: rgb(51, 51, 51);
-}
-
-.tabla-personalizada tbody tr:hover {
-    background-color: rgb(204, 229, 255);
-    cursor: pointer;
-}
-
-.cabecera-tabla:first-child,
-.celda-tabla:first-child {
-    width: 10%;
-    text-align: center;
-    position: relative;
-}
-
 .cabecera-tabla:first-child::before,
 .celda-tabla:first-child::before {
     display: block;
@@ -1127,7 +1111,6 @@ article ul li {
     left: 7px;
 }
 
-/* TORNEOS */
 .contenedor-torneo {
     max-width: 1000px;
     margin: 0 auto;
@@ -1300,6 +1283,7 @@ article ul li {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         margin-top: 30px; 
     }
+
     .red-social {
         transition: transform 0.3s ease-in-out;
     }
@@ -1382,7 +1366,7 @@ article ul li {
     }
 }
 
-/* GRUPOS */
+/* TORNEOS - GRUPOS */
 .grupos-container {
     max-width: 100%;
     margin: 0 auto;
@@ -2281,7 +2265,7 @@ article ul li {
 }
 
 /* APLICACION */
-@media (max-width: 360px) {         /* Pasar a _header el hero */  /* sacar el 360 que quede mismo en el css */
+       /* Pasar a _header el hero */  /* sacar el 360 que quede mismo en el css */
     .app-hero-container {
         padding: 20px 0;
         background-color: rgb(255, 255, 255);
@@ -2438,7 +2422,7 @@ article ul li {
     .app-hero-menu {
         display: none;
     }
-}
+
 
 @media (min-width: 1024px) {
     .app-hero-container h1 {
@@ -2621,4 +2605,239 @@ article ul li {
         width: 250px;
         height: 100px;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tabla-personalizada {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgb(221, 221, 221);
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    max-width: 100%;                  /* Ajuste para evitar desbordamiento */
+    table-layout: fixed;              /* Fijar el ancho de la tabla para mejor control en movil */
+    text-align: center;
+}
+
+.cabecera-tabla,
+.celda-tabla {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    white-space: nowrap;
+    overflow: hidden;                 /* Ocultar el texto que desborda */
+}
+
+.cabecera-tabla {
+    background-color: rgb(242, 242, 242);
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+}
+
+.celda-tabla {
+    background-color: rgb(255, 255, 255);
+}
+
+.cabecera-tabla:first-child,
+.celda-tabla:first-child {
+    width: 8%;
+    text-align: center;
+    position: relative;
+}
+
+.cabecera-tabla:nth-child(2),
+.celda-tabla:nth-child(2) {
+    width: 25%;
+}
+
+.cabecera-tabla:nth-child(3),
+.celda-tabla:nth-child(3) {
+    width: 10%;
+}
+
+.cabecera-tabla:nth-child(4),
+.celda-tabla:nth-child(4) {
+    width: 8%;
+}
+
+.cabecera-tabla:nth-child(5),
+.celda-tabla:nth-child(5) {
+    width: 7%;
+}
+
+.cabecera-tabla:nth-child(6),
+.celda-tabla:nth-child(6) {
+    width: 7%;
+}
+
+.cabecera-tabla:first-child::before,
+.celda-tabla:first-child::before {
+    display: block;
+    color: rgb(85, 85, 85);
+    font-size: 11px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7px;
+}
+
+.contenedor-torneo {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-torneo h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: rgb(51, 51, 51);
+}
+
+.contenedor-torneo .torneo h2 {
+    font-size: 1.8rem;
+    color: rgb(231, 76, 60);
+    margin-bottom: 10px;
+}
+
+.contenedor-torneo .torneo {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contenedor-torneo .torneo p {
+    color: rgb(85, 85, 85);
+}
+
+.contenedor-torneo .torneo ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+
+.contenedor-torneo .torneo ul li {
+    margin-bottom: 5px;
+}
+
+.contenedor-torneo .torneo img {
+    display: block;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.redes-contactos-torneos {
+    background-color: rgb(240, 240, 240);
+    margin-top: 20px;
+}
+
+.redes-sociales-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.red-social {
+    transition: transform 0.3s ease-in-out;
+}
+
+.red-social img {
+    width: 40px;
+    height: 40px;
+}
+
+.red-social:hover {
+    transform: scale(1.2);                                  /* Aumenta el tamaño del ícono al hacer hover */
+}
+
+.contenedor-tabla {
+    overflow-x: auto;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);             /* Sombra más pronunciada para profesionalismo */
+    transition: box-shadow 0.3s ease-in-out;                  /* Transición para el hover */
+}
+
+.contenedor-tabla:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);              /* Sombra más pronunciada al hacer hover */
+}
+
+.contenedor-tabla h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: rgb(51, 51, 51);
+    font-weight: bold;                      
+}
+
+.caption-torneos {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.texto-torneos {
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(85, 85, 85);
+    margin-bottom: 15px; 
+    padding: 10px;
+    background-color: rgb(245, 245, 245); 
+    border-left: 4px solid rgb(231, 76, 60);        /* Borde izquierdo colorido */
+    border-radius: 4px;
+}
+
+.pie {
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(119, 119, 119);
+    padding: 10px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.pie a {
+    text-decoration: none;      /* Eliminar la línea de los enlaces */
 }

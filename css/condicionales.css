@@ -1,105 +1,19 @@
-.condicional {
-  color: blue;
-}
+/* Error: Declarations may only be used within style rules.
+ *     ,
+ * 188 |     width: 100%;
+ *     |     ^^^^^^^^^^^
+ *     '
+ *   scss\condicionales.scss 188:5   @content
+ *   scss\condicionales.scss 164:13  respond-to()
+ *   scss\condicionales.scss 187:1   root stylesheet */
 
-.m-r1 {
-  margin: 10px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Declarations may only be used within style rules.\a     \2577 \a 188 \2502      width: 100%;\d\a     \2502      ^^^^^^^^^^^\a     \2575 \a   scss\\condicionales.scss 188:5   @content\a   scss\\condicionales.scss 164:13  respond-to()\a   scss\\condicionales.scss 187:1   root stylesheet";
 }
-
-.m-r2 {
-  margin: 20px;
-}
-
-.m-r3 {
-  margin: 30px;
-}
-
-.m-r4 {
-  margin: 40px;
-}
-
-.m-r5 {
-  margin: 50px;
-}
-
-.m-r6 {
-  margin: 60px;
-}
-
-.m-r7 {
-  margin: 70px;
-}
-
-.m-r8 {
-  margin: 80px;
-}
-
-.m-r9 {
-  margin: 90px;
-}
-
-.m-r10 {
-  margin: 100px;
-}
-
-.m-l1 {
-  margin: 20px;
-}
-
-.m-l2 {
-  margin: 40px;
-}
-
-.m-l3 {
-  margin: 60px;
-}
-
-.m-l4 {
-  margin: 80px;
-}
-
-.m-l5 {
-  margin: 100px;
-}
-
-.pais-1 {
-  background-color: rgb(7, 120, 249);
-}
-
-.pais-2 {
-  background-color: rgb(7, 120, 249);
-}
-
-.pais-3 {
-  background-color: rgb(7, 120, 249);
-}
-
-.pais-4 {
-  background-color: rgb(7, 120, 249);
-}
-
-.pais-5 {
-  background-color: rgb(7, 120, 249);
-}
-
-.pais-6 {
-  background-color: rgb(7, 120, 249);
-}
-
-.pais-7 {
-  background-color: rgb(7, 120, 249);
-}
-
-.pais-8 {
-  background-color: rgb(7, 120, 249);
-}
-
-.pais-9 {
-  background-color: rgb(7, 120, 249);
-}
-
-.pais-10 {
-  background-color: rgb(7, 120, 249);
-}
-
-/*# sourceMappingURL=condicionales.css.map */

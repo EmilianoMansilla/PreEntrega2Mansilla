@@ -1,0 +1,644 @@
+$large: 1024px;
+
+
+// Navegador 
+@media (min-width: $large) {
+    .menu-items label {
+        display: none;
+    }
+
+    .menu-items ul {
+        position: inherit;
+        display: flex;
+        padding: 3px;
+        margin: 5px;
+        flex-direction: row;
+    }
+
+    .menu-items {
+        margin-top: 20px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+
+// Footer
+@media (min-width: 1024px) {
+    footer h4 {
+        font-size: 1.1rem;
+    }
+}
+
+
+// Formulario 
+@media (min-width: 1024px) {
+    .form-registrarme label {
+        display: inline-block;
+        width: 35%;
+        color: rgb(51, 51, 51);
+    }
+
+    label[for="terminos"] {
+        width: 38%;
+    }
+
+    .form-registrarme input[type="text"],
+    .form-registrarme input[type="password"],
+    .form-registrarme input[type="email"],
+    .form-registrarme input[type="tel"],
+    .form-registrarme textarea,
+    .form-registrarme input[type="file"] {
+        width: 40%;
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .botones-container {
+        text-align: center;
+    }
+
+    .form-registrarme select {
+        width: 40%;
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .form-registrarme input[type="number"] {
+        width: 20%;
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .form-registrarme input[type="color"] {
+        width: 20%;
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .form-registrarme input[type="date"] {
+        width: 30%;
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .form-registrarme input[type="submit"] {
+        padding: 12px 24px;
+        background-color: rgb(255, 34, 84);
+        border: none;
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .form-registrarme input[type="reset"] {
+        padding: 12px 18px;
+        background-color: rgb(0, 123, 255);
+        border: none;
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .form-registrarme input[type="submit"]:hover {
+        background-color: rgb(255, 85, 102);
+    }
+
+    .form-registrarme input[type="reset"]:hover {
+        background-color: rgb(0, 86, 179);
+    }
+
+    .terminos-container {
+        margin-top: 20px;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    /* Estilo para el enfoque de los inputs */
+    .form-registrarme input[type="text"]:focus,
+    .form-registrarme input[type="password"]:focus,
+    .form-registrarme input[type="email"]:focus,
+    .form-registrarme input[type="tel"]:focus,
+    .form-registrarme input[type="number"]:focus,
+    .form-registrarme textarea:focus,
+    .form-registrarme select:focus,
+    .form-registrarme input[type="date"]:focus,
+    .form-registrarme input[type="file"]:focus,
+    .form-registrarme input[type="color"]:focus {
+        outline: none;
+        /* Elimina el borde predeterminado */
+        border: 2px solid rgb(131, 11, 131);
+        box-shadow: 0 0 5px rgba(128, 0, 128, 0.5);
+    }
+
+    .sexo-container {
+        width: 70%;
+    }
+
+    .sexo-container label {
+        font-size: 1rem;
+        margin-left: 1px;
+    }
+
+    .form-registrarme textarea {
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 10px;
+    }
+
+    .form-registrarme textarea:focus {
+        border-width: 2px;
+    }
+}
+
+
+// Reserva
+@media (min-width: 1024px) {
+    .carousel .local-slide {
+        width: 80%;
+        margin-left: 40px;
+    }
+
+    .local-imagen {
+        display: inline-block;
+        float: right;
+        max-width: 35%;
+        margin-right: 2%;
+        margin-top: 6%;
+    }
+
+    .reservar-boton {
+        margin-top: 25px;
+    }
+}
+
+
+// Torneos
+@media (min-width: 1024px) {
+    .contenedor-torneo {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.755); 
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);        /* Sombra suave */
+        margin-bottom: 30px; 
+    }
+
+    .contenedor-torneo h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        color: rgb(51, 51, 51);
+        margin-bottom: 0px; 
+    }
+
+    .redes-sociales-container {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 10px;
+        justify-items: center;
+        align-items: center;
+        background-color: rgba(31, 47, 55, 0.879);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-top: 30px; 
+    }
+
+    .red-social {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .red-social img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .red-social:hover {
+        transform: scale(1.2);                  /* Efecto de escala al hacer hover */
+    }
+    
+    .contenedor-titulo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 40px;
+        text-align: center;
+        background-color: rgb(242, 242, 242); 
+        border-radius: 10px; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);           /* Sombra suave */
+        margin-bottom: 30px; 
+    }
+
+    .contenedor-titulo h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        color: rgb(51, 51, 51); 
+    }
+
+    .contenedor-titulo p {
+        font-size: 16px;
+        max-width: 900px;
+        margin-bottom: 20px;
+        color: rgb(85, 85, 85); 
+    }
+
+    .contenedor-tabla {
+        overflow-x: auto;
+        margin-top: 20px;
+        background-color: rgb(255, 255, 255);
+        padding: 20px; 
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);           /* Sombra suave */
+    }
+
+    .tabla-personalizada {
+        font-size: 16px;
+        width: 100%;                    /* Ancho completo */
+        max-width: 1200px;              /* Ancho máximo */
+        margin: 0 auto;
+        border-collapse: collapse;      /* Colapsar bordes de la tabla */
+    }
+
+    /* Estilo de las celdas de la tabla */
+    .tabla-personalizada th,
+    .tabla-personalizada td {
+        padding: 12px;
+        border: 1px solid rgb(221, 221, 221);
+        text-align: center;
+    }
+
+    .pie {
+        text-align: center;
+        font-size: 1rem;
+        color: rgb(119, 119, 119);
+        padding: 10px;
+        background-color: rgb(242, 242, 242);
+        border-radius: 10px;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        width: 10%;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .pie a {
+        text-decoration: none;      /* Eliminar la línea de los enlaces */
+    }
+}
+
+@media (min-width: 1024px) {
+    .grupos-article {
+        display: flex;
+        flex-direction: row;                        /* Alinear las tablas una al lado de la otra */
+        gap: 50px;
+        flex-wrap: wrap;                            /* Envolver las tablas en múltiples filas si el espacio es insuficiente */
+        justify-content: center;
+        align-items: flex-start;                    /* Alinear el contenido al inicio verticalmente */
+    }
+
+    .grupos-content {
+        width: calc(44% - 20px);                    /* El 50% del ancho total menos el espacio entre las tablas */
+        margin-bottom: 20px; 
+        box-sizing: border-box;                     /* Asegura que el padding se incluya en el ancho */
+    }
+
+    .tabla-grupos {
+        width: 100%; 
+        border-collapse: collapse;                  /* Colapsa los bordes de la tabla para una apariencia más limpia */
+        background-color: rgb(249, 249, 249);
+    }
+
+    .tabla-grupos th,
+    .tabla-grupos td {
+        font-size: 0.9em;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid rgb(221, 221, 221);
+    }
+
+    .tabla-grupos tr {
+        transition: background-color 0.3s ease;         /* Transición suave del color de fondo */
+    }
+
+    .tabla-grupos tr:hover {
+        background-color: rgb(240, 240, 240); 
+        cursor: pointer; 
+    }
+
+    .titulo-grupos {
+        font-size: 2em; 
+        font-weight: bold;          /* Negrita para resaltar */
+        color: rgb(51, 51, 51);
+        margin-top: 40px;
+        text-align: center; 
+    }
+
+    .texto-grupos {
+        max-width: 70%;
+        font-size: 1.1em;
+        line-height: 1.8;           /* Incrementar la altura de línea */
+        color: rgb(68, 68, 68); 
+        margin-bottom: 15px;      
+        padding: 10px;         
+        margin-left: auto;          /* Centrar el bloque horizontalmente */
+        margin-right: auto;        
+    }
+
+    .texto-grupos::first-letter {
+        font-size: 1.8em;        
+        font-weight: bold;      
+        line-height: 1;             
+        color: rgb(231, 76, 60);     /* Asegurarse de que el color sea consistente */
+    }
+}
+
+@media (min-width: 1024px) {
+    .torneo-container-fixture {
+        grid-template-columns: repeat(5, 1fr);         /* Volver al diseño de 5 columnas */
+        gap: 15px;                                     /* Espacio entre columnas */
+    }
+
+    .etapa {
+        display: grid;
+        grid-auto-flow: row;
+        gap: 30px;
+        text-align: center;
+        align-items: start;
+    }
+
+    .partido-container {
+        width: 250px;           /* Ancho fijo para partidos */
+    }
+
+    .campeon-container {
+        height: 250px;          /* Altura fija para contenedor de campeón */
+    }
+
+    .octavos {
+        grid-column: 1 / 2;
+    }
+
+    .cuartos {
+        grid-column: 2 / 3;
+    }
+
+    .semifinales {
+        grid-column: 3 / 4;
+    }
+
+    .final {
+        grid-column: 4 / 5;
+    }
+
+    .campeon {
+        grid-column: 5;
+        margin-bottom: 30%;
+    }
+
+    .texto-fixture {
+        max-width: 1200px;      
+        margin-top: 10px;          
+        margin-bottom: 3%;    
+    }    
+
+    .campeon-container {
+        max-width: 350px;           /* Ancho máximo fijo para el contenedor */
+        max-height: 350px;          /* Altura máxima fija para el contenedor */
+    }
+
+    .campeon-container img {
+        max-width: 100%;            /* Ajustar la imagen al 100% del contenedor */
+        max-height: 100%;           
+    }
+}
+
+
+// Inicio 
+@media (min-width: 1024px) {
+    .main-contenedor-inicio {
+        display: flex; 
+        justify-content: space-between;                     
+        align-items: flex-start;                            
+        flex-direction: row-reverse;
+    }
+
+    .main-contenedor-inicio section {
+        flex: 1;                                            
+        margin-left: 20px;
+    }
+
+    .aside-inicio {
+        max-width: 260px;                                   
+        padding: 13px;
+        background-color: rgb(245, 245, 245); 
+        position: sticky;                                   
+        margin-top: 0px;
+    }
+
+    .titulo-inicio {
+        font-size: 35px;
+    }
+
+    .texto-inicio {
+        font-size: 18px;
+    }
+
+    .subtitulo-inicio {
+        max-width: 60%;
+        margin: 0 auto;                                     
+        margin-top: 20px;
+    }
+
+    .titulo-aside-inicio {
+        text-align: center; 
+        margin-bottom: 20px; 
+        font-size: 1.2rem; 
+        color: rgb(51, 51, 51); 
+        white-space: nowrap;                                
+        margin-top: 50px; 
+    }
+
+    .subtitulo-aside-inicio {
+        text-align: center; 
+        margin-bottom: 20px; 
+        font-size: 1.2rem; 
+        color: rgb(51, 51, 51); 
+        white-space: nowrap;
+        margin-top: 110px;                              
+    }
+
+    .texto-aside-inicio {
+        text-align: center;
+        width: 93%;
+        margin-bottom: 12%;
+    }
+
+    .texto-aside-inicio ul {
+        list-style: none;                         
+        padding: 0;
+        text-align: left;
+    }
+
+    .texto-aside-inicio ul li {
+        margin-bottom: 10px;
+    }
+
+    .texto-aside-inicio ul li a {
+        display: block;                                                 
+        padding: 10px 15px;
+        background-color: rgb(255, 255, 255); 
+        border-radius: 5px; 
+        text-decoration: none;                      
+        color: rgb(51, 51, 51); 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);                         
+        transition: background-color 0.3s ease, color 0.3s ease;            
+    }
+
+    .texto-aside-inicio ul li a:hover {
+        background-color: rgb(51, 51, 51);
+        color: rgb(255, 255, 255); 
+    }
+
+    .aside-inicio a {
+        text-align: center;
+        padding: 12px 10px;
+        margin-top: 30px;
+    }
+
+    .redes-sociales-container-inicio {
+        flex-direction: column;
+    }
+
+    .redes-sociales-container-inicio a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);                        
+        gap: 20px;
+    }
+    
+    .articulo-noticia {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);                     
+        transition: transform 0.3s ease, box-shadow 0.3s ease;          
+    }
+
+    .articulo-noticia:hover {
+        transform: translateY(-5px);                                    
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);                    
+    }
+
+    .foto-noticias {
+        width: 100%; 
+        height: auto; 
+        border-radius: 8px;
+        margin-bottom: 10px; 
+    }
+
+    .contenido-noticia {
+        flex: 1;                                                        
+    }
+    
+    .date-noticias {
+        font-size: 0.9rem;
+        color: rgb(255, 255, 255); 
+        margin-bottom: 5px; 
+    }
+
+    .titulo-noticia {
+        font-size: 1.3rem; 
+        margin-top: 40px;
+        margin-bottom: 10px;
+        color: rgb(51, 51, 51); 
+    }
+
+    .texto-noticia {
+        font-size: 17px;
+        color: rgb(102, 102, 102); 
+        line-height: 1.6; 
+        margin-top: 30px;
+        margin-bottom: 10px; 
+    }
+
+    .botones-noticias {
+        display: flex;
+        gap: 20px;
+    }
+
+    .boton-noticia {
+        padding: 10px 15px;                                                                             /* Aumentado para botones más grandes */
+        background-color: rgb(30, 144, 255);
+        border-radius: 8px; 
+        font-size: 1rem; 
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;                   /* Transición suave y transformación */
+    }
+
+    .boton-noticia:hover {
+        background-color: rgb(16, 78, 139); 
+        color: rgb(255, 255, 255); 
+        transform: translateY(-3px);                                                                    /* Ligera elevación al pasar el mouse */
+    }
+
+    .boton-noticia:active { 
+        transform: translateY(0);                                                                       /* Restaura la posición al hacer clic */
+    }
+
+    .columna-1 .articulo-noticia, .columna-2 .articulo-noticia {
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+// Ubicaciones 
+@media (min-width: 1024px) {
+    .titulo-ubicaciones {
+        font-size: 30px; 
+        margin-bottom: 30px; 
+    }
+
+    .titulo-texto-ubicaciones {
+        font-size: 18px;
+        line-height: 1.8; 
+        padding: 30px; 
+        max-width: 1000px; 
+    }
+
+    .mapa-grande {
+        width: 70%; 
+        margin: 20px auto;                                  /* Margen ajustado para centrar */
+        height: 550px; 
+    }
+
+    .ubicacion-item {
+        width: 350px;                              
+    }
+
+    .subtitulo-ubicaciones {
+        font-size: 26px; 
+    }
+
+    .texto-ubicaciones {
+        font-size: 16px; 
+    }
+}
