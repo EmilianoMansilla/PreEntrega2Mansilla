@@ -490,6 +490,7 @@ article ul li {
   transition: color 0.3s;                                 /* Transición para el color del texto */
 }
 
+// Ubicaciones
 .titulo-ubicaciones {
   font-size: 25px;
   font-weight: 700;
@@ -540,21 +541,20 @@ article ul li {
   color: $color-hover-a-mapa;
 }
 
-// UBICACIONES 
+// Descargas - Aplicacion 
 .app-hero-container h1 {
-  font-size: 24px;
+  margin-top: 60px;
+  margin-bottom: 10px;
   font-weight: 700;
   color: $color-titulo-ubicaciones;
-  margin-bottom: 15px;
+  font-size: 28px; 
+  text-align: center;                                         /* Centrar el texto */
 }
 
-.app-hero-menu-item a {
-  text-decoration: none;
-  color: $color-texto-item-ubicaciones;
-  transition: color 0.3s ease;
-}
-
-.app-hero-menu-item a:hover {
-  color: $color-hover-item-ubicaciones;
+.app-hero-description {
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center; 
+  margin-top: 20px;
 }
 

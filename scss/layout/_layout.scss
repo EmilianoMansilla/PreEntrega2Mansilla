@@ -1131,3 +1131,113 @@ article input[type=date] {
 .app-hero-menu {
     display: none;
 }
+
+// Descargar - Aplicacion
+.app-hero-container {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: $color-blanco;
+}
+
+.app-hero-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;                                        /* Centra los elementos horizontalmente */
+    background-color: $color-hero-descargas;  
+    padding: 35px 0;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.app-hero-logo img {
+    width: 220px; 
+    height: 90px;
+    margin-bottom: 10px; 
+}
+
+.app-hero-menu {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.app-hero-menu-item {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: $color-hero-menu-descargas;
+    cursor: pointer;
+    transition: $transition-hero-menu-descargas;
+    text-transform: uppercase;                          /* Convertir el texto a mayúsculas */
+}
+
+.app-hero-menu-item:hover {
+    color: $color-hover-item-ubicaciones;
+}
+
+.app-hero-botones-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 23px;
+    gap: 10px;
+}
+
+/* Imágenes */
+.app-hero-imagen-container {
+    position: relative;
+}
+
+.app-hero-imagen-container .app-hero-imagen {
+    width: 40%;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.app-hero-imagen-container .app-hero-imagen-flotante {
+    position: absolute;
+    bottom: 15px;
+    left: 155px;
+    width: 90px;
+    height: 90px;
+}
+
+.app-hero-imagen-flotante-apple {
+    position: absolute;
+    bottom: 15px;
+    left: 230px;
+    width: 50px;
+    height: 50px;
+}
+
+.app-hero-imagen-flotante-android {
+    position: absolute;
+    bottom: 12px;
+    left: 280px;
+    width: 50px;
+    height: 50px;
+}
+
+/* Iconos */
+.app-hero-footer-logos {
+    margin-top: 40px;
+}
+
+.app-hero-icons-container {
+    display: flex;
+    justify-content: center;                                /* Centrar elementos en línea */
+    gap: 20px; 
+}
+
+.app-hero-icon {
+    width: 40px; 
+    height: 40px; 
+}
+
+.app-hero-linea {
+    height: 2px; 
+    width: 50%;                                             /* Ancho de la línea */
+    background-color: $color-texto-item-ubicaciones; 
+    margin: 20px auto;                                      /* Margen arriba y abajo automático, centrado horizontalmente */
+}

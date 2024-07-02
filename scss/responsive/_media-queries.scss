@@ -2,7 +2,7 @@ $large: 1024px;
 
 
 // Navegador 
-@media (min-width: 1024px) {
+@media (min-width: $large) {
     .menu-items label {
         display: none;
     }
@@ -24,7 +24,7 @@ $large: 1024px;
 
 
 // Footer
-@media (min-width: 1024px) {
+@media (min-width: $large) {
     footer h4 {
         font-size: 1.1rem;
     }
@@ -32,7 +32,7 @@ $large: 1024px;
 
 
 // Formulario 
-@media (min-width: 1024px) {
+@media (min-width: $large) {
     .form-registrarme label {
         display: inline-block;
         width: 35%;
@@ -165,7 +165,7 @@ $large: 1024px;
 
 
 // Reserva
-@media (min-width: 1024px) {
+@media (min-width: $large) {
     .carousel .local-slide {
         width: 80%;
         margin-left: 40px;
@@ -186,7 +186,7 @@ $large: 1024px;
 
 
 // Torneos
-@media (min-width: 1024px) {
+@media (min-width: $large) {
     .contenedor-torneo {
         width: 100%;
         background-color: rgba(255, 255, 255, 0.755); 
@@ -299,7 +299,7 @@ $large: 1024px;
 }
 
 // Torneos - Grupos
-@media (min-width: 1024px) {
+@media (min-width: $large) {
     .grupos-article {
         display: flex;
         flex-direction: row;                        /* Alinear las tablas una al lado de la otra */
@@ -367,7 +367,7 @@ $large: 1024px;
 
 
 // Torneos - Fixture
-@media (min-width: 1024px) {
+@media (min-width: $large) {
     .torneo-container-fixture {
         grid-template-columns: repeat(5, 1fr);         /* Volver al diseño de 5 columnas */
         gap: 15px;                                     /* Espacio entre columnas */
@@ -428,7 +428,7 @@ $large: 1024px;
 }
 
 // Inicio 
-@media (min-width: 1024px) {
+@media (min-width: $large) {
     .main-contenedor-inicio {
         display: flex; 
         justify-content: space-between;                     
@@ -614,7 +614,7 @@ $large: 1024px;
 
 
 // Ubicaciones 
-@media (min-width: 1024px) {
+@media (min-width: $large) {
     .titulo-ubicaciones {
         font-size: 30px; 
         margin-bottom: 30px; 
@@ -648,7 +648,7 @@ $large: 1024px;
 
 
 // Descargar - Aplicacion 
-@media (min-width: 1024px) {
+@media (min-width: $large) {
     .app-hero-container h1 {
         font-weight: 700;
         color: rgb(16, 26, 36);

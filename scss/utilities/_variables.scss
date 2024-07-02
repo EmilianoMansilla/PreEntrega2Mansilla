@@ -8,6 +8,7 @@ $color-hover-a: rgba(255, 255, 255, 0.1);
 $color-texto-productos: rgb(204, 204, 204);
 $color-fondo-tabla-personalizada: rgb(204, 229, 255);
 $color-texto-login: rgb(208, 208, 208);
+$color-hero-menu-descargas: rgb(214, 228, 226);
 $color-fondo-footer: rgb(220, 225, 222);
 $color-bordes-tabla: rgb(221, 221, 221);
 $color-fondo-ubicacion: rgba(222, 219, 219, 0.907);
@@ -30,6 +31,7 @@ $color-texto-pie: rgb(119, 119, 119);
 $color-input-placeholder: rgb(153, 153, 153);
 $color-body-fondo: rgb(163, 177, 138);
 
+$color-hero-descargas: rgb(44, 62, 80); 
 $color-hover-fixture: rgba(44, 130, 201, 0.1); 
 $color-titulo-fixture: rgb(47, 47, 48);  
 $color-body-texto: rgb(51, 51, 51);
@@ -217,6 +219,7 @@ $space-evenly: space-evenly;
 $row: row;
 
 // Transiciones
+$transition-hero-menu-descargas: color 0.3s ease;
 $transition-background-menu-link: background-color 0.2s ease;
 $transition-background-boton-index: background 0.3s ease-in-out;
 
@@ -227,7 +230,7 @@ $transition-box-sombra-index-servicio: box-shadow 0.3s ease;
 
 $transform-translate-index-producto: translateY(-5px);
 
-$transform-zoom-index-servicio:  scale(1.05);           // Efecto de zoom suave al pasar el cursor
+$transform-zoom-index-servicio: scale(1.05);           // Efecto de zoom suave al pasar el cursor
 
 // Otros
 $pointer: pointer;                    

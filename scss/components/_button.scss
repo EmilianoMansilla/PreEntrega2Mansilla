@@ -113,3 +113,17 @@ button:hover,
     margin-top: 50px;
     margin-bottom: -30px;
 }
+
+// Descargas - Aplicacion 
+.app-link-boton {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-blanco;
+    background-color: $color-boton-ubicaciones;
+    box-shadow: $sombra-boton-ubicaciones;
+    margin-top: 15px;
+}
